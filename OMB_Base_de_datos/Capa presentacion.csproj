@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3CE248B6-A608-4F46-BCEA-DDD79FDE64C6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OMB_Base_de_datos</RootNamespace>
+    <AssemblyName>OMB_Base_de_datos</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>E:\David\Libreria Banifu\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VisualStudioTabControl">
+      <HintPath>..\..\..\..\Downloads\VisualStudioTabControl\VisualStudioTabControl\obj\Debug\VisualStudioTabControl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frames\Agregar_poliza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frames\Agregar_poliza.Designer.cs">
+      <DependentUpon>Agregar_poliza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frames\Listado_Beneficiarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frames\Listado_Beneficiarios.Designer.cs">
+      <DependentUpon>Listado_Beneficiarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frames\Listado_polizas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frames\Listado_polizas.Designer.cs">
+      <DependentUpon>Listado_polizas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frames\Listado_Tomadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frames\Listado_Tomadores.Designer.cs">
+      <DependentUpon>Listado_Tomadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frames\SelectDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frames\SelectDate.Designer.cs">
+      <DependentUpon>SelectDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frames\Agregar_poliza.resx">
+      <DependentUpon>Agregar_poliza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\Listado_Beneficiarios.resx">
+      <DependentUpon>Listado_Beneficiarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\Listado_polizas.resx">
+      <DependentUpon>Listado_polizas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\Listado_Tomadores.resx">
+      <DependentUpon>Listado_Tomadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\SelectDate.resx">
+      <DependentUpon>SelectDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa logica\Capa logica.csproj">
+      <Project>{2479806c-3517-42f9-b8a0-5a945f6a3724}</Project>
+      <Name>Capa logica</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LogIn\LogIn.csproj">
+      <Project>{4d5ece6d-4004-4ab3-9702-e27fe305bf80}</Project>
+      <Name>LogIn</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CERRAR3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLOSE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male User_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAXIMIZAR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAXIMIZAR2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAXIMIZAR3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MINIMIZAR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MINIMIZAR2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\News_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus Math_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POLIZAS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POLIZAS2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RESTAURAR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RESTAURAR2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tomadores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehiculos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View Details_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Car_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CERRAR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
