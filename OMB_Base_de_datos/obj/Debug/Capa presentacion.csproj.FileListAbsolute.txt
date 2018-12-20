@@ -27,3 +27,4 @@ C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\bin\Debug\Vis
 C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Debug\OMB_Base_de_datos.Frames.SelectDate.resources
 C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Debug\OMB_Base_de_datos.Frames.Listado_Tomadores.resources
 C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Debug\OMB_Base_de_datos.Frames.Listado_Beneficiarios.resources
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Debug\OMB_Base_de_datos.Frames.Listado_Vehiculos.resources

@@ -92,7 +92,7 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.ListadoVeh.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.ListadoVeh.Size = new System.Drawing.Size(1276, 569);
+            this.ListadoVeh.Size = new System.Drawing.Size(1276, 571);
             this.ListadoVeh.TabIndex = 7;
             // 
             // PdfVeh
@@ -110,6 +110,7 @@
             this.PdfVeh.TabIndex = 3;
             this.PdfVeh.Text = "Generar archivo PDF";
             this.PdfVeh.UseVisualStyleBackColor = true;
+            this.PdfVeh.Click += new System.EventHandler(this.PdfVeh_Click);
             // 
             // IconoBuscar
             // 
@@ -154,6 +155,9 @@
             this.Buscar.TabIndex = 0;
             this.Buscar.Text = "Buscar...";
             this.Buscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Buscar.Enter += new System.EventHandler(this.Buscar_Enter);
+            this.Buscar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Buscar_KeyUp);
+            this.Buscar.Leave += new System.EventHandler(this.Buscar_Leave);
             // 
             // Listado_Vehiculos
             // 
@@ -166,6 +170,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Listado_Vehiculos";
             this.Text = "Listado_Vehiculos";
+            this.Load += new System.EventHandler(this.Listado_Vehiculos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ListadoVeh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconoBuscar)).EndInit();
             this.Cabeza.ResumeLayout(false);

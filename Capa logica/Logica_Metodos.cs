@@ -82,6 +82,22 @@ namespace Capa_logica
             }
             bd.DesconectarBase();
         }
+        public void LlenarTabla_Vehiculos(DataGridView Llenar)
+        {
+            try
+            {
+                MySqlCommand query = new MySqlCommand("SELECT * FROM polizasveh", bd.GetConnection());
+                MySqlDataAdapter rs = new MySqlDataAdapter(query);
+                DataTable dt = new DataTable();
+                rs.Fill(dt);
+                Llenar.DataSource = dt;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            bd.DesconectarBase();
+        }
         public bool Insertar_Datos_Poliza_General(string query)
         {
             bool Insertado = false;
@@ -221,6 +237,22 @@ namespace Capa_logica
             try
             {
                 MySqlCommand query = new MySqlCommand("SELECT * FROM ben b WHERE b.Documento  LIKE '" + TextoBusqueda + "%' OR b.Nombres LIKE '" + TextoBusqueda + "%' OR b.Apellidos LIKE '" + TextoBusqueda + "%'  ", bd.GetConnection());
+                MySqlDataAdapter rs = new MySqlDataAdapter(query);
+                DataTable dt = new DataTable();
+                rs.Fill(dt);
+                Llenar.DataSource = dt;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            bd.DesconectarBase();
+        }
+        public void Buscar_Vehiculo(DataGridView Llenar, string TextoBusqueda)
+        {
+            try
+            {
+                MySqlCommand query = new MySqlCommand("SELECT * FROM polizasveh pv WHERE pv.`N.Poliza` LIKE '" + TextoBusqueda + "%' or pv.`Documento Tomador` LIKE '" + TextoBusqueda + "%' OR pv.`Nombres Tomador` LIKE '" + TextoBusqueda + "%' or pv.Placa LIKE '" + TextoBusqueda + "%'", bd.GetConnection());
                 MySqlDataAdapter rs = new MySqlDataAdapter(query);
                 DataTable dt = new DataTable();
                 rs.Fill(dt);

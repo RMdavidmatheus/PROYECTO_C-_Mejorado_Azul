@@ -103,6 +103,7 @@ namespace OMB_Base_de_datos
             Selection.Height = Vehiculos.Height;
             Selection.Top = Vehiculos.Top;
             Title.Text = Vehiculos.Text;
+            Metodos.Abrir_Formulario_En_Panel(Contenido, new Frames.Listado_Vehiculos());
         }
 
         private void vigenciapol_Click(object sender, EventArgs e)
