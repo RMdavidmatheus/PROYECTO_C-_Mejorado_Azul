@@ -12,11 +12,13 @@ namespace OMB_Base_de_datos
 {
     public partial class Principal : Form
     {
-        public Principal()
+        public Principal(string TomarUsu)
         {
             InitializeComponent();
+            Usu = TomarUsu;
+            txtUsuario.Text = Usu;
         }
-
+        private string Usu;
         private void timer1_Tick(object sender, EventArgs e)
         {
             this.hora.Text = DateTime.Now.ToLongTimeString();

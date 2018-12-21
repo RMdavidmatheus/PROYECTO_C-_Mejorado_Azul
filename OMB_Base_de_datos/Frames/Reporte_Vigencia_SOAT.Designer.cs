@@ -42,9 +42,17 @@
             this.IconoBuscar = new System.Windows.Forms.PictureBox();
             this.Buscar = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.Cabeza = new System.Windows.Forms.Panel();
+            this.PanelHora = new System.Windows.Forms.Panel();
+            this.txtUsuario = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.Imagen_usu = new System.Windows.Forms.PictureBox();
+            this.Fecha = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.hora = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ListadoPolizasSOAT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconoBuscar)).BeginInit();
             this.Cabeza.SuspendLayout();
+            this.PanelHora.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_usu)).BeginInit();
             this.SuspendLayout();
             // 
             // FormaApp
@@ -83,7 +91,7 @@
             this.ListadoPolizasSOAT.EnableHeadersVisualStyles = false;
             this.ListadoPolizasSOAT.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
             this.ListadoPolizasSOAT.HeaderForeColor = System.Drawing.SystemColors.Control;
-            this.ListadoPolizasSOAT.Location = new System.Drawing.Point(-2, 132);
+            this.ListadoPolizasSOAT.Location = new System.Drawing.Point(-2, 151);
             this.ListadoPolizasSOAT.Name = "ListadoPolizasSOAT";
             this.ListadoPolizasSOAT.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -94,7 +102,7 @@
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.ListadoPolizasSOAT.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.ListadoPolizasSOAT.Size = new System.Drawing.Size(1276, 550);
+            this.ListadoPolizasSOAT.Size = new System.Drawing.Size(1276, 422);
             this.ListadoPolizasSOAT.TabIndex = 11;
             this.ListadoPolizasSOAT.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.ListadoPolizasSOAT_CellFormatting);
             // 
@@ -107,7 +115,7 @@
             this.BuscarMes.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuscarMes.Image = ((System.Drawing.Image)(resources.GetObject("BuscarMes.Image")));
             this.BuscarMes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuscarMes.Location = new System.Drawing.Point(594, 102);
+            this.BuscarMes.Location = new System.Drawing.Point(597, 115);
             this.BuscarMes.Name = "BuscarMes";
             this.BuscarMes.Size = new System.Drawing.Size(152, 44);
             this.BuscarMes.TabIndex = 5;
@@ -133,9 +141,9 @@
             "OCTUBRE",
             "NOVIEMBRE",
             "DICIEMBRE"});
-            this.Mes.Location = new System.Drawing.Point(290, 107);
+            this.Mes.Location = new System.Drawing.Point(301, 120);
             this.Mes.Name = "Mes";
-            this.Mes.Size = new System.Drawing.Size(298, 36);
+            this.Mes.Size = new System.Drawing.Size(287, 36);
             this.Mes.TabIndex = 4;
             this.Mes.Text = "-- SELECCIONE UN MES --";
             // 
@@ -148,7 +156,7 @@
             this.PdfVeh.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PdfVeh.Image = ((System.Drawing.Image)(resources.GetObject("PdfVeh.Image")));
             this.PdfVeh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.PdfVeh.Location = new System.Drawing.Point(7, 102);
+            this.PdfVeh.Location = new System.Drawing.Point(17, 115);
             this.PdfVeh.Name = "PdfVeh";
             this.PdfVeh.Size = new System.Drawing.Size(277, 44);
             this.PdfVeh.TabIndex = 3;
@@ -159,7 +167,7 @@
             // IconoBuscar
             // 
             this.IconoBuscar.Image = ((System.Drawing.Image)(resources.GetObject("IconoBuscar.Image")));
-            this.IconoBuscar.Location = new System.Drawing.Point(752, 102);
+            this.IconoBuscar.Location = new System.Drawing.Point(755, 117);
             this.IconoBuscar.Name = "IconoBuscar";
             this.IconoBuscar.Size = new System.Drawing.Size(41, 44);
             this.IconoBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -180,7 +188,7 @@
             this.Buscar.LineIdleColor = System.Drawing.Color.Gray;
             this.Buscar.LineMouseHoverColor = System.Drawing.Color.SteelBlue;
             this.Buscar.LineThickness = 4;
-            this.Buscar.Location = new System.Drawing.Point(800, 102);
+            this.Buscar.Location = new System.Drawing.Point(800, 116);
             this.Buscar.Margin = new System.Windows.Forms.Padding(4);
             this.Buscar.Name = "Buscar";
             this.Buscar.Size = new System.Drawing.Size(468, 44);
@@ -195,6 +203,7 @@
             // 
             this.Cabeza.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.Cabeza.BackColor = System.Drawing.Color.Gainsboro;
             this.Cabeza.Controls.Add(this.BuscarMes);
             this.Cabeza.Controls.Add(this.Mes);
             this.Cabeza.Controls.Add(this.PdfVeh);
@@ -202,8 +211,71 @@
             this.Cabeza.Controls.Add(this.Buscar);
             this.Cabeza.Location = new System.Drawing.Point(-9, -23);
             this.Cabeza.Name = "Cabeza";
-            this.Cabeza.Size = new System.Drawing.Size(1283, 149);
+            this.Cabeza.Size = new System.Drawing.Size(1283, 168);
             this.Cabeza.TabIndex = 10;
+            // 
+            // PanelHora
+            // 
+            this.PanelHora.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PanelHora.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
+            this.PanelHora.Controls.Add(this.txtUsuario);
+            this.PanelHora.Controls.Add(this.Imagen_usu);
+            this.PanelHora.Controls.Add(this.Fecha);
+            this.PanelHora.Controls.Add(this.hora);
+            this.PanelHora.Location = new System.Drawing.Point(-2, 576);
+            this.PanelHora.Name = "PanelHora";
+            this.PanelHora.Size = new System.Drawing.Size(1276, 106);
+            this.PanelHora.TabIndex = 12;
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.AutoSize = true;
+            this.txtUsuario.Font = new System.Drawing.Font("MV Boli", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtUsuario.Location = new System.Drawing.Point(135, 31);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(186, 49);
+            this.txtUsuario.TabIndex = 3;
+            this.txtUsuario.Text = "USUARIO";
+            // 
+            // Imagen_usu
+            // 
+            this.Imagen_usu.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_usu.Image")));
+            this.Imagen_usu.Location = new System.Drawing.Point(31, 3);
+            this.Imagen_usu.Name = "Imagen_usu";
+            this.Imagen_usu.Size = new System.Drawing.Size(115, 101);
+            this.Imagen_usu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_usu.TabIndex = 2;
+            this.Imagen_usu.TabStop = false;
+            // 
+            // Fecha
+            // 
+            this.Fecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Fecha.AutoSize = true;
+            this.Fecha.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fecha.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Fecha.Location = new System.Drawing.Point(901, 69);
+            this.Fecha.Name = "Fecha";
+            this.Fecha.Size = new System.Drawing.Size(79, 25);
+            this.Fecha.TabIndex = 1;
+            this.Fecha.Text = "MM:SS";
+            // 
+            // hora
+            // 
+            this.hora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.hora.AutoSize = true;
+            this.hora.Font = new System.Drawing.Font("MV Boli", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hora.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.hora.Location = new System.Drawing.Point(893, 6);
+            this.hora.Name = "hora";
+            this.hora.Size = new System.Drawing.Size(190, 63);
+            this.hora.TabIndex = 0;
+            this.hora.Text = "MM:SS";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Reporte_Vigencia_SOAT
             // 
@@ -211,6 +283,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.PanelHora);
             this.Controls.Add(this.ListadoPolizasSOAT);
             this.Controls.Add(this.Cabeza);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -220,6 +293,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.ListadoPolizasSOAT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconoBuscar)).EndInit();
             this.Cabeza.ResumeLayout(false);
+            this.PanelHora.ResumeLayout(false);
+            this.PanelHora.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_usu)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -234,5 +310,11 @@
         private System.Windows.Forms.Button PdfVeh;
         private System.Windows.Forms.PictureBox IconoBuscar;
         private Bunifu.Framework.UI.BunifuMaterialTextbox Buscar;
+        private System.Windows.Forms.Panel PanelHora;
+        private Bunifu.Framework.UI.BunifuCustomLabel txtUsuario;
+        private System.Windows.Forms.PictureBox Imagen_usu;
+        private Bunifu.Framework.UI.BunifuCustomLabel Fecha;
+        private Bunifu.Framework.UI.BunifuCustomLabel hora;
+        private System.Windows.Forms.Timer timer1;
     }
 }

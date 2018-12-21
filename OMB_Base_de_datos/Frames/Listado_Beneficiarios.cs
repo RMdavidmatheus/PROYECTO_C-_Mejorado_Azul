@@ -15,11 +15,15 @@ namespace OMB_Base_de_datos.Frames
 {
     public partial class Listado_Beneficiarios : Form
     {
-        public Listado_Beneficiarios()
+        public Listado_Beneficiarios(string Usuario)
         {
             InitializeComponent();
             ListadoBen.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            TomarUsu = Usuario;
+            txtUsuario.Text = TomarUsu;
         }
+
+        private string TomarUsu;
 
         Capa_logica.Logica_Metodos Metodos = new Capa_logica.Logica_Metodos();
 

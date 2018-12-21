@@ -80,11 +80,11 @@
             // txtUsuario
             // 
             this.txtUsuario.AutoSize = true;
-            this.txtUsuario.Font = new System.Drawing.Font("MV Boli", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Font = new System.Drawing.Font("MV Boli", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.txtUsuario.Location = new System.Drawing.Point(137, 28);
+            this.txtUsuario.Location = new System.Drawing.Point(137, 38);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(238, 63);
+            this.txtUsuario.Size = new System.Drawing.Size(186, 49);
             this.txtUsuario.TabIndex = 3;
             this.txtUsuario.Text = "USUARIO";
             // 

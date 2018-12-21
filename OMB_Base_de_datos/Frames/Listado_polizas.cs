@@ -12,13 +12,16 @@ namespace OMB_Base_de_datos.Frames
 {
     public partial class Listado_polizas : Form
     {
-        public Listado_polizas()
+        public Listado_polizas(string TomarUsu)
         {
             InitializeComponent();
             Listado.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             string Titulo_Añadir = Anadir.Text;
             string Titulo_Editar = Editar.Text;
+            Usu = TomarUsu;
+            txtUsuario.Text = Usu;
         }
+        private string Usu;
         /*SELECCION DE PLACA DE LA TABLA POL_VEH */     private string PlacaVeh;
         /*SELECCION DE ID ASE Y TIPO POLIZA*/           private int seleccionTP, seleccionAse;
         private string DocumentoBen;

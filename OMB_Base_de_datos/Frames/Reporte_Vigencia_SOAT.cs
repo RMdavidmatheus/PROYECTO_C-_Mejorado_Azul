@@ -15,15 +15,18 @@ namespace OMB_Base_de_datos.Frames
 {
     public partial class Reporte_Vigencia_SOAT : Form
     {
-        public Reporte_Vigencia_SOAT()
+        public Reporte_Vigencia_SOAT(string TomarUsu)
         {
             InitializeComponent();
             ListadoPolizasSOAT.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            Usu = TomarUsu;
+            txtUsuario.Text = Usu;
         }
+        private string Usu;
         Capa_logica.Logica_Metodos Metodos = new Capa_logica.Logica_Metodos();
         private void Reporte_Vigencia_SOAT_Load(object sender, EventArgs e)
         {
-
+            this.timer1.Enabled = true;
         }
 
         private void Buscar_KeyUp(object sender, KeyEventArgs e)
@@ -155,6 +158,12 @@ namespace OMB_Base_de_datos.Frames
                 pdfDoc.Close();
                 stream.Close();
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.hora.Text = DateTime.Now.ToLongTimeString();
+            this.Fecha.Text = DateTime.Now.ToLongDateString();
         }
     }
 }

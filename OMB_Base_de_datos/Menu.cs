@@ -81,7 +81,7 @@ namespace OMB_Base_de_datos
             Selection.Height = Polizas.Height;
             Selection.Top = Polizas.Top;
             Title.Text = Polizas.Text;
-            Metodos.Abrir_Formulario_En_Panel(Contenido,new Frames.Listado_polizas());
+            Metodos.Abrir_Formulario_En_Panel(Contenido,new Frames.Listado_polizas(Usu));
 
         }
 
@@ -90,7 +90,7 @@ namespace OMB_Base_de_datos
             Selection.Height = Tomadores.Height;
             Selection.Top = Tomadores.Top;
             Title.Text = Tomadores.Text;
-            Metodos.Abrir_Formulario_En_Panel(Contenido,new Frames.Listado_Tomadores());
+            Metodos.Abrir_Formulario_En_Panel(Contenido,new Frames.Listado_Tomadores(Usu));
         }
 
         private void Beneficiarios_Click(object sender, EventArgs e)
@@ -98,7 +98,7 @@ namespace OMB_Base_de_datos
             Selection.Height = Beneficiarios.Height;
             Selection.Top = Beneficiarios.Top;
             Title.Text = Beneficiarios.Text;
-            Metodos.Abrir_Formulario_En_Panel(Contenido,new Frames.Listado_Beneficiarios());
+            Metodos.Abrir_Formulario_En_Panel(Contenido,new Frames.Listado_Beneficiarios(Usu));
         }
 
         private void Vehiculos_Click(object sender, EventArgs e)
@@ -106,7 +106,7 @@ namespace OMB_Base_de_datos
             Selection.Height = Vehiculos.Height;
             Selection.Top = Vehiculos.Top;
             Title.Text = Vehiculos.Text;
-            Metodos.Abrir_Formulario_En_Panel(Contenido, new Frames.Listado_Vehiculos());
+            Metodos.Abrir_Formulario_En_Panel(Contenido, new Frames.Listado_Vehiculos(Usu));
         }
 
         private void vigenciapol_Click(object sender, EventArgs e)
@@ -114,7 +114,7 @@ namespace OMB_Base_de_datos
             Selection.Height = vigenciapol.Height;
             Selection.Top = vigenciapol.Top;
             Title.Text = vigenciapol.Text;
-            Metodos.Abrir_Formulario_En_Panel(Contenido, new Frames.Reporte_Vigencias_Polizas());
+            Metodos.Abrir_Formulario_En_Panel(Contenido, new Frames.Reporte_Vigencias_Polizas(Usu));
         }
 
         private void vigenciasoat_Click(object sender, EventArgs e)
@@ -122,7 +122,7 @@ namespace OMB_Base_de_datos
             Selection.Height = vigenciasoat.Height;
             Selection.Top = vigenciasoat.Top;
             Title.Text = vigenciasoat.Text;
-            Metodos.Abrir_Formulario_En_Panel(Contenido, new Frames.Reporte_Vigencia_SOAT());
+            Metodos.Abrir_Formulario_En_Panel(Contenido, new Frames.Reporte_Vigencia_SOAT(Usu));
         }
 
         private void Cerrar_Click(object sender, EventArgs e)
@@ -181,13 +181,13 @@ namespace OMB_Base_de_datos
         private void Menu_Load(object sender, EventArgs e)
         {
             Title.Text = "Aplicativo OMB SEGUROS";
-            Metodos.Abrir_Formulario_En_Panel(Contenido, new Principal());
+            Metodos.Abrir_Formulario_En_Panel(Contenido, new Principal(Usu));
         }
 
         private void Logo_Click(object sender, EventArgs e)
         {
             Title.Text = "Aplicativo OMB SEGUROS";
-            Metodos.Abrir_Formulario_En_Panel(Contenido, new Principal());
+            Metodos.Abrir_Formulario_En_Panel(Contenido, new Principal(Usu));
         }
 
         private void Maximizar_Click(object sender, EventArgs e)

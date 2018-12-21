@@ -15,12 +15,14 @@ namespace OMB_Base_de_datos.Frames
 {
     public partial class Listado_Vehiculos : Form
     {
-        public Listado_Vehiculos()
+        public Listado_Vehiculos(string TomarUsu)
         {
             InitializeComponent();
             ListadoVeh.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            Usu = TomarUsu;
+            txtUsuario.Text = Usu;
         }
-
+        private string Usu;
         Capa_logica.Logica_Metodos Metodos = new Capa_logica.Logica_Metodos();
 
         private void Listado_Vehiculos_Load(object sender, EventArgs e)

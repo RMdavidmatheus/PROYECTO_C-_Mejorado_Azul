@@ -15,14 +15,16 @@ namespace OMB_Base_de_datos.Frames
 {
     public partial class Listado_Tomadores : Form
     {
-        public Listado_Tomadores()
+        public Listado_Tomadores(string TomarUsu)
         {
             InitializeComponent();
             ListadoTom.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            Usu = TomarUsu;
+            txtUsuario.Text = Usu;
         }
 
         Capa_logica.Logica_Metodos Metodos = new Capa_logica.Logica_Metodos();
-
+        private string Usu;
         private void Buscar_Enter(object sender, EventArgs e)
         {
             if (Buscar.Text == "Buscar...")

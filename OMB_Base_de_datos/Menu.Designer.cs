@@ -562,8 +562,7 @@
             // 
             // Twitter
             // 
-            this.Twitter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Twitter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Twitter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
             this.LogoHide.SetDecoration(this.Twitter, BunifuAnimatorNS.DecorationType.None);
             this.PanelSlideAni.SetDecoration(this.Twitter, BunifuAnimatorNS.DecorationType.None);
@@ -579,8 +578,7 @@
             // 
             // Insta
             // 
-            this.Insta.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Insta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Insta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
             this.LogoHide.SetDecoration(this.Insta, BunifuAnimatorNS.DecorationType.None);
             this.PanelSlideAni.SetDecoration(this.Insta, BunifuAnimatorNS.DecorationType.None);
@@ -596,8 +594,7 @@
             // 
             // Face
             // 
-            this.Face.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Face.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Face.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
             this.LogoHide.SetDecoration(this.Face, BunifuAnimatorNS.DecorationType.None);
             this.PanelSlideAni.SetDecoration(this.Face, BunifuAnimatorNS.DecorationType.None);
@@ -613,8 +610,7 @@
             // 
             // Web
             // 
-            this.Web.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Web.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Web.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
             this.LogoHide.SetDecoration(this.Web, BunifuAnimatorNS.DecorationType.None);
             this.PanelSlideAni.SetDecoration(this.Web, BunifuAnimatorNS.DecorationType.None);

@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reporte_Vigencias_Polizas));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.FormaApp = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Cabeza = new System.Windows.Forms.Panel();
             this.BuscarMes = new System.Windows.Forms.Button();
@@ -42,9 +42,17 @@
             this.IconoBuscar = new System.Windows.Forms.PictureBox();
             this.Buscar = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.ListadoPolizas = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.PanelHora = new System.Windows.Forms.Panel();
+            this.txtUsuario = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.Imagen_usu = new System.Windows.Forms.PictureBox();
+            this.Fecha = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.hora = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Cabeza.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IconoBuscar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ListadoPolizas)).BeginInit();
+            this.PanelHora.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_usu)).BeginInit();
             this.SuspendLayout();
             // 
             // FormaApp
@@ -161,31 +169,31 @@
             // 
             // ListadoPolizas
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ListadoPolizas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ListadoPolizas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.ListadoPolizas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ListadoPolizas.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.ListadoPolizas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ListadoPolizas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ListadoPolizas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ListadoPolizas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.ListadoPolizas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ListadoPolizas.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ListadoPolizas.DefaultCellStyle = dataGridViewCellStyle7;
             this.ListadoPolizas.DoubleBuffered = true;
             this.ListadoPolizas.EnableHeadersVisualStyles = false;
             this.ListadoPolizas.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
@@ -193,17 +201,80 @@
             this.ListadoPolizas.Location = new System.Drawing.Point(6, 152);
             this.ListadoPolizas.Name = "ListadoPolizas";
             this.ListadoPolizas.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.Info;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ListadoPolizas.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.ListadoPolizas.Size = new System.Drawing.Size(1276, 571);
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ListadoPolizas.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.ListadoPolizas.Size = new System.Drawing.Size(1276, 459);
             this.ListadoPolizas.TabIndex = 9;
             this.ListadoPolizas.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.ListadoPolizas_CellFormatting);
+            // 
+            // PanelHora
+            // 
+            this.PanelHora.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PanelHora.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
+            this.PanelHora.Controls.Add(this.txtUsuario);
+            this.PanelHora.Controls.Add(this.Imagen_usu);
+            this.PanelHora.Controls.Add(this.Fecha);
+            this.PanelHora.Controls.Add(this.hora);
+            this.PanelHora.Location = new System.Drawing.Point(-1, 614);
+            this.PanelHora.Name = "PanelHora";
+            this.PanelHora.Size = new System.Drawing.Size(1283, 109);
+            this.PanelHora.TabIndex = 13;
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.AutoSize = true;
+            this.txtUsuario.Font = new System.Drawing.Font("MV Boli", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtUsuario.Location = new System.Drawing.Point(136, 32);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(186, 49);
+            this.txtUsuario.TabIndex = 3;
+            this.txtUsuario.Text = "USUARIO";
+            // 
+            // Imagen_usu
+            // 
+            this.Imagen_usu.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_usu.Image")));
+            this.Imagen_usu.Location = new System.Drawing.Point(31, 3);
+            this.Imagen_usu.Name = "Imagen_usu";
+            this.Imagen_usu.Size = new System.Drawing.Size(115, 101);
+            this.Imagen_usu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_usu.TabIndex = 2;
+            this.Imagen_usu.TabStop = false;
+            // 
+            // Fecha
+            // 
+            this.Fecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Fecha.AutoSize = true;
+            this.Fecha.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fecha.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Fecha.Location = new System.Drawing.Point(908, 70);
+            this.Fecha.Name = "Fecha";
+            this.Fecha.Size = new System.Drawing.Size(79, 25);
+            this.Fecha.TabIndex = 1;
+            this.Fecha.Text = "MM:SS";
+            // 
+            // hora
+            // 
+            this.hora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.hora.AutoSize = true;
+            this.hora.Font = new System.Drawing.Font("MV Boli", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hora.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.hora.Location = new System.Drawing.Point(900, 7);
+            this.hora.Name = "hora";
+            this.hora.Size = new System.Drawing.Size(190, 63);
+            this.hora.TabIndex = 0;
+            this.hora.Text = "MM:SS";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Reporte_Vigencias_Polizas
             // 
@@ -211,14 +282,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.PanelHora);
             this.Controls.Add(this.Cabeza);
             this.Controls.Add(this.ListadoPolizas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Reporte_Vigencias_Polizas";
             this.Text = "Reporte_Vigencias_Polizas";
+            this.Load += new System.EventHandler(this.Reporte_Vigencias_Polizas_Load);
             this.Cabeza.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.IconoBuscar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ListadoPolizas)).EndInit();
+            this.PanelHora.ResumeLayout(false);
+            this.PanelHora.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_usu)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -233,5 +309,11 @@
         private System.Windows.Forms.PictureBox IconoBuscar;
         private Bunifu.Framework.UI.BunifuMaterialTextbox Buscar;
         private Bunifu.Framework.UI.BunifuCustomDataGrid ListadoPolizas;
+        private System.Windows.Forms.Panel PanelHora;
+        private Bunifu.Framework.UI.BunifuCustomLabel txtUsuario;
+        private System.Windows.Forms.PictureBox Imagen_usu;
+        private Bunifu.Framework.UI.BunifuCustomLabel Fecha;
+        private Bunifu.Framework.UI.BunifuCustomLabel hora;
+        private System.Windows.Forms.Timer timer1;
     }
 }
