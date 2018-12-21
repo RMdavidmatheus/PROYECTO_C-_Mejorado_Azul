@@ -10,3 +10,7 @@ C:\Users\David PC\source\repos\OMB_Base_de_datos\LogIn\obj\Debug\LogIn.csproj.Co
 C:\Users\David PC\source\repos\OMB_Base_de_datos\LogIn\bin\Debug\MySql.Data.dll
 C:\Users\David PC\source\repos\OMB_Base_de_datos\LogIn\bin\Debug\Google.Protobuf.dll
 C:\Users\David PC\source\repos\OMB_Base_de_datos\LogIn\bin\Debug\MySql.Data.xml
+C:\Users\David PC\source\repos\OMB_Base_de_datos\LogIn\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\David PC\source\repos\OMB_Base_de_datos\LogIn\obj\Debug\LogIn.LogIn.resources
+C:\Users\David PC\source\repos\OMB_Base_de_datos\LogIn\obj\Debug\LogIn.Properties.Resources.resources
+C:\Users\David PC\source\repos\OMB_Base_de_datos\LogIn\obj\Debug\LogIn.csproj.GenerateResource.cache

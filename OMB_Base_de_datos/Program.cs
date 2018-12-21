@@ -16,7 +16,7 @@ namespace OMB_Base_de_datos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Menu());
+            Application.Run(new LogIn.LogIn());
         }
     }
 }
