@@ -51,7 +51,7 @@ namespace OMB_Base_de_datos.Frames
 
         private void ListadoPolizasSOAT_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            if (this.ListadoPolizasSOAT.Columns[e.ColumnIndex].Name == "Estado")
+            if (this.ListadoPolizasSOAT.Columns[e.ColumnIndex].Name == "Estado SOAT")
             {
                 try
                 {
