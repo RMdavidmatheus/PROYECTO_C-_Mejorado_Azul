@@ -86,6 +86,18 @@
     <Compile Include="Frames\Listado_Vehiculos.Designer.cs">
       <DependentUpon>Listado_Vehiculos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frames\Reporte_Vigencias_Polizas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frames\Reporte_Vigencias_Polizas.Designer.cs">
+      <DependentUpon>Reporte_Vigencias_Polizas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frames\Reporte_Vigencia_SOAT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frames\Reporte_Vigencia_SOAT.Designer.cs">
+      <DependentUpon>Reporte_Vigencia_SOAT.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frames\SelectDate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +132,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frames\Listado_Vehiculos.resx">
       <DependentUpon>Listado_Vehiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\Reporte_Vigencias_Polizas.resx">
+      <DependentUpon>Reporte_Vigencias_Polizas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\Reporte_Vigencia_SOAT.resx">
+      <DependentUpon>Reporte_Vigencia_SOAT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frames\SelectDate.resx">
       <DependentUpon>SelectDate.cs</DependentUpon>

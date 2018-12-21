@@ -98,6 +98,54 @@ namespace Capa_logica
             }
             bd.DesconectarBase();
         }
+        public void LlenarTabla_VigPol(DataGridView Llenar, int SelectIndexMes)
+        {
+            try
+            {
+                MySqlCommand query = new MySqlCommand("SELECT * FROM vigencia_polizas_activas vpa WHERE MONTH(vpa.`Fecha vencimiento Poliza`)=" + SelectIndexMes + " AND vpa.Estado='ACTIVO'", bd.GetConnection());
+                MySqlDataAdapter rs = new MySqlDataAdapter(query);
+                DataTable dt = new DataTable();
+                rs.Fill(dt);
+                Llenar.DataSource = dt;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            bd.DesconectarBase();
+        }
+        public void LlenarTabla_VigSOAT(DataGridView Llenar, int SelectIndexMes)
+        {
+            try
+            {
+                MySqlCommand query = new MySqlCommand("SELECT * FROM vigencia_soat_mes vsm WHERE MONTH(vsm.`Fecha Vencimiento SOAT`)='" + SelectIndexMes + "'", bd.GetConnection());
+                MySqlDataAdapter rs = new MySqlDataAdapter(query);
+                DataTable dt = new DataTable();
+                rs.Fill(dt);
+                Llenar.DataSource = dt;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            bd.DesconectarBase();
+        }
+        public void LlenarTabla_PolCancel(DataGridView Llenar, int SelectIndexMes)
+        {
+            try
+            {
+                MySqlCommand query = new MySqlCommand("SELECT * FROM vigencia_polizas_activas vpa WHERE MONTH(vpa.`Fecha vencimiento Poliza`)=" + SelectIndexMes + " AND vpa.Estado='INACTIVO'", bd.GetConnection());
+                MySqlDataAdapter rs = new MySqlDataAdapter(query);
+                DataTable dt = new DataTable();
+                rs.Fill(dt);
+                Llenar.DataSource = dt;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            bd.DesconectarBase();
+        }
         public bool Insertar_Datos_Poliza_General(string query)
         {
             bool Insertado = false;
@@ -253,6 +301,38 @@ namespace Capa_logica
             try
             {
                 MySqlCommand query = new MySqlCommand("SELECT * FROM polizasveh pv WHERE pv.`N.Poliza` LIKE '" + TextoBusqueda + "%' or pv.`Documento Tomador` LIKE '" + TextoBusqueda + "%' OR pv.`Nombres Tomador` LIKE '" + TextoBusqueda + "%' or pv.Placa LIKE '" + TextoBusqueda + "%'", bd.GetConnection());
+                MySqlDataAdapter rs = new MySqlDataAdapter(query);
+                DataTable dt = new DataTable();
+                rs.Fill(dt);
+                Llenar.DataSource = dt;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            bd.DesconectarBase();
+        }
+        public void Reporte_SOAT_Buscar(DataGridView Llenar, string TextoBusqueda)
+        {
+            try
+            {
+                MySqlCommand query = new MySqlCommand("select * from vigencia_soat_mes vs where vs.Placa LIKE '" + TextoBusqueda + "%' OR vs.`N.Poliza` LIKE '" + TextoBusqueda + "%' OR vs.`Documento Tomador`LIKE '" + TextoBusqueda + "%' OR vs.`Nombres Tomador` LIKE '" + TextoBusqueda + "%' ", bd.GetConnection());
+                MySqlDataAdapter rs = new MySqlDataAdapter(query);
+                DataTable dt = new DataTable();
+                rs.Fill(dt);
+                Llenar.DataSource = dt;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            bd.DesconectarBase();
+        }
+        public void Reporte_Vigencia_Poliza_Buscar(DataGridView Llenar, string TextoBusqueda)
+        {
+            try
+            {
+                MySqlCommand query = new MySqlCommand("SELECT * FROM vigencia_polizas_activas vpa WHERE vpa.`Nombres Tomador` LIKE '" + TextoBusqueda + "%' OR vpa.`N.Poliza` LIKE '" + TextoBusqueda + "%' OR vpa.`Documento Tomador` LIKE '" + TextoBusqueda + "%' AND vpa.Estado='ACTIVO'", bd.GetConnection());
                 MySqlDataAdapter rs = new MySqlDataAdapter(query);
                 DataTable dt = new DataTable();
                 rs.Fill(dt);

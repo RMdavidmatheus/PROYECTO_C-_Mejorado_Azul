@@ -111,6 +111,7 @@ namespace OMB_Base_de_datos
             Selection.Height = vigenciapol.Height;
             Selection.Top = vigenciapol.Top;
             Title.Text = vigenciapol.Text;
+            Metodos.Abrir_Formulario_En_Panel(Contenido, new Frames.Reporte_Vigencias_Polizas());
         }
 
         private void vigenciasoat_Click(object sender, EventArgs e)
@@ -118,6 +119,7 @@ namespace OMB_Base_de_datos
             Selection.Height = vigenciasoat.Height;
             Selection.Top = vigenciasoat.Top;
             Title.Text = vigenciasoat.Text;
+            Metodos.Abrir_Formulario_En_Panel(Contenido, new Frames.Reporte_Vigencia_SOAT());
         }
 
         private void Cerrar_Click(object sender, EventArgs e)
