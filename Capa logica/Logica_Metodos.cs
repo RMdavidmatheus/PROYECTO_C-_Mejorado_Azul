@@ -344,5 +344,101 @@ namespace Capa_logica
             }
             bd.DesconectarBase();
         }
+        public DataTable Validar_Ingreso(string Usuario, string Contraseña)
+        {
+            // TOMANDO DATOS CONCRETOS DE USUARIOS
+            DataTable dt = new DataTable();
+            MySqlCommand query = new MySqlCommand("SELECT usu.Usuario, usu.Contrasena FROM usuarios usu WHERE usu.Usuario = '" + Usuario + "' AND usu.Contrasena= '" + Contraseña + "' ", bd.GetConnection());
+            MySqlDataAdapter rs = new MySqlDataAdapter(query);
+            rs.Fill(dt);
+
+
+            return dt;
+        }
+        // VALIDACIONES
+        public void SoloLetras(KeyPressEventArgs ev)
+        {
+            if (Char.IsLetter(ev.KeyChar))
+            {
+                ev.Handled = false;
+            }
+            else if (Char.IsSeparator(ev.KeyChar))
+            {
+                ev.Handled = false;
+            }
+            else if (Char.IsControl(ev.KeyChar))
+            {
+                ev.Handled = false;
+            }
+            else
+            {
+                ev.Handled = true;
+            }
+        }
+        public void SoloNumeros(KeyPressEventArgs ev)
+        {
+            if (Char.IsNumber(ev.KeyChar))
+            {
+                ev.Handled = false;
+            }
+            else if (Char.IsSeparator(ev.KeyChar))
+            {
+                ev.Handled = false;
+            }
+            else if (Char.IsControl(ev.KeyChar))
+            {
+                ev.Handled = false;
+            }
+            else
+            {
+                ev.Handled = true;
+            }
+        }
+        public void AlphaNumerico(KeyPressEventArgs ev)
+        {
+            if (Char.IsLetterOrDigit(ev.KeyChar))
+            {
+                ev.Handled = false;
+            }
+            else if (Char.IsSeparator(ev.KeyChar))
+            {
+                ev.Handled = false;
+            }
+            else if (Char.IsControl(ev.KeyChar))
+            {
+                ev.Handled = false;
+            }
+            else
+            {
+                ev.Handled = true;
+            }
+        }
+        public void Email(KeyPressEventArgs ev)
+        {
+            if (Char.IsLetterOrDigit(ev.KeyChar))
+            {
+                ev.Handled = false;
+            }
+            else if (Char.IsSymbol(ev.KeyChar))
+            {
+                ev.Handled = false;
+            }
+            else if (Char.IsPunctuation(ev.KeyChar))
+            {
+                ev.Handled = false;
+            }
+            else if (Char.IsSeparator(ev.KeyChar))
+            {
+                ev.Handled = false;
+            }
+            else if (Char.IsControl(ev.KeyChar))
+            {
+                ev.Handled = false;
+            }
+            else
+            {
+                ev.Handled = true;
+            }
+        }
     }
 }
