@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Listado_polizas));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Cabeza = new System.Windows.Forms.Panel();
             this.Eliminar = new System.Windows.Forms.Button();
             this.Editar = new System.Windows.Forms.Button();
@@ -42,9 +42,17 @@
             this.Buscar = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.Listado = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.FormaApp = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.PanelHora = new System.Windows.Forms.Panel();
+            this.txtUsuario = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.Imagen_usu = new System.Windows.Forms.PictureBox();
+            this.Fecha = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.hora = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Cabeza.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IconoBuscar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Listado)).BeginInit();
+            this.PanelHora.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_usu)).BeginInit();
             this.SuspendLayout();
             // 
             // Cabeza
@@ -149,31 +157,31 @@
             // 
             // Listado
             // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Listado.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Listado.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.Listado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Listado.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.Listado.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Listado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Listado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Listado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.Listado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Listado.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Listado.DefaultCellStyle = dataGridViewCellStyle11;
             this.Listado.DoubleBuffered = true;
             this.Listado.EnableHeadersVisualStyles = false;
             this.Listado.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
@@ -181,15 +189,15 @@
             this.Listado.Location = new System.Drawing.Point(3, 158);
             this.Listado.Name = "Listado";
             this.Listado.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.Info;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Listado.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
-            this.Listado.Size = new System.Drawing.Size(1276, 569);
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Listado.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.Listado.Size = new System.Drawing.Size(1276, 462);
             this.Listado.TabIndex = 1;
             this.Listado.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.Listado_CellFormatting);
             // 
@@ -198,12 +206,76 @@
             this.FormaApp.ElipseRadius = 5;
             this.FormaApp.TargetControl = this;
             // 
+            // PanelHora
+            // 
+            this.PanelHora.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PanelHora.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
+            this.PanelHora.Controls.Add(this.txtUsuario);
+            this.PanelHora.Controls.Add(this.Imagen_usu);
+            this.PanelHora.Controls.Add(this.Fecha);
+            this.PanelHora.Controls.Add(this.hora);
+            this.PanelHora.Location = new System.Drawing.Point(-4, 623);
+            this.PanelHora.Name = "PanelHora";
+            this.PanelHora.Size = new System.Drawing.Size(1294, 109);
+            this.PanelHora.TabIndex = 7;
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.AutoSize = true;
+            this.txtUsuario.Font = new System.Drawing.Font("MV Boli", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtUsuario.Location = new System.Drawing.Point(137, 22);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(238, 63);
+            this.txtUsuario.TabIndex = 3;
+            this.txtUsuario.Text = "USUARIO";
+            // 
+            // Imagen_usu
+            // 
+            this.Imagen_usu.Image = ((System.Drawing.Image)(resources.GetObject("Imagen_usu.Image")));
+            this.Imagen_usu.Location = new System.Drawing.Point(31, 3);
+            this.Imagen_usu.Name = "Imagen_usu";
+            this.Imagen_usu.Size = new System.Drawing.Size(115, 101);
+            this.Imagen_usu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_usu.TabIndex = 2;
+            this.Imagen_usu.TabStop = false;
+            // 
+            // Fecha
+            // 
+            this.Fecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Fecha.AutoSize = true;
+            this.Fecha.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fecha.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Fecha.Location = new System.Drawing.Point(919, 70);
+            this.Fecha.Name = "Fecha";
+            this.Fecha.Size = new System.Drawing.Size(79, 25);
+            this.Fecha.TabIndex = 1;
+            this.Fecha.Text = "MM:SS";
+            // 
+            // hora
+            // 
+            this.hora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.hora.AutoSize = true;
+            this.hora.Font = new System.Drawing.Font("MV Boli", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hora.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.hora.Location = new System.Drawing.Point(911, 7);
+            this.hora.Name = "hora";
+            this.hora.Size = new System.Drawing.Size(190, 63);
+            this.hora.TabIndex = 0;
+            this.hora.Text = "MM:SS";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Listado_polizas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1280, 728);
+            this.Controls.Add(this.PanelHora);
             this.Controls.Add(this.Listado);
             this.Controls.Add(this.Cabeza);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -213,6 +285,9 @@
             this.Cabeza.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.IconoBuscar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Listado)).EndInit();
+            this.PanelHora.ResumeLayout(false);
+            this.PanelHora.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_usu)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -226,5 +301,11 @@
         private Bunifu.Framework.UI.BunifuElipse FormaApp;
         private System.Windows.Forms.Button Anadir;
         private System.Windows.Forms.Button Editar;
+        private System.Windows.Forms.Panel PanelHora;
+        private Bunifu.Framework.UI.BunifuCustomLabel txtUsuario;
+        private System.Windows.Forms.PictureBox Imagen_usu;
+        private Bunifu.Framework.UI.BunifuCustomLabel Fecha;
+        private Bunifu.Framework.UI.BunifuCustomLabel hora;
+        private System.Windows.Forms.Timer timer1;
     }
 }

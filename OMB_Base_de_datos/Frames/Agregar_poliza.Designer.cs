@@ -33,11 +33,14 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.TituloForm = new System.Windows.Forms.Label();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.Contenido = new VisualStudioTabControl.VisualStudioTabControl();
             this.Tomador = new System.Windows.Forms.TabPage();
             this.FechaNaTom = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.ActualizarTom = new System.Windows.Forms.Button();
             this.GuardarTom = new System.Windows.Forms.Button();
+            this.Calendario = new Bunifu.Framework.UI.BunifuImageButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.EmailTom = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.TelTom = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.DirTom = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -56,6 +59,8 @@
             this.NomBen = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.TipoDocBen = new System.Windows.Forms.ComboBox();
             this.DocBen = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.CalendarBen = new Bunifu.Framework.UI.BunifuImageButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Poliza = new System.Windows.Forms.TabPage();
             this.ActualizarPol = new System.Windows.Forms.Button();
             this.Estado = new System.Windows.Forms.ComboBox();
@@ -64,10 +69,14 @@
             this.Vigencia = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.NumPoliza = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.Ase = new System.Windows.Forms.ComboBox();
+            this.CalendarPol = new Bunifu.Framework.UI.BunifuImageButton();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.Vehiculo = new System.Windows.Forms.TabPage();
             this.ActualizarVeh = new System.Windows.Forms.Button();
             this.Modelo = new System.Windows.Forms.DateTimePicker();
             this.GuardarVeh = new System.Windows.Forms.Button();
+            this.CalendarVeh = new Bunifu.Framework.UI.BunifuImageButton();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.VigenciaSOAT = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.Marca = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.Clase = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -75,30 +84,21 @@
             this.Fasecolda = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.Placa = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.Calendario = new Bunifu.Framework.UI.BunifuImageButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.CalendarBen = new Bunifu.Framework.UI.BunifuImageButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.CalendarPol = new Bunifu.Framework.UI.BunifuImageButton();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.CalendarVeh = new Bunifu.Framework.UI.BunifuImageButton();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.Contenido.SuspendLayout();
             this.Tomador.SuspendLayout();
-            this.Beneficiario.SuspendLayout();
-            this.Poliza.SuspendLayout();
-            this.Vehiculo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Calendario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Beneficiario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CalendarBen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.Poliza.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CalendarPol)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.Vehiculo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CalendarVeh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -127,6 +127,20 @@
             this.TituloForm.Size = new System.Drawing.Size(237, 31);
             this.TituloForm.TabIndex = 1;
             this.TituloForm.Text = "Llenado de datos";
+            // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(357, 11);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(46, 32);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 0;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // Contenido
             // 
@@ -230,6 +244,30 @@
             this.GuardarTom.Text = "GUARDAR";
             this.GuardarTom.UseVisualStyleBackColor = false;
             this.GuardarTom.Click += new System.EventHandler(this.GuardarTom_Click);
+            // 
+            // Calendario
+            // 
+            this.Calendario.BackColor = System.Drawing.Color.Gainsboro;
+            this.Calendario.Image = ((System.Drawing.Image)(resources.GetObject("Calendario.Image")));
+            this.Calendario.ImageActive = null;
+            this.Calendario.Location = new System.Drawing.Point(222, 589);
+            this.Calendario.Name = "Calendario";
+            this.Calendario.Size = new System.Drawing.Size(39, 43);
+            this.Calendario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Calendario.TabIndex = 9;
+            this.Calendario.TabStop = false;
+            this.Calendario.Zoom = 10;
+            this.Calendario.Click += new System.EventHandler(this.Calendario_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(123, 15);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(153, 126);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // EmailTom
             // 
@@ -605,6 +643,30 @@
             this.DocBen.Enter += new System.EventHandler(this.DocBen_Enter);
             this.DocBen.Leave += new System.EventHandler(this.DocBen_Leave);
             // 
+            // CalendarBen
+            // 
+            this.CalendarBen.BackColor = System.Drawing.Color.Gainsboro;
+            this.CalendarBen.Image = ((System.Drawing.Image)(resources.GetObject("CalendarBen.Image")));
+            this.CalendarBen.ImageActive = null;
+            this.CalendarBen.Location = new System.Drawing.Point(227, 586);
+            this.CalendarBen.Name = "CalendarBen";
+            this.CalendarBen.Size = new System.Drawing.Size(39, 43);
+            this.CalendarBen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CalendarBen.TabIndex = 20;
+            this.CalendarBen.TabStop = false;
+            this.CalendarBen.Zoom = 10;
+            this.CalendarBen.Click += new System.EventHandler(this.CalendarBen_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(128, 16);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(153, 126);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 19;
+            this.pictureBox2.TabStop = false;
+            // 
             // Poliza
             // 
             this.Poliza.BackColor = System.Drawing.Color.Gainsboro;
@@ -763,6 +825,30 @@
             this.Ase.TabIndex = 1;
             this.Ase.Text = "-- SELECCIONE UNA ASEGURADORA --";
             // 
+            // CalendarPol
+            // 
+            this.CalendarPol.BackColor = System.Drawing.Color.Gainsboro;
+            this.CalendarPol.Image = ((System.Drawing.Image)(resources.GetObject("CalendarPol.Image")));
+            this.CalendarPol.ImageActive = null;
+            this.CalendarPol.Location = new System.Drawing.Point(229, 412);
+            this.CalendarPol.Name = "CalendarPol";
+            this.CalendarPol.Size = new System.Drawing.Size(39, 43);
+            this.CalendarPol.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CalendarPol.TabIndex = 31;
+            this.CalendarPol.TabStop = false;
+            this.CalendarPol.Zoom = 10;
+            this.CalendarPol.Click += new System.EventHandler(this.CalendarPol_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(130, 16);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(153, 126);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 30;
+            this.pictureBox3.TabStop = false;
+            // 
             // Vehiculo
             // 
             this.Vehiculo.BackColor = System.Drawing.Color.Gainsboro;
@@ -824,6 +910,30 @@
             this.GuardarVeh.Text = "GUARDAR";
             this.GuardarVeh.UseVisualStyleBackColor = false;
             this.GuardarVeh.Click += new System.EventHandler(this.GuardarVeh_Click);
+            // 
+            // CalendarVeh
+            // 
+            this.CalendarVeh.BackColor = System.Drawing.Color.Gainsboro;
+            this.CalendarVeh.Image = ((System.Drawing.Image)(resources.GetObject("CalendarVeh.Image")));
+            this.CalendarVeh.ImageActive = null;
+            this.CalendarVeh.Location = new System.Drawing.Point(229, 523);
+            this.CalendarVeh.Name = "CalendarVeh";
+            this.CalendarVeh.Size = new System.Drawing.Size(39, 43);
+            this.CalendarVeh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CalendarVeh.TabIndex = 31;
+            this.CalendarVeh.TabStop = false;
+            this.CalendarVeh.Zoom = 10;
+            this.CalendarVeh.Click += new System.EventHandler(this.CalendarVeh_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(130, 16);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(153, 126);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 30;
+            this.pictureBox4.TabStop = false;
             // 
             // VigenciaSOAT
             // 
@@ -961,116 +1071,6 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // Calendario
-            // 
-            this.Calendario.BackColor = System.Drawing.Color.Gainsboro;
-            this.Calendario.Image = ((System.Drawing.Image)(resources.GetObject("Calendario.Image")));
-            this.Calendario.ImageActive = null;
-            this.Calendario.Location = new System.Drawing.Point(222, 589);
-            this.Calendario.Name = "Calendario";
-            this.Calendario.Size = new System.Drawing.Size(39, 43);
-            this.Calendario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Calendario.TabIndex = 9;
-            this.Calendario.TabStop = false;
-            this.Calendario.Zoom = 10;
-            this.Calendario.Click += new System.EventHandler(this.Calendario_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(123, 15);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(153, 126);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
-            // CalendarBen
-            // 
-            this.CalendarBen.BackColor = System.Drawing.Color.Gainsboro;
-            this.CalendarBen.Image = ((System.Drawing.Image)(resources.GetObject("CalendarBen.Image")));
-            this.CalendarBen.ImageActive = null;
-            this.CalendarBen.Location = new System.Drawing.Point(227, 586);
-            this.CalendarBen.Name = "CalendarBen";
-            this.CalendarBen.Size = new System.Drawing.Size(39, 43);
-            this.CalendarBen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CalendarBen.TabIndex = 20;
-            this.CalendarBen.TabStop = false;
-            this.CalendarBen.Zoom = 10;
-            this.CalendarBen.Click += new System.EventHandler(this.CalendarBen_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(128, 16);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(153, 126);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 19;
-            this.pictureBox2.TabStop = false;
-            // 
-            // CalendarPol
-            // 
-            this.CalendarPol.BackColor = System.Drawing.Color.Gainsboro;
-            this.CalendarPol.Image = ((System.Drawing.Image)(resources.GetObject("CalendarPol.Image")));
-            this.CalendarPol.ImageActive = null;
-            this.CalendarPol.Location = new System.Drawing.Point(229, 412);
-            this.CalendarPol.Name = "CalendarPol";
-            this.CalendarPol.Size = new System.Drawing.Size(39, 43);
-            this.CalendarPol.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CalendarPol.TabIndex = 31;
-            this.CalendarPol.TabStop = false;
-            this.CalendarPol.Zoom = 10;
-            this.CalendarPol.Click += new System.EventHandler(this.CalendarPol_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(130, 16);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(153, 126);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 30;
-            this.pictureBox3.TabStop = false;
-            // 
-            // CalendarVeh
-            // 
-            this.CalendarVeh.BackColor = System.Drawing.Color.Gainsboro;
-            this.CalendarVeh.Image = ((System.Drawing.Image)(resources.GetObject("CalendarVeh.Image")));
-            this.CalendarVeh.ImageActive = null;
-            this.CalendarVeh.Location = new System.Drawing.Point(229, 523);
-            this.CalendarVeh.Name = "CalendarVeh";
-            this.CalendarVeh.Size = new System.Drawing.Size(39, 43);
-            this.CalendarVeh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CalendarVeh.TabIndex = 31;
-            this.CalendarVeh.TabStop = false;
-            this.CalendarVeh.Zoom = 10;
-            this.CalendarVeh.Click += new System.EventHandler(this.CalendarVeh_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(130, 16);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(153, 126);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 30;
-            this.pictureBox4.TabStop = false;
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(357, 11);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(46, 32);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 0;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            // 
             // Agregar_poliza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1087,20 +1087,20 @@
             this.Load += new System.EventHandler(this.Agregar_poliza_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.Contenido.ResumeLayout(false);
             this.Tomador.ResumeLayout(false);
-            this.Beneficiario.ResumeLayout(false);
-            this.Poliza.ResumeLayout(false);
-            this.Vehiculo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Calendario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Beneficiario.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.CalendarBen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.Poliza.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.CalendarPol)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.Vehiculo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.CalendarVeh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
         }

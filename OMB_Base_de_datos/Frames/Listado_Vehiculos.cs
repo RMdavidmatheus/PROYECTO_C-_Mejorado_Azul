@@ -26,6 +26,7 @@ namespace OMB_Base_de_datos.Frames
         private void Listado_Vehiculos_Load(object sender, EventArgs e)
         {
             Metodos.LlenarTabla_Vehiculos(ListadoVeh);
+            this.timer1.Enabled = true;
         }
 
         private void Buscar_KeyUp(object sender, KeyEventArgs e)
@@ -116,6 +117,12 @@ namespace OMB_Base_de_datos.Frames
                 pdfDoc.Close();
                 stream.Close();
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.hora.Text = DateTime.Now.ToLongTimeString();
+            this.Fecha.Text = DateTime.Now.ToLongDateString();
         }
     }
 }

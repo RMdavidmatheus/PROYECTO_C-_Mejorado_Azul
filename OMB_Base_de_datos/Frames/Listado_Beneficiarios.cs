@@ -26,6 +26,8 @@ namespace OMB_Base_de_datos.Frames
         private void Listado_Beneficiarios_Load(object sender, EventArgs e)
         {
             Metodos.LlenarTabla_Beneficiarios(ListadoBen);
+            this.timer1.Enabled = true;
+
         }
 
         private void Buscar_Enter(object sender, EventArgs e)
@@ -115,6 +117,12 @@ namespace OMB_Base_de_datos.Frames
         private void Buscar_KeyUp(object sender, KeyEventArgs e)
         {
             Metodos.Buscar_Ben(ListadoBen, Buscar.Text);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.hora.Text = DateTime.Now.ToLongTimeString();
+            this.Fecha.Text = DateTime.Now.ToLongDateString();
         }
     }
 }

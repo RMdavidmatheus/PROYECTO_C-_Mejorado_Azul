@@ -116,7 +116,7 @@ namespace LogIn
                     TomarUsu = UsuarioBD;
                     ContraseñaBD = "";
                     this.Hide();
-                    OMB_Base_de_datos.Menu Menu = new OMB_Base_de_datos.Menu();
+                    OMB_Base_de_datos.Menu Menu = new OMB_Base_de_datos.Menu(TomarUsu);
                     Menu.Show();
                     UsuarioBD = "";
                     ContraseñaBD = "";

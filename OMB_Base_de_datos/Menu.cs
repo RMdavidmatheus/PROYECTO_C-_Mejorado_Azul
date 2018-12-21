@@ -13,19 +13,22 @@ namespace OMB_Base_de_datos
 {
     public partial class Menu : Form
     {
-        public Menu()
+        public Menu(string TomarUsu)
         {
             InitializeComponent();
             Selection.Height = Polizas.Height;
             Selection.Top = Polizas.Top;
+            Usu = TomarUsu;
         }
-
+        // METODO MOVER PANTALLA
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
+        // FIN METODO MOVER PANTALLA
 
-        int LX, LY;
+        private int LX, LY;
+        private string Usu;
 
         Capa_logica.Logica_Metodos Metodos = new Capa_logica.Logica_Metodos();
 

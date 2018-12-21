@@ -54,6 +54,10 @@
             this.PanelSlideAni = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.Main = new System.Windows.Forms.Panel();
             this.LogoHide = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.Twitter = new Bunifu.Framework.UI.BunifuImageButton();
+            this.Insta = new Bunifu.Framework.UI.BunifuImageButton();
+            this.Face = new Bunifu.Framework.UI.BunifuImageButton();
+            this.Web = new Bunifu.Framework.UI.BunifuImageButton();
             this.Herramienta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TitleIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
@@ -64,6 +68,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.MenuSlide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.Main.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Twitter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Insta)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Face)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Web)).BeginInit();
             this.SuspendLayout();
             // 
             // Herramienta
@@ -188,9 +196,13 @@
             this.Slide.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.Slide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
+            this.Slide.Controls.Add(this.Twitter);
             this.Slide.Controls.Add(this.MenuSlide);
+            this.Slide.Controls.Add(this.Web);
             this.Slide.Controls.Add(this.Logo);
+            this.Slide.Controls.Add(this.Insta);
             this.Slide.Controls.Add(this.Selection);
+            this.Slide.Controls.Add(this.Face);
             this.Slide.Controls.Add(this.vigenciasoat);
             this.Slide.Controls.Add(this.vigenciapol);
             this.Slide.Controls.Add(this.Vehiculos);
@@ -213,7 +225,7 @@
             this.PanelSlideAni.SetDecoration(this.MenuSlide, BunifuAnimatorNS.DecorationType.None);
             this.MenuSlide.Image = ((System.Drawing.Image)(resources.GetObject("MenuSlide.Image")));
             this.MenuSlide.ImageActive = null;
-            this.MenuSlide.Location = new System.Drawing.Point(227, 158);
+            this.MenuSlide.Location = new System.Drawing.Point(227, 163);
             this.MenuSlide.Name = "MenuSlide";
             this.MenuSlide.Size = new System.Drawing.Size(31, 40);
             this.MenuSlide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -518,8 +530,8 @@
             this.Main.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Main.Controls.Add(this.Contenido);
             this.Main.Controls.Add(this.Slide);
+            this.Main.Controls.Add(this.Contenido);
             this.LogoHide.SetDecoration(this.Main, BunifuAnimatorNS.DecorationType.None);
             this.PanelSlideAni.SetDecoration(this.Main, BunifuAnimatorNS.DecorationType.None);
             this.Main.Location = new System.Drawing.Point(0, 53);
@@ -548,6 +560,74 @@
             animation2.TransparencyCoeff = 0F;
             this.LogoHide.DefaultAnimation = animation2;
             // 
+            // Twitter
+            // 
+            this.Twitter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Twitter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
+            this.LogoHide.SetDecoration(this.Twitter, BunifuAnimatorNS.DecorationType.None);
+            this.PanelSlideAni.SetDecoration(this.Twitter, BunifuAnimatorNS.DecorationType.None);
+            this.Twitter.Image = ((System.Drawing.Image)(resources.GetObject("Twitter.Image")));
+            this.Twitter.ImageActive = null;
+            this.Twitter.Location = new System.Drawing.Point(189, 635);
+            this.Twitter.Name = "Twitter";
+            this.Twitter.Size = new System.Drawing.Size(43, 22);
+            this.Twitter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Twitter.TabIndex = 18;
+            this.Twitter.TabStop = false;
+            this.Twitter.Zoom = 10;
+            // 
+            // Insta
+            // 
+            this.Insta.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Insta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
+            this.LogoHide.SetDecoration(this.Insta, BunifuAnimatorNS.DecorationType.None);
+            this.PanelSlideAni.SetDecoration(this.Insta, BunifuAnimatorNS.DecorationType.None);
+            this.Insta.Image = ((System.Drawing.Image)(resources.GetObject("Insta.Image")));
+            this.Insta.ImageActive = null;
+            this.Insta.Location = new System.Drawing.Point(42, 635);
+            this.Insta.Name = "Insta";
+            this.Insta.Size = new System.Drawing.Size(43, 22);
+            this.Insta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Insta.TabIndex = 17;
+            this.Insta.TabStop = false;
+            this.Insta.Zoom = 10;
+            // 
+            // Face
+            // 
+            this.Face.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Face.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
+            this.LogoHide.SetDecoration(this.Face, BunifuAnimatorNS.DecorationType.None);
+            this.PanelSlideAni.SetDecoration(this.Face, BunifuAnimatorNS.DecorationType.None);
+            this.Face.Image = ((System.Drawing.Image)(resources.GetObject("Face.Image")));
+            this.Face.ImageActive = null;
+            this.Face.Location = new System.Drawing.Point(91, 635);
+            this.Face.Name = "Face";
+            this.Face.Size = new System.Drawing.Size(43, 22);
+            this.Face.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Face.TabIndex = 16;
+            this.Face.TabStop = false;
+            this.Face.Zoom = 10;
+            // 
+            // Web
+            // 
+            this.Web.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Web.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
+            this.LogoHide.SetDecoration(this.Web, BunifuAnimatorNS.DecorationType.None);
+            this.PanelSlideAni.SetDecoration(this.Web, BunifuAnimatorNS.DecorationType.None);
+            this.Web.Image = ((System.Drawing.Image)(resources.GetObject("Web.Image")));
+            this.Web.ImageActive = null;
+            this.Web.Location = new System.Drawing.Point(140, 635);
+            this.Web.Name = "Web";
+            this.Web.Size = new System.Drawing.Size(43, 22);
+            this.Web.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Web.TabIndex = 15;
+            this.Web.TabStop = false;
+            this.Web.Zoom = 10;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -574,6 +654,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.MenuSlide)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.Main.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Twitter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Insta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Face)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Web)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -601,6 +685,10 @@
         private Bunifu.Framework.UI.BunifuCustomLabel Title;
         public System.Windows.Forms.Panel Contenido;
         private System.Windows.Forms.Panel Main;
+        private Bunifu.Framework.UI.BunifuImageButton Twitter;
+        private Bunifu.Framework.UI.BunifuImageButton Insta;
+        private Bunifu.Framework.UI.BunifuImageButton Face;
+        private Bunifu.Framework.UI.BunifuImageButton Web;
     }
 }
 

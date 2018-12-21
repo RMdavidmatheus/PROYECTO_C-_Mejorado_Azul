@@ -27,6 +27,7 @@ namespace OMB_Base_de_datos.Frames
         private void Listado_polizas_Load(object sender, EventArgs e)
         {
             Metodos.LlenarTabla_Poliza(Listado);
+            this.timer1.Enabled = true;
         }
 
         private void Añadir_Click(object sender, EventArgs e)
@@ -244,6 +245,12 @@ namespace OMB_Base_de_datos.Frames
         private void Buscar_KeyUp(object sender, KeyEventArgs e)
         {
             Metodos.Buscar_Poliza(Listado,Buscar.Text);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.hora.Text = DateTime.Now.ToLongTimeString();
+            this.Fecha.Text = DateTime.Now.ToLongDateString();
         }
 
         private void Eliminar_Click(object sender, EventArgs e)
