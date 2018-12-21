@@ -126,7 +126,7 @@ namespace OMB_Base_de_datos
         {
             if (MessageBox.Show("¿Desea salir del aplicativo?","SALIR",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
             {
-                this.Close();
+                Application.Exit();
             }
             else
             {

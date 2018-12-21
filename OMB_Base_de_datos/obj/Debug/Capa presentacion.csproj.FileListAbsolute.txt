@@ -11,9 +11,7 @@ C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Debug\Cap
 C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Debug\OMB_Base_de_datos.exe
 C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Debug\OMB_Base_de_datos.pdb
 C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\bin\Debug\Capa logica.dll
-C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\bin\Debug\LogIn.dll
 C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\bin\Debug\Capa logica.pdb
-C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\bin\Debug\LogIn.pdb
 C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Debug\OMB_Base_de_datos.Principal.resources
 C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\bin\Debug\itextsharp.dll
 C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\bin\Debug\itextsharp.xml
@@ -30,3 +28,4 @@ C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Debug\OMB
 C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Debug\OMB_Base_de_datos.Frames.Listado_Vehiculos.resources
 C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Debug\OMB_Base_de_datos.Frames.Reporte_Vigencias_Polizas.resources
 C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Debug\OMB_Base_de_datos.Frames.Reporte_Vigencia_SOAT.resources
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Debug\LogIn.LogIn.resources

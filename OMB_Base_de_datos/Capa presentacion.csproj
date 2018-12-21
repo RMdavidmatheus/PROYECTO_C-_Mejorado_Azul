@@ -86,6 +86,12 @@
     <Compile Include="Frames\Listado_Vehiculos.Designer.cs">
       <DependentUpon>Listado_Vehiculos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frames\LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frames\LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frames\Reporte_Vigencias_Polizas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     <EmbeddedResource Include="Frames\Listado_Vehiculos.resx">
       <DependentUpon>Listado_Vehiculos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frames\LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frames\Reporte_Vigencias_Polizas.resx">
       <DependentUpon>Reporte_Vigencias_Polizas.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,10 +185,6 @@
     <ProjectReference Include="..\Capa logica\Capa logica.csproj">
       <Project>{2479806c-3517-42f9-b8a0-5a945f6a3724}</Project>
       <Name>Capa logica</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LogIn\LogIn.csproj">
-      <Project>{4d5ece6d-4004-4ab3-9702-e27fe305bf80}</Project>
-      <Name>LogIn</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
