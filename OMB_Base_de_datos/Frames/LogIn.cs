@@ -163,20 +163,14 @@ namespace LogIn
         {
             var proceso = new ProcessStartInfo("firefox.exe");
             // ABRIENDO FIREFOX
-            var proceso2 = new ProcessStartInfo("iexplore.exe");
-            // ABRIENDO IE
             var proceso3 = new ProcessStartInfo("chrome.exe");
             // ABRIENDO CHROME
             proceso.Arguments = "https://proyectoomb.azurewebsites.net/OMB_Proyecto_FINAL/index.php";
             // INSTANCIANDO SITIO FIREFOX
-            proceso2.Arguments = "https://proyectoomb.azurewebsites.net/OMB_Proyecto_FINAL/index.php";
-            // INSTANCIANDO SITIO IE
             proceso3.Arguments = "https://proyectoomb.azurewebsites.net/OMB_Proyecto_FINAL/index.php";
             // INSTANCIANDO SITIO CHROME
             Process.Start(proceso);
             // INICIANDO PROCESO FIREFOX
-            Process.Start(proceso2);
-            // INICIANDO PROCESO IE
             Process.Start(proceso3);
             // INICIANDO PROCESO CHROME
         }
