@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -201,6 +202,22 @@ namespace OMB_Base_de_datos
         {
             Title.Text = "Aplicativo OMB SEGUROS";
             Metodos.Abrir_Formulario_En_Panel(Contenido, new Principal(Usu));
+        }
+
+        private void Web_Click(object sender, EventArgs e)
+        {
+            var proceso = new ProcessStartInfo("firefox.exe");
+            // ABRIENDO FIREFOX
+            var proceso3 = new ProcessStartInfo("chrome.exe");
+            // ABRIENDO CHROME
+            proceso.Arguments = "https://proyectoomb.azurewebsites.net/OMB_Proyecto_FINAL/index.php";
+            // INSTANCIANDO SITIO FIREFOX
+            proceso3.Arguments = "https://proyectoomb.azurewebsites.net/OMB_Proyecto_FINAL/index.php";
+            // INSTANCIANDO SITIO CHROME
+            Process.Start(proceso);
+            // INICIANDO PROCESO FIREFOX
+            Process.Start(proceso3);
+            // INICIANDO PROCESO CHROME
         }
 
         private void Maximizar_Click(object sender, EventArgs e)
