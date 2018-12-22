@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa presentacion", "OMB_Ba
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa logica", "Capa logica\Capa logica.csproj", "{2479806C-3517-42F9-B8A0-5A945F6A3724}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetUp OMB", "SetUp OMB\SetUp OMB.vdproj", "{50123CAC-7A3E-458B-96C1-329FD1941CB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,8 @@ Global
 		{2479806C-3517-42F9-B8A0-5A945F6A3724}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2479806C-3517-42F9-B8A0-5A945F6A3724}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2479806C-3517-42F9-B8A0-5A945F6A3724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50123CAC-7A3E-458B-96C1-329FD1941CB2}.Debug|Any CPU.ActiveCfg = Debug
+		{50123CAC-7A3E-458B-96C1-329FD1941CB2}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,12 @@
+C:\Users\David PC\source\repos\OMB_Base_de_datos\Capa logica\bin\Release\Capa logica.dll
+C:\Users\David PC\source\repos\OMB_Base_de_datos\Capa logica\bin\Release\Capa logica.pdb
+C:\Users\David PC\source\repos\OMB_Base_de_datos\Capa logica\bin\Release\itextsharp.dll
+C:\Users\David PC\source\repos\OMB_Base_de_datos\Capa logica\bin\Release\MySql.Data.dll
+C:\Users\David PC\source\repos\OMB_Base_de_datos\Capa logica\bin\Release\Google.Protobuf.dll
+C:\Users\David PC\source\repos\OMB_Base_de_datos\Capa logica\bin\Release\itextsharp.xml
+C:\Users\David PC\source\repos\OMB_Base_de_datos\Capa logica\bin\Release\MySql.Data.xml
+C:\Users\David PC\source\repos\OMB_Base_de_datos\Capa logica\obj\Release\Capa logica.csprojAssemblyReference.cache
+C:\Users\David PC\source\repos\OMB_Base_de_datos\Capa logica\obj\Release\Capa logica.csproj.CoreCompileInputs.cache
+C:\Users\David PC\source\repos\OMB_Base_de_datos\Capa logica\obj\Release\Capa logica.csproj.CopyComplete
+C:\Users\David PC\source\repos\OMB_Base_de_datos\Capa logica\obj\Release\Capa logica.dll
+C:\Users\David PC\source\repos\OMB_Base_de_datos\Capa logica\obj\Release\Capa logica.pdb

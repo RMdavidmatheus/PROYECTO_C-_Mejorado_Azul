@@ -31,19 +31,6 @@ namespace OMB_Base_de_datos.Frames
         {
             Metodos.LlenarTabla_Poliza(Listado);
             this.timer1.Enabled = true;
-            // ACTUALIZAR AUTOMATICAMENTE POLIZA SI ESTA ACTIVA O INACTIVA
-            string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigencia >= NOW()  AND p.polEstado = 'INACTIVO'";
-            Metodos.Insertar_Datos_Poliza_General(PolqueryActivo);
-            string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigencia < NOW() AND p.polEstado = 'ACTIVO'";
-            Metodos.Insertar_Datos_Poliza_General(PolqueryInactivo);
-            // FINALIZACION POLIZA UPDATE
-
-            //ACTUALIZAR ACTIVO O INACTIVO EN VEHICULOS
-            string SOATqueryActivo = "UPDATE vehiculo v set v.veh_soat_estado = 'ACTIVO'where v.vehVigenciaSOAT >= NOW()";
-            Metodos.Insertar_Datos_Poliza_General(SOATqueryActivo);
-            string SOATqueryInactivo = "UPDATE vehiculo v set v.veh_soat_estado = 'INACTIVO'where v.vehVigenciaSOAT < NOW()";
-            Metodos.Insertar_Datos_Poliza_General(SOATqueryInactivo);
-            // FIN
         }
 
         private void Añadir_Click(object sender, EventArgs e)
@@ -62,10 +49,36 @@ namespace OMB_Base_de_datos.Frames
             if (Añadir.Visible==false)
             {
                 Metodos.LlenarTabla_Poliza(Listado);
+                // ACTUALIZAR AUTOMATICAMENTE POLIZA SI ESTA ACTIVA O INACTIVA
+                string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigencia >= NOW()  AND p.polEstado = 'INACTIVO'";
+                Metodos.Insertar_Datos_Poliza_General(PolqueryActivo);
+                string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigencia < NOW() AND p.polEstado = 'ACTIVO'";
+                Metodos.Insertar_Datos_Poliza_General(PolqueryInactivo);
+                // FINALIZACION POLIZA UPDATE
+
+                //ACTUALIZAR ACTIVO O INACTIVO EN VEHICULOS
+                string SOATqueryActivo = "UPDATE vehiculo v set v.veh_soat_estado = 'ACTIVO'where v.vehVigenciaSOAT >= NOW()";
+                Metodos.Insertar_Datos_Poliza_General(SOATqueryActivo);
+                string SOATqueryInactivo = "UPDATE vehiculo v set v.veh_soat_estado = 'INACTIVO'where v.vehVigenciaSOAT < NOW()";
+                Metodos.Insertar_Datos_Poliza_General(SOATqueryInactivo);
+                // FIN
             }
             else
             {
                 Metodos.LlenarTabla_Poliza(Listado);
+                // ACTUALIZAR AUTOMATICAMENTE POLIZA SI ESTA ACTIVA O INACTIVA
+                string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigencia >= NOW()  AND p.polEstado = 'INACTIVO'";
+                Metodos.Insertar_Datos_Poliza_General(PolqueryActivo);
+                string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigencia < NOW() AND p.polEstado = 'ACTIVO'";
+                Metodos.Insertar_Datos_Poliza_General(PolqueryInactivo);
+                // FINALIZACION POLIZA UPDATE
+
+                //ACTUALIZAR ACTIVO O INACTIVO EN VEHICULOS
+                string SOATqueryActivo = "UPDATE vehiculo v set v.veh_soat_estado = 'ACTIVO'where v.vehVigenciaSOAT >= NOW()";
+                Metodos.Insertar_Datos_Poliza_General(SOATqueryActivo);
+                string SOATqueryInactivo = "UPDATE vehiculo v set v.veh_soat_estado = 'INACTIVO'where v.vehVigenciaSOAT < NOW()";
+                Metodos.Insertar_Datos_Poliza_General(SOATqueryInactivo);
+                // FIN
             }
         }
 
@@ -202,10 +215,36 @@ namespace OMB_Base_de_datos.Frames
             if (Editar.Visible == false)
             {
                 Metodos.LlenarTabla_Poliza(Listado);
+                // ACTUALIZAR AUTOMATICAMENTE POLIZA SI ESTA ACTIVA O INACTIVA
+                string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigencia >= NOW()  AND p.polEstado = 'INACTIVO'";
+                Metodos.Insertar_Datos_Poliza_General(PolqueryActivo);
+                string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigencia < NOW() AND p.polEstado = 'ACTIVO'";
+                Metodos.Insertar_Datos_Poliza_General(PolqueryInactivo);
+                // FINALIZACION POLIZA UPDATE
+
+                //ACTUALIZAR ACTIVO O INACTIVO EN VEHICULOS
+                string SOATqueryActivo = "UPDATE vehiculo v set v.veh_soat_estado = 'ACTIVO'where v.vehVigenciaSOAT >= NOW()";
+                Metodos.Insertar_Datos_Poliza_General(SOATqueryActivo);
+                string SOATqueryInactivo = "UPDATE vehiculo v set v.veh_soat_estado = 'INACTIVO'where v.vehVigenciaSOAT < NOW()";
+                Metodos.Insertar_Datos_Poliza_General(SOATqueryInactivo);
+                // FIN
             }
             else
             {
                 Metodos.LlenarTabla_Poliza(Listado);
+                // ACTUALIZAR AUTOMATICAMENTE POLIZA SI ESTA ACTIVA O INACTIVA
+                string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigencia >= NOW()  AND p.polEstado = 'INACTIVO'";
+                Metodos.Insertar_Datos_Poliza_General(PolqueryActivo);
+                string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigencia < NOW() AND p.polEstado = 'ACTIVO'";
+                Metodos.Insertar_Datos_Poliza_General(PolqueryInactivo);
+                // FINALIZACION POLIZA UPDATE
+
+                //ACTUALIZAR ACTIVO O INACTIVO EN VEHICULOS
+                string SOATqueryActivo = "UPDATE vehiculo v set v.veh_soat_estado = 'ACTIVO'where v.vehVigenciaSOAT >= NOW()";
+                Metodos.Insertar_Datos_Poliza_General(SOATqueryActivo);
+                string SOATqueryInactivo = "UPDATE vehiculo v set v.veh_soat_estado = 'INACTIVO'where v.vehVigenciaSOAT < NOW()";
+                Metodos.Insertar_Datos_Poliza_General(SOATqueryInactivo);
+                // FIN
             }
         }
 
@@ -425,6 +464,19 @@ namespace OMB_Base_de_datos.Frames
                 }
             }
                     Metodos.LlenarTabla_Poliza(Listado);
+            // ACTUALIZAR AUTOMATICAMENTE POLIZA SI ESTA ACTIVA O INACTIVA
+            string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigencia >= NOW()  AND p.polEstado = 'INACTIVO'";
+            Metodos.Insertar_Datos_Poliza_General(PolqueryActivo);
+            string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigencia < NOW() AND p.polEstado = 'ACTIVO'";
+            Metodos.Insertar_Datos_Poliza_General(PolqueryInactivo);
+            // FINALIZACION POLIZA UPDATE
+
+            //ACTUALIZAR ACTIVO O INACTIVO EN VEHICULOS
+            string SOATqueryActivo = "UPDATE vehiculo v set v.veh_soat_estado = 'ACTIVO'where v.vehVigenciaSOAT >= NOW()";
+            Metodos.Insertar_Datos_Poliza_General(SOATqueryActivo);
+            string SOATqueryInactivo = "UPDATE vehiculo v set v.veh_soat_estado = 'INACTIVO'where v.vehVigenciaSOAT < NOW()";
+            Metodos.Insertar_Datos_Poliza_General(SOATqueryInactivo);
+            // FIN
         }
     }
     

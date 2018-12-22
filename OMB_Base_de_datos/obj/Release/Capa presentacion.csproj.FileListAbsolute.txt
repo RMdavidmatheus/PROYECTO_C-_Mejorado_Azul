@@ -1,0 +1,32 @@
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\bin\Release\OMB_Base_de_datos.exe.config
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\bin\Release\OMB_Base_de_datos.exe
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\bin\Release\OMB_Base_de_datos.pdb
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\bin\Release\Bunifu_UI_v1.52.dll
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\bin\Release\Capa logica.dll
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\bin\Release\itextsharp.dll
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\bin\Release\VisualStudioTabControl.dll
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\bin\Release\MySql.Data.dll
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\bin\Release\Google.Protobuf.dll
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\bin\Release\Capa logica.pdb
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\bin\Release\itextsharp.xml
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\bin\Release\VisualStudioTabControl.pdb
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\bin\Release\MySql.Data.xml
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\Capa presentacion.csprojAssemblyReference.cache
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\OMB_Base_de_datos.Frames.Agregar_poliza.resources
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\OMB_Base_de_datos.Frames.Listado_Beneficiarios.resources
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\OMB_Base_de_datos.Frames.Listado_polizas.resources
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\OMB_Base_de_datos.Frames.Listado_Tomadores.resources
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\OMB_Base_de_datos.Frames.Listado_Vehiculos.resources
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\LogIn.LogIn.resources
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\OMB_Base_de_datos.Frames.Cargando.resources
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\OMB_Base_de_datos.Frames.Reporte_Vigencias_Polizas.resources
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\OMB_Base_de_datos.Frames.Reporte_Vigencia_SOAT.resources
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\OMB_Base_de_datos.Frames.SelectDate.resources
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\OMB_Base_de_datos.Menu.resources
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\OMB_Base_de_datos.Principal.resources
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\OMB_Base_de_datos.Properties.Resources.resources
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\Capa presentacion.csproj.GenerateResource.cache
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\Capa presentacion.csproj.CoreCompileInputs.cache
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\Capa presentacion.csproj.CopyComplete
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\OMB_Base_de_datos.exe
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\OMB_Base_de_datos.pdb
