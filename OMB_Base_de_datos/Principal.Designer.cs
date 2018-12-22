@@ -104,7 +104,7 @@
             this.Fecha.AutoSize = true;
             this.Fecha.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Fecha.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Fecha.Location = new System.Drawing.Point(919, 77);
+            this.Fecha.Location = new System.Drawing.Point(909, 77);
             this.Fecha.Name = "Fecha";
             this.Fecha.Size = new System.Drawing.Size(79, 25);
             this.Fecha.TabIndex = 1;
@@ -116,7 +116,7 @@
             this.hora.AutoSize = true;
             this.hora.Font = new System.Drawing.Font("MV Boli", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hora.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.hora.Location = new System.Drawing.Point(911, 14);
+            this.hora.Location = new System.Drawing.Point(901, 14);
             this.hora.Name = "hora";
             this.hora.Size = new System.Drawing.Size(190, 63);
             this.hora.TabIndex = 0;

@@ -63,7 +63,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Poliza = new System.Windows.Forms.TabPage();
             this.ActualizarPol = new System.Windows.Forms.Button();
-            this.Estado = new System.Windows.Forms.ComboBox();
             this.TpPoliza = new System.Windows.Forms.ComboBox();
             this.GuardarPol = new System.Windows.Forms.Button();
             this.Vigencia = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -671,7 +670,6 @@
             // 
             this.Poliza.BackColor = System.Drawing.Color.Gainsboro;
             this.Poliza.Controls.Add(this.ActualizarPol);
-            this.Poliza.Controls.Add(this.Estado);
             this.Poliza.Controls.Add(this.TpPoliza);
             this.Poliza.Controls.Add(this.GuardarPol);
             this.Poliza.Controls.Add(this.Vigencia);
@@ -693,27 +691,13 @@
             this.ActualizarPol.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.ActualizarPol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ActualizarPol.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ActualizarPol.Location = new System.Drawing.Point(106, 511);
+            this.ActualizarPol.Location = new System.Drawing.Point(106, 442);
             this.ActualizarPol.Name = "ActualizarPol";
             this.ActualizarPol.Size = new System.Drawing.Size(207, 47);
             this.ActualizarPol.TabIndex = 5;
             this.ActualizarPol.Text = "ACTUALIZAR";
             this.ActualizarPol.UseVisualStyleBackColor = false;
             this.ActualizarPol.Click += new System.EventHandler(this.ActualizarPol_Click);
-            // 
-            // Estado
-            // 
-            this.Estado.BackColor = System.Drawing.Color.Gainsboro;
-            this.Estado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Estado.FormattingEnabled = true;
-            this.Estado.Items.AddRange(new object[] {
-            "ACTIVO",
-            "INACTIVO"});
-            this.Estado.Location = new System.Drawing.Point(37, 356);
-            this.Estado.Name = "Estado";
-            this.Estado.Size = new System.Drawing.Size(331, 26);
-            this.Estado.TabIndex = 3;
-            this.Estado.Text = "-- SELECCIONE UN ESTADO --";
             // 
             // TpPoliza
             // 
@@ -746,7 +730,7 @@
             this.GuardarPol.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.GuardarPol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GuardarPol.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GuardarPol.Location = new System.Drawing.Point(106, 511);
+            this.GuardarPol.Location = new System.Drawing.Point(106, 442);
             this.GuardarPol.Name = "GuardarPol";
             this.GuardarPol.Size = new System.Drawing.Size(207, 43);
             this.GuardarPol.TabIndex = 6;
@@ -767,7 +751,7 @@
             this.Vigencia.LineIdleColor = System.Drawing.Color.Gray;
             this.Vigencia.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
             this.Vigencia.LineThickness = 4;
-            this.Vigencia.Location = new System.Drawing.Point(37, 405);
+            this.Vigencia.Location = new System.Drawing.Point(37, 363);
             this.Vigencia.Margin = new System.Windows.Forms.Padding(4);
             this.Vigencia.Name = "Vigencia";
             this.Vigencia.Size = new System.Drawing.Size(185, 44);
@@ -806,19 +790,19 @@
             "SURA",
             "COLPATRIA",
             "ALLIANZ",
-            "LIBERTY",
             "ESTADO",
-            "SOLIDARIA",
-            "QBE",
             "EQUIDAD",
+            "LIBERTY",
             "MAPFRE",
             "BOLIVAR",
+            "CHUBB",
+            "SOLIDARIA",
+            "QBE",
             "MUNDIAL",
             "CARDIFF",
-            "CHUBB",
-            "PREVISORA",
             "SBS",
-            "ZURICH"});
+            "ZURICH",
+            "PREVISORA"});
             this.Ase.Location = new System.Drawing.Point(37, 243);
             this.Ase.Name = "Ase";
             this.Ase.Size = new System.Drawing.Size(331, 26);
@@ -830,7 +814,7 @@
             this.CalendarPol.BackColor = System.Drawing.Color.Gainsboro;
             this.CalendarPol.Image = ((System.Drawing.Image)(resources.GetObject("CalendarPol.Image")));
             this.CalendarPol.ImageActive = null;
-            this.CalendarPol.Location = new System.Drawing.Point(229, 412);
+            this.CalendarPol.Location = new System.Drawing.Point(229, 370);
             this.CalendarPol.Name = "CalendarPol";
             this.CalendarPol.Size = new System.Drawing.Size(39, 43);
             this.CalendarPol.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1144,7 +1128,6 @@
         public Bunifu.Framework.UI.BunifuMaterialTextbox NomBen;
         public System.Windows.Forms.ComboBox TipoDocBen;
         public Bunifu.Framework.UI.BunifuMaterialTextbox DocBen;
-        public System.Windows.Forms.ComboBox Estado;
         public System.Windows.Forms.ComboBox TpPoliza;
         public Bunifu.Framework.UI.BunifuMaterialTextbox Vigencia;
         public Bunifu.Framework.UI.BunifuMaterialTextbox NumPoliza;
