@@ -45,7 +45,7 @@ namespace LogIn
                 imageNumber = 1;
             }
             // DANDO LA RUTA DE LA CARPETA IMAGES
-            Slider.ImageLocation = string.Format(@"C:\Users\David PC\source\repos\OMB_Base_de_datos\LogIn\bin\Debug\Images\{0}.Jpg", imageNumber);
+            Slider.ImageLocation = string.Format(@"C:\Program Files\OMB Seguros\SetUp OMB\Images\{0}.Jpg", imageNumber);
             imageNumber++;
         }
         private void timer1_Tick(object sender, EventArgs e)
