@@ -279,6 +279,7 @@
             this.Controls.Add(this.Listado);
             this.Controls.Add(this.Cabeza);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Listado_polizas";
             this.Text = "Listado_polizas";
             this.Load += new System.EventHandler(this.Listado_polizas_Load);

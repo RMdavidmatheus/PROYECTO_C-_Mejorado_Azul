@@ -286,6 +286,7 @@
             this.Controls.Add(this.Cabeza);
             this.Controls.Add(this.ListadoPolizas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Reporte_Vigencias_Polizas";
             this.Text = "Reporte_Vigencias_Polizas";
             this.Load += new System.EventHandler(this.Reporte_Vigencias_Polizas_Load);

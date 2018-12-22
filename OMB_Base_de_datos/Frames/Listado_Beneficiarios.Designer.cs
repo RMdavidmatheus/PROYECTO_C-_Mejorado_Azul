@@ -240,6 +240,7 @@
             this.Controls.Add(this.ListadoBen);
             this.Controls.Add(this.Cabeza);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Listado_Beneficiarios";
             this.Text = "Listado_Beneficiarios";
             this.Load += new System.EventHandler(this.Listado_Beneficiarios_Load);

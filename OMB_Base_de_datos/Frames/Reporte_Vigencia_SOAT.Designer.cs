@@ -287,6 +287,7 @@
             this.Controls.Add(this.ListadoPolizasSOAT);
             this.Controls.Add(this.Cabeza);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Reporte_Vigencia_SOAT";
             this.Text = "Reporte_Vigencia_SOAT";
             this.Load += new System.EventHandler(this.Reporte_Vigencia_SOAT_Load);

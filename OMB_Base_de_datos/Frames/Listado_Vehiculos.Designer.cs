@@ -240,6 +240,7 @@
             this.Controls.Add(this.ListadoVeh);
             this.Controls.Add(this.Cabeza);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Listado_Vehiculos";
             this.Text = "Listado_Vehiculos";
             this.Load += new System.EventHandler(this.Listado_Vehiculos_Load);

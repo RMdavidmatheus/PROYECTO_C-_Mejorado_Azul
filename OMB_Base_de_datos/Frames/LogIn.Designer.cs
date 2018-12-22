@@ -38,6 +38,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Contenido = new System.Windows.Forms.Panel();
+            this.Minimizar = new Bunifu.Framework.UI.BunifuImageButton();
+            this.Twitter = new Bunifu.Framework.UI.BunifuImageButton();
+            this.Insta = new Bunifu.Framework.UI.BunifuImageButton();
+            this.Cerrar = new Bunifu.Framework.UI.BunifuImageButton();
+            this.ErrorUsu = new System.Windows.Forms.Label();
+            this.Face = new Bunifu.Framework.UI.BunifuImageButton();
+            this.Web = new Bunifu.Framework.UI.BunifuImageButton();
+            this.ErrorPass = new System.Windows.Forms.Label();
             this.RecuperarPassword = new System.Windows.Forms.LinkLabel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -46,27 +54,19 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Pass = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.Usuario = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.ErrorPass = new System.Windows.Forms.Label();
-            this.ErrorUsu = new System.Windows.Forms.Label();
-            this.Cerrar = new Bunifu.Framework.UI.BunifuImageButton();
-            this.Web = new Bunifu.Framework.UI.BunifuImageButton();
-            this.Face = new Bunifu.Framework.UI.BunifuImageButton();
-            this.Insta = new Bunifu.Framework.UI.BunifuImageButton();
-            this.Twitter = new Bunifu.Framework.UI.BunifuImageButton();
-            this.Minimizar = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Slider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Contenido.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Twitter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Insta)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Face)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Web)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Web)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Face)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Insta)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Twitter)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
             this.SuspendLayout();
             // 
             // FormaApp
@@ -162,6 +162,110 @@
             this.Contenido.Size = new System.Drawing.Size(583, 648);
             this.Contenido.TabIndex = 1;
             this.Contenido.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Contenido_MouseDown);
+            // 
+            // Minimizar
+            // 
+            this.Minimizar.BackColor = System.Drawing.Color.Gainsboro;
+            this.Minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Minimizar.Image")));
+            this.Minimizar.ImageActive = null;
+            this.Minimizar.Location = new System.Drawing.Point(439, 19);
+            this.Minimizar.Name = "Minimizar";
+            this.Minimizar.Size = new System.Drawing.Size(60, 32);
+            this.Minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Minimizar.TabIndex = 15;
+            this.Minimizar.TabStop = false;
+            this.Minimizar.Zoom = 10;
+            this.Minimizar.Click += new System.EventHandler(this.Minimizar_Click);
+            // 
+            // Twitter
+            // 
+            this.Twitter.BackColor = System.Drawing.Color.Gainsboro;
+            this.Twitter.Image = ((System.Drawing.Image)(resources.GetObject("Twitter.Image")));
+            this.Twitter.ImageActive = null;
+            this.Twitter.Location = new System.Drawing.Point(348, 575);
+            this.Twitter.Name = "Twitter";
+            this.Twitter.Size = new System.Drawing.Size(43, 22);
+            this.Twitter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Twitter.TabIndex = 14;
+            this.Twitter.TabStop = false;
+            this.Twitter.Zoom = 10;
+            this.Twitter.Click += new System.EventHandler(this.Twitter_Click);
+            // 
+            // Insta
+            // 
+            this.Insta.BackColor = System.Drawing.Color.Gainsboro;
+            this.Insta.Image = ((System.Drawing.Image)(resources.GetObject("Insta.Image")));
+            this.Insta.ImageActive = null;
+            this.Insta.Location = new System.Drawing.Point(201, 575);
+            this.Insta.Name = "Insta";
+            this.Insta.Size = new System.Drawing.Size(43, 22);
+            this.Insta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Insta.TabIndex = 13;
+            this.Insta.TabStop = false;
+            this.Insta.Zoom = 10;
+            this.Insta.Click += new System.EventHandler(this.Insta_Click);
+            // 
+            // Cerrar
+            // 
+            this.Cerrar.BackColor = System.Drawing.Color.Gainsboro;
+            this.Cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Cerrar.Image")));
+            this.Cerrar.ImageActive = null;
+            this.Cerrar.Location = new System.Drawing.Point(501, 19);
+            this.Cerrar.Name = "Cerrar";
+            this.Cerrar.Size = new System.Drawing.Size(60, 32);
+            this.Cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Cerrar.TabIndex = 10;
+            this.Cerrar.TabStop = false;
+            this.Cerrar.Zoom = 10;
+            this.Cerrar.Click += new System.EventHandler(this.Cerrar_Click);
+            // 
+            // ErrorUsu
+            // 
+            this.ErrorUsu.AutoSize = true;
+            this.ErrorUsu.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ErrorUsu.ForeColor = System.Drawing.Color.Maroon;
+            this.ErrorUsu.Location = new System.Drawing.Point(75, 335);
+            this.ErrorUsu.Name = "ErrorUsu";
+            this.ErrorUsu.Size = new System.Drawing.Size(0, 17);
+            this.ErrorUsu.TabIndex = 9;
+            // 
+            // Face
+            // 
+            this.Face.BackColor = System.Drawing.Color.Gainsboro;
+            this.Face.Image = ((System.Drawing.Image)(resources.GetObject("Face.Image")));
+            this.Face.ImageActive = null;
+            this.Face.Location = new System.Drawing.Point(250, 575);
+            this.Face.Name = "Face";
+            this.Face.Size = new System.Drawing.Size(43, 22);
+            this.Face.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Face.TabIndex = 12;
+            this.Face.TabStop = false;
+            this.Face.Zoom = 10;
+            this.Face.Click += new System.EventHandler(this.Face_Click);
+            // 
+            // Web
+            // 
+            this.Web.BackColor = System.Drawing.Color.Gainsboro;
+            this.Web.Image = ((System.Drawing.Image)(resources.GetObject("Web.Image")));
+            this.Web.ImageActive = null;
+            this.Web.Location = new System.Drawing.Point(299, 575);
+            this.Web.Name = "Web";
+            this.Web.Size = new System.Drawing.Size(43, 22);
+            this.Web.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Web.TabIndex = 11;
+            this.Web.TabStop = false;
+            this.Web.Zoom = 10;
+            this.Web.Click += new System.EventHandler(this.Web_Click);
+            // 
+            // ErrorPass
+            // 
+            this.ErrorPass.AutoSize = true;
+            this.ErrorPass.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ErrorPass.ForeColor = System.Drawing.Color.Maroon;
+            this.ErrorPass.Location = new System.Drawing.Point(75, 438);
+            this.ErrorPass.Name = "ErrorPass";
+            this.ErrorPass.Size = new System.Drawing.Size(0, 17);
+            this.ErrorPass.TabIndex = 8;
             // 
             // RecuperarPassword
             // 
@@ -322,110 +426,6 @@
             this.Usuario.Enter += new System.EventHandler(this.Usuario_Enter);
             this.Usuario.Leave += new System.EventHandler(this.Usuario_Leave);
             // 
-            // ErrorPass
-            // 
-            this.ErrorPass.AutoSize = true;
-            this.ErrorPass.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ErrorPass.ForeColor = System.Drawing.Color.Maroon;
-            this.ErrorPass.Location = new System.Drawing.Point(75, 438);
-            this.ErrorPass.Name = "ErrorPass";
-            this.ErrorPass.Size = new System.Drawing.Size(0, 17);
-            this.ErrorPass.TabIndex = 8;
-            // 
-            // ErrorUsu
-            // 
-            this.ErrorUsu.AutoSize = true;
-            this.ErrorUsu.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ErrorUsu.ForeColor = System.Drawing.Color.Maroon;
-            this.ErrorUsu.Location = new System.Drawing.Point(75, 335);
-            this.ErrorUsu.Name = "ErrorUsu";
-            this.ErrorUsu.Size = new System.Drawing.Size(0, 17);
-            this.ErrorUsu.TabIndex = 9;
-            // 
-            // Cerrar
-            // 
-            this.Cerrar.BackColor = System.Drawing.Color.Gainsboro;
-            this.Cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Cerrar.Image")));
-            this.Cerrar.ImageActive = null;
-            this.Cerrar.Location = new System.Drawing.Point(501, 19);
-            this.Cerrar.Name = "Cerrar";
-            this.Cerrar.Size = new System.Drawing.Size(60, 32);
-            this.Cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Cerrar.TabIndex = 10;
-            this.Cerrar.TabStop = false;
-            this.Cerrar.Zoom = 10;
-            this.Cerrar.Click += new System.EventHandler(this.Cerrar_Click);
-            // 
-            // Web
-            // 
-            this.Web.BackColor = System.Drawing.Color.Gainsboro;
-            this.Web.Image = ((System.Drawing.Image)(resources.GetObject("Web.Image")));
-            this.Web.ImageActive = null;
-            this.Web.Location = new System.Drawing.Point(299, 575);
-            this.Web.Name = "Web";
-            this.Web.Size = new System.Drawing.Size(43, 22);
-            this.Web.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Web.TabIndex = 11;
-            this.Web.TabStop = false;
-            this.Web.Zoom = 10;
-            this.Web.Click += new System.EventHandler(this.Web_Click);
-            // 
-            // Face
-            // 
-            this.Face.BackColor = System.Drawing.Color.Gainsboro;
-            this.Face.Image = ((System.Drawing.Image)(resources.GetObject("Face.Image")));
-            this.Face.ImageActive = null;
-            this.Face.Location = new System.Drawing.Point(250, 575);
-            this.Face.Name = "Face";
-            this.Face.Size = new System.Drawing.Size(43, 22);
-            this.Face.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Face.TabIndex = 12;
-            this.Face.TabStop = false;
-            this.Face.Zoom = 10;
-            this.Face.Click += new System.EventHandler(this.Face_Click);
-            // 
-            // Insta
-            // 
-            this.Insta.BackColor = System.Drawing.Color.Gainsboro;
-            this.Insta.Image = ((System.Drawing.Image)(resources.GetObject("Insta.Image")));
-            this.Insta.ImageActive = null;
-            this.Insta.Location = new System.Drawing.Point(201, 575);
-            this.Insta.Name = "Insta";
-            this.Insta.Size = new System.Drawing.Size(43, 22);
-            this.Insta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Insta.TabIndex = 13;
-            this.Insta.TabStop = false;
-            this.Insta.Zoom = 10;
-            this.Insta.Click += new System.EventHandler(this.Insta_Click);
-            // 
-            // Twitter
-            // 
-            this.Twitter.BackColor = System.Drawing.Color.Gainsboro;
-            this.Twitter.Image = ((System.Drawing.Image)(resources.GetObject("Twitter.Image")));
-            this.Twitter.ImageActive = null;
-            this.Twitter.Location = new System.Drawing.Point(348, 575);
-            this.Twitter.Name = "Twitter";
-            this.Twitter.Size = new System.Drawing.Size(43, 22);
-            this.Twitter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Twitter.TabIndex = 14;
-            this.Twitter.TabStop = false;
-            this.Twitter.Zoom = 10;
-            this.Twitter.Click += new System.EventHandler(this.Twitter_Click);
-            // 
-            // Minimizar
-            // 
-            this.Minimizar.BackColor = System.Drawing.Color.Gainsboro;
-            this.Minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Minimizar.Image")));
-            this.Minimizar.ImageActive = null;
-            this.Minimizar.Location = new System.Drawing.Point(439, 19);
-            this.Minimizar.Name = "Minimizar";
-            this.Minimizar.Size = new System.Drawing.Size(60, 32);
-            this.Minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Minimizar.TabIndex = 15;
-            this.Minimizar.TabStop = false;
-            this.Minimizar.Zoom = 10;
-            this.Minimizar.Click += new System.EventHandler(this.Minimizar_Click);
-            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -435,6 +435,7 @@
             this.Controls.Add(this.Contenido);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LogIn";
             this.Opacity = 0.98D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -445,15 +446,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Contenido.ResumeLayout(false);
             this.Contenido.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Twitter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Insta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Face)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Web)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Web)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Face)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Insta)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Twitter)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).EndInit();
             this.ResumeLayout(false);
 
         }

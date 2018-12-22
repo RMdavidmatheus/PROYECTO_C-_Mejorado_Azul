@@ -111,13 +111,13 @@ namespace LogIn
 
                 if (Usuario.Text.Equals(UsuarioBD) || Pass.Text.Equals(ContraseñaBD))
                 {
-                    MessageBox.Show("Ingreso Extitoso", "EXITOSO");
-
                     TomarUsu = UsuarioBD;
                     ContraseñaBD = "";
+                    OMB_Base_de_datos.Frames.Cargando bar = new OMB_Base_de_datos.Frames.Cargando(TomarUsu);
+                    bar.Show();
                     this.Hide();
-                    OMB_Base_de_datos.Menu Menu = new OMB_Base_de_datos.Menu(TomarUsu);
-                    Menu.Show();
+                    //OMB_Base_de_datos.Menu Menu = new OMB_Base_de_datos.Menu(TomarUsu);
+                    //Menu.Show();
                     UsuarioBD = "";
                     ContraseñaBD = "";
                 }
