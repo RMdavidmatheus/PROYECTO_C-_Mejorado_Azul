@@ -13,7 +13,7 @@ namespace Capa_logica
     class ConexionSQL
     {
         //MySqlConnection conexionBase = new MySqlConnection("server=localhost;user id=root;password=;persistsecurityinfo=True;port=3306;database=proyecto_omb;SslMode=none");
-        MySqlConnection conexionBase = new MySqlConnection("server=proyectoombescritorio.mysql.database.azure.com;user id=DavidMateus@proyectoombescritorio;password=Davidale98;persistsecurityinfo=True;port=3306;database=proyecto_omb;SslMode=none");
+        MySqlConnection conexionBase = new MySqlConnection("server=proyecto-omb.mysql.database.azure.com;user id=DavidAlejandro@proyecto-omb;password=Davidale98;persistsecurityinfo=True;port=3306;database=proyecto_omb;SslMode=none");
 
         public void ObtenerConexion()
         {
