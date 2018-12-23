@@ -98,6 +98,12 @@
     <Compile Include="Frames\Cargando.Designer.cs">
       <DependentUpon>Cargando.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frames\Recuperacion_pass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frames\Recuperacion_pass.Designer.cs">
+      <DependentUpon>Recuperacion_pass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frames\Reporte_Vigencias_Polizas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frames\Cargando.resx">
       <DependentUpon>Cargando.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\Recuperacion_pass.resx">
+      <DependentUpon>Recuperacion_pass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frames\Reporte_Vigencias_Polizas.resx">
       <DependentUpon>Reporte_Vigencias_Polizas.cs</DependentUpon>

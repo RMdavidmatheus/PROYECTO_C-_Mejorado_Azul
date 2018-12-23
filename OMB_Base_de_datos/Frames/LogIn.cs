@@ -194,5 +194,11 @@ namespace LogIn
         {
 
         }
+
+        private void RecuperarPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OMB_Base_de_datos.Frames.Recuperacion_pass Recuperar = new OMB_Base_de_datos.Frames.Recuperacion_pass();
+            Recuperar.ShowDialog();
+        }
     }
 }

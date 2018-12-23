@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,6 +14,7 @@ namespace Capa_logica
 {
     public class Logica_Metodos
     {
+        private string Email, nombres, contrasena, mensaje;
         ConexionSQL bd = new ConexionSQL();
         public void Abrir_Formulario_En_Panel(Panel Panel_Receptor, object Formulario_Hijo)
         {
@@ -413,7 +416,7 @@ namespace Capa_logica
                 ev.Handled = true;
             }
         }
-        public void Email(KeyPressEventArgs ev)
+        public void Validar_Email(KeyPressEventArgs ev)
         {
             if (Char.IsLetterOrDigit(ev.KeyChar))
             {
@@ -439,6 +442,55 @@ namespace Capa_logica
             {
                 ev.Handled = true;
             }
+        }
+        public string Metodo_Recuperar_Contrasena(string DocumentoUsu)
+        {
+            // TOMANDO DATOS CONCRETOS DEL USUARIO
+            DataTable dt = new DataTable();
+            MySqlCommand query = new MySqlCommand("select * from usuarios usu where usu.Documento = '" + DocumentoUsu + "' ", bd.GetConnection());
+            MySqlDataAdapter rs = new MySqlDataAdapter(query);
+            rs.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                DataRow row = dt.Rows[0];
+                Email = Convert.ToString(row["Email"]);
+                nombres= Convert.ToString(row["Usuario"]);
+                contrasena = Convert.ToString(row["Contrasena"]);
+                //ENVIANDO EMAIL
+                EnviarEmail();
+                mensaje = "Estimad@ "+nombres+" , se envio su contraseña al correo: "+Email+" , verifique su bandeja de entrada";
+            }
+            else
+            {
+                mensaje = "El usuario no existe en nuestras bases de datos";
+            }
+
+            return mensaje;
+        }
+        public void EnviarEmail()
+        {
+            // ESTRUCTURA DEL CORREO
+            MailMessage Correo = new MailMessage();
+            Correo.From = new MailAddress("millos2013returns@gmail.com");
+            Correo.To.Add(Email);
+            Correo.Subject = ("RECUPERACION DE CONTRASEÑA");
+            Correo.Body = "Bienvenido "+nombres+" a nuestro sistema de recuperacion de contraseñas\n Su contraseña es: "+contrasena+" \n Esperamos haya sido de ayuda, gracias por usar nuestros servicios.";
+            Correo.Priority = MailPriority.High;
+            // CONFIGURANDO PROTOCOLO DE TRANSFERENCIA SMTP
+            SmtpClient ServerEmail = new SmtpClient();
+            ServerEmail.Credentials = new NetworkCredential("millos2013returns@gmail.com", "DAVIDALE98");
+            ServerEmail.Host = "smtp.gmail.com";
+            ServerEmail.Port = 587;
+            ServerEmail.EnableSsl = true;
+            try
+            {
+                ServerEmail.Send(Correo);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR AL ENVIAR EMAIL " + ex.Message);
+            }
+            Correo.Dispose();
         }
     }
 }

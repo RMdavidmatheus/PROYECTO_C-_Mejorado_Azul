@@ -34,29 +34,27 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.label1 = new System.Windows.Forms.Label();
-            this.Slider = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Contenido = new System.Windows.Forms.Panel();
+            this.ErrorUsu = new System.Windows.Forms.Label();
+            this.ErrorPass = new System.Windows.Forms.Label();
+            this.RecuperarPassword = new System.Windows.Forms.LinkLabel();
+            this.Loguear = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Pass = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.Usuario = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.Minimizar = new Bunifu.Framework.UI.BunifuImageButton();
             this.Twitter = new Bunifu.Framework.UI.BunifuImageButton();
             this.Insta = new Bunifu.Framework.UI.BunifuImageButton();
             this.Cerrar = new Bunifu.Framework.UI.BunifuImageButton();
-            this.ErrorUsu = new System.Windows.Forms.Label();
             this.Face = new Bunifu.Framework.UI.BunifuImageButton();
             this.Web = new Bunifu.Framework.UI.BunifuImageButton();
-            this.ErrorPass = new System.Windows.Forms.Label();
-            this.RecuperarPassword = new System.Windows.Forms.LinkLabel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.Loguear = new Bunifu.Framework.UI.BunifuFlatButton();
             this.IniciarSesion = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.Pass = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.Usuario = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.Slider = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Slider)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Contenido.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Twitter)).BeginInit();
@@ -67,6 +65,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Slider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // FormaApp
@@ -113,26 +113,6 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Bienvenido";
             // 
-            // Slider
-            // 
-            this.Slider.Image = ((System.Drawing.Image)(resources.GetObject("Slider.Image")));
-            this.Slider.Location = new System.Drawing.Point(14, 215);
-            this.Slider.Name = "Slider";
-            this.Slider.Size = new System.Drawing.Size(660, 413);
-            this.Slider.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Slider.TabIndex = 1;
-            this.Slider.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(161, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(412, 93);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // timer1
             // 
             this.timer1.Enabled = true;
@@ -162,6 +142,121 @@
             this.Contenido.Size = new System.Drawing.Size(583, 648);
             this.Contenido.TabIndex = 1;
             this.Contenido.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Contenido_MouseDown);
+            // 
+            // ErrorUsu
+            // 
+            this.ErrorUsu.AutoSize = true;
+            this.ErrorUsu.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ErrorUsu.ForeColor = System.Drawing.Color.Maroon;
+            this.ErrorUsu.Location = new System.Drawing.Point(75, 335);
+            this.ErrorUsu.Name = "ErrorUsu";
+            this.ErrorUsu.Size = new System.Drawing.Size(0, 17);
+            this.ErrorUsu.TabIndex = 9;
+            // 
+            // ErrorPass
+            // 
+            this.ErrorPass.AutoSize = true;
+            this.ErrorPass.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ErrorPass.ForeColor = System.Drawing.Color.Maroon;
+            this.ErrorPass.Location = new System.Drawing.Point(75, 438);
+            this.ErrorPass.Name = "ErrorPass";
+            this.ErrorPass.Size = new System.Drawing.Size(0, 17);
+            this.ErrorPass.TabIndex = 8;
+            // 
+            // RecuperarPassword
+            // 
+            this.RecuperarPassword.ActiveLinkColor = System.Drawing.SystemColors.Highlight;
+            this.RecuperarPassword.AutoSize = true;
+            this.RecuperarPassword.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RecuperarPassword.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.RecuperarPassword.Location = new System.Drawing.Point(215, 542);
+            this.RecuperarPassword.Name = "RecuperarPassword";
+            this.RecuperarPassword.Size = new System.Drawing.Size(161, 17);
+            this.RecuperarPassword.TabIndex = 7;
+            this.RecuperarPassword.TabStop = true;
+            this.RecuperarPassword.Text = "¿Olvido su contraseña?";
+            this.RecuperarPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.RecuperarPassword_LinkClicked);
+            // 
+            // Loguear
+            // 
+            this.Loguear.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.Loguear.BackColor = System.Drawing.Color.DarkGray;
+            this.Loguear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Loguear.BorderRadius = 0;
+            this.Loguear.ButtonText = "Iniciar Sesion";
+            this.Loguear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Loguear.DisabledColor = System.Drawing.Color.Gray;
+            this.Loguear.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Loguear.Iconcolor = System.Drawing.Color.Transparent;
+            this.Loguear.Iconimage = null;
+            this.Loguear.Iconimage_right = null;
+            this.Loguear.Iconimage_right_Selected = null;
+            this.Loguear.Iconimage_Selected = null;
+            this.Loguear.IconMarginLeft = 0;
+            this.Loguear.IconMarginRight = 0;
+            this.Loguear.IconRightVisible = true;
+            this.Loguear.IconRightZoom = 0D;
+            this.Loguear.IconVisible = true;
+            this.Loguear.IconZoom = 90D;
+            this.Loguear.IsTab = false;
+            this.Loguear.Location = new System.Drawing.Point(175, 470);
+            this.Loguear.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Loguear.Name = "Loguear";
+            this.Loguear.Normalcolor = System.Drawing.Color.DarkGray;
+            this.Loguear.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.Loguear.OnHoverTextColor = System.Drawing.Color.White;
+            this.Loguear.selected = false;
+            this.Loguear.Size = new System.Drawing.Size(247, 69);
+            this.Loguear.TabIndex = 4;
+            this.Loguear.Text = "Iniciar Sesion";
+            this.Loguear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Loguear.Textcolor = System.Drawing.Color.Black;
+            this.Loguear.TextFont = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Loguear.Click += new System.EventHandler(this.Loguear_Click);
+            // 
+            // Pass
+            // 
+            this.Pass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Pass.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pass.ForeColor = System.Drawing.Color.Gray;
+            this.Pass.HintForeColor = System.Drawing.Color.Empty;
+            this.Pass.HintText = "";
+            this.Pass.isPassword = false;
+            this.Pass.LineFocusedColor = System.Drawing.SystemColors.Highlight;
+            this.Pass.LineIdleColor = System.Drawing.Color.Gray;
+            this.Pass.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
+            this.Pass.LineThickness = 4;
+            this.Pass.Location = new System.Drawing.Point(78, 376);
+            this.Pass.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.Pass.Name = "Pass";
+            this.Pass.Size = new System.Drawing.Size(454, 57);
+            this.Pass.TabIndex = 1;
+            this.Pass.Text = "INGRESE SU CONTRASEÑA";
+            this.Pass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Pass.Enter += new System.EventHandler(this.Pass_Enter);
+            this.Pass.Leave += new System.EventHandler(this.Pass_Leave);
+            // 
+            // Usuario
+            // 
+            this.Usuario.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Usuario.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Usuario.ForeColor = System.Drawing.Color.Gray;
+            this.Usuario.HintForeColor = System.Drawing.Color.Empty;
+            this.Usuario.HintText = "";
+            this.Usuario.isPassword = false;
+            this.Usuario.LineFocusedColor = System.Drawing.SystemColors.Highlight;
+            this.Usuario.LineIdleColor = System.Drawing.Color.Gray;
+            this.Usuario.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
+            this.Usuario.LineThickness = 4;
+            this.Usuario.Location = new System.Drawing.Point(78, 273);
+            this.Usuario.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.Usuario.Name = "Usuario";
+            this.Usuario.Size = new System.Drawing.Size(454, 57);
+            this.Usuario.TabIndex = 0;
+            this.Usuario.Text = "INGRESE SU USUARIO";
+            this.Usuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Usuario.Enter += new System.EventHandler(this.Usuario_Enter);
+            this.Usuario.Leave += new System.EventHandler(this.Usuario_Leave);
             // 
             // Minimizar
             // 
@@ -219,16 +314,6 @@
             this.Cerrar.Zoom = 10;
             this.Cerrar.Click += new System.EventHandler(this.Cerrar_Click);
             // 
-            // ErrorUsu
-            // 
-            this.ErrorUsu.AutoSize = true;
-            this.ErrorUsu.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ErrorUsu.ForeColor = System.Drawing.Color.Maroon;
-            this.ErrorUsu.Location = new System.Drawing.Point(75, 335);
-            this.ErrorUsu.Name = "ErrorUsu";
-            this.ErrorUsu.Size = new System.Drawing.Size(0, 17);
-            this.ErrorUsu.TabIndex = 9;
-            // 
             // Face
             // 
             this.Face.BackColor = System.Drawing.Color.Gainsboro;
@@ -257,29 +342,6 @@
             this.Web.Zoom = 10;
             this.Web.Click += new System.EventHandler(this.Web_Click);
             // 
-            // ErrorPass
-            // 
-            this.ErrorPass.AutoSize = true;
-            this.ErrorPass.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ErrorPass.ForeColor = System.Drawing.Color.Maroon;
-            this.ErrorPass.Location = new System.Drawing.Point(75, 438);
-            this.ErrorPass.Name = "ErrorPass";
-            this.ErrorPass.Size = new System.Drawing.Size(0, 17);
-            this.ErrorPass.TabIndex = 8;
-            // 
-            // RecuperarPassword
-            // 
-            this.RecuperarPassword.ActiveLinkColor = System.Drawing.SystemColors.Highlight;
-            this.RecuperarPassword.AutoSize = true;
-            this.RecuperarPassword.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RecuperarPassword.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.RecuperarPassword.Location = new System.Drawing.Point(215, 542);
-            this.RecuperarPassword.Name = "RecuperarPassword";
-            this.RecuperarPassword.Size = new System.Drawing.Size(161, 17);
-            this.RecuperarPassword.TabIndex = 7;
-            this.RecuperarPassword.TabStop = true;
-            this.RecuperarPassword.Text = "¿Olvido su contraseña?";
-            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
@@ -299,43 +361,6 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
-            // 
-            // Loguear
-            // 
-            this.Loguear.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.Loguear.BackColor = System.Drawing.Color.DarkGray;
-            this.Loguear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Loguear.BorderRadius = 0;
-            this.Loguear.ButtonText = "Iniciar Sesion";
-            this.Loguear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Loguear.DisabledColor = System.Drawing.Color.Gray;
-            this.Loguear.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Loguear.Iconcolor = System.Drawing.Color.Transparent;
-            this.Loguear.Iconimage = null;
-            this.Loguear.Iconimage_right = null;
-            this.Loguear.Iconimage_right_Selected = null;
-            this.Loguear.Iconimage_Selected = null;
-            this.Loguear.IconMarginLeft = 0;
-            this.Loguear.IconMarginRight = 0;
-            this.Loguear.IconRightVisible = true;
-            this.Loguear.IconRightZoom = 0D;
-            this.Loguear.IconVisible = true;
-            this.Loguear.IconZoom = 90D;
-            this.Loguear.IsTab = false;
-            this.Loguear.Location = new System.Drawing.Point(175, 470);
-            this.Loguear.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.Loguear.Name = "Loguear";
-            this.Loguear.Normalcolor = System.Drawing.Color.DarkGray;
-            this.Loguear.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.Loguear.OnHoverTextColor = System.Drawing.Color.White;
-            this.Loguear.selected = false;
-            this.Loguear.Size = new System.Drawing.Size(247, 69);
-            this.Loguear.TabIndex = 4;
-            this.Loguear.Text = "Iniciar Sesion";
-            this.Loguear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Loguear.Textcolor = System.Drawing.Color.Black;
-            this.Loguear.TextFont = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Loguear.Click += new System.EventHandler(this.Loguear_Click);
             // 
             // IniciarSesion
             // 
@@ -382,49 +407,25 @@
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
-            // Pass
+            // Slider
             // 
-            this.Pass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Pass.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pass.ForeColor = System.Drawing.Color.Gray;
-            this.Pass.HintForeColor = System.Drawing.Color.Empty;
-            this.Pass.HintText = "";
-            this.Pass.isPassword = false;
-            this.Pass.LineFocusedColor = System.Drawing.SystemColors.Highlight;
-            this.Pass.LineIdleColor = System.Drawing.Color.Gray;
-            this.Pass.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
-            this.Pass.LineThickness = 4;
-            this.Pass.Location = new System.Drawing.Point(78, 376);
-            this.Pass.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.Pass.Name = "Pass";
-            this.Pass.Size = new System.Drawing.Size(454, 57);
-            this.Pass.TabIndex = 1;
-            this.Pass.Text = "INGRESE SU CONTRASEÑA";
-            this.Pass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Pass.Enter += new System.EventHandler(this.Pass_Enter);
-            this.Pass.Leave += new System.EventHandler(this.Pass_Leave);
+            this.Slider.Image = ((System.Drawing.Image)(resources.GetObject("Slider.Image")));
+            this.Slider.Location = new System.Drawing.Point(14, 215);
+            this.Slider.Name = "Slider";
+            this.Slider.Size = new System.Drawing.Size(660, 413);
+            this.Slider.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Slider.TabIndex = 1;
+            this.Slider.TabStop = false;
             // 
-            // Usuario
+            // pictureBox1
             // 
-            this.Usuario.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Usuario.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Usuario.ForeColor = System.Drawing.Color.Gray;
-            this.Usuario.HintForeColor = System.Drawing.Color.Empty;
-            this.Usuario.HintText = "";
-            this.Usuario.isPassword = false;
-            this.Usuario.LineFocusedColor = System.Drawing.SystemColors.Highlight;
-            this.Usuario.LineIdleColor = System.Drawing.Color.Gray;
-            this.Usuario.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
-            this.Usuario.LineThickness = 4;
-            this.Usuario.Location = new System.Drawing.Point(78, 273);
-            this.Usuario.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.Usuario.Name = "Usuario";
-            this.Usuario.Size = new System.Drawing.Size(454, 57);
-            this.Usuario.TabIndex = 0;
-            this.Usuario.Text = "INGRESE SU USUARIO";
-            this.Usuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Usuario.Enter += new System.EventHandler(this.Usuario_Enter);
-            this.Usuario.Leave += new System.EventHandler(this.Usuario_Leave);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(161, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(412, 93);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // LogIn
             // 
@@ -442,8 +443,6 @@
             this.Text = "LogIn";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Slider)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Contenido.ResumeLayout(false);
             this.Contenido.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).EndInit();
@@ -455,6 +454,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Slider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
