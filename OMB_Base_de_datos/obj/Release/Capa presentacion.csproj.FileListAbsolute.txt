@@ -30,3 +30,4 @@ C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\C
 C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\Capa presentacion.csproj.CopyComplete
 C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\OMB_Base_de_datos.exe
 C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\OMB_Base_de_datos.pdb
+C:\Users\David PC\source\repos\OMB_Base_de_datos\OMB_Base_de_datos\obj\Release\OMB_Base_de_datos.Frames.Recuperacion_pass.resources
