@@ -116,7 +116,6 @@ namespace OMB_Base_de_datos.Frames
                 Editar.NumPoliza.Text = Listado.CurrentRow.Cells[0].Value.ToString();
                 Editar.VigenciaIni.Text = Listado.CurrentRow.Cells[11].Value.ToString();
                 Editar.Vigencia.Text = Listado.CurrentRow.Cells[12].Value.ToString();
-                //Editar.ValorPrima.Text = Listado.CurrentRow.Cells[13].Value.ToString();
 
                 // EXTRAYENDO DATOS QUE NO ESTAN EN EL DATAGRID, POLIZA
                 DataTable dt4 = Metodos.Extraer_Pol(Editar.NumPoliza.Text);

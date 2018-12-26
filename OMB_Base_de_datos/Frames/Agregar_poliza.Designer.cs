@@ -62,6 +62,7 @@
             this.CalendarBen = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Poliza = new System.Windows.Forms.TabPage();
+            this.ValorPrima = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.VigenciaIni = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.CalendarPolIni = new Bunifu.Framework.UI.BunifuImageButton();
             this.ActualizarPol = new System.Windows.Forms.Button();
@@ -85,7 +86,6 @@
             this.CalendarVeh = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.ValorPrima = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.Contenido.SuspendLayout();
@@ -690,6 +690,28 @@
             this.Poliza.TabIndex = 2;
             this.Poliza.Text = "Poliza";
             // 
+            // ValorPrima
+            // 
+            this.ValorPrima.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ValorPrima.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ValorPrima.ForeColor = System.Drawing.Color.DimGray;
+            this.ValorPrima.HintForeColor = System.Drawing.Color.Empty;
+            this.ValorPrima.HintText = "";
+            this.ValorPrima.isPassword = false;
+            this.ValorPrima.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.ValorPrima.LineIdleColor = System.Drawing.Color.Gray;
+            this.ValorPrima.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
+            this.ValorPrima.LineThickness = 4;
+            this.ValorPrima.Location = new System.Drawing.Point(37, 492);
+            this.ValorPrima.Margin = new System.Windows.Forms.Padding(4);
+            this.ValorPrima.Name = "ValorPrima";
+            this.ValorPrima.Size = new System.Drawing.Size(331, 44);
+            this.ValorPrima.TabIndex = 34;
+            this.ValorPrima.Text = "Valor Prima";
+            this.ValorPrima.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ValorPrima.Enter += new System.EventHandler(this.ValorPrima_Enter);
+            this.ValorPrima.Leave += new System.EventHandler(this.ValorPrima_Leave);
+            // 
             // VigenciaIni
             // 
             this.VigenciaIni.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -1096,28 +1118,6 @@
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // ValorPrima
-            // 
-            this.ValorPrima.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ValorPrima.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ValorPrima.ForeColor = System.Drawing.Color.DimGray;
-            this.ValorPrima.HintForeColor = System.Drawing.Color.Empty;
-            this.ValorPrima.HintText = "";
-            this.ValorPrima.isPassword = false;
-            this.ValorPrima.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.ValorPrima.LineIdleColor = System.Drawing.Color.Gray;
-            this.ValorPrima.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.ValorPrima.LineThickness = 4;
-            this.ValorPrima.Location = new System.Drawing.Point(37, 492);
-            this.ValorPrima.Margin = new System.Windows.Forms.Padding(4);
-            this.ValorPrima.Name = "ValorPrima";
-            this.ValorPrima.Size = new System.Drawing.Size(331, 44);
-            this.ValorPrima.TabIndex = 34;
-            this.ValorPrima.Text = "Valor Prima";
-            this.ValorPrima.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.ValorPrima.Enter += new System.EventHandler(this.ValorPrima_Enter);
-            this.ValorPrima.Leave += new System.EventHandler(this.ValorPrima_Leave);
             // 
             // Agregar_poliza
             // 
