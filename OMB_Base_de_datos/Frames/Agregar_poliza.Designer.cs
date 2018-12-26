@@ -62,6 +62,8 @@
             this.CalendarBen = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Poliza = new System.Windows.Forms.TabPage();
+            this.VigenciaIni = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.CalendarPolIni = new Bunifu.Framework.UI.BunifuImageButton();
             this.ActualizarPol = new System.Windows.Forms.Button();
             this.TpPoliza = new System.Windows.Forms.ComboBox();
             this.GuardarPol = new System.Windows.Forms.Button();
@@ -83,6 +85,7 @@
             this.CalendarVeh = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.ValorPrima = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.Contenido.SuspendLayout();
@@ -93,6 +96,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.CalendarBen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Poliza.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CalendarPolIni)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CalendarPol)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.Vehiculo.SuspendLayout();
@@ -669,6 +673,9 @@
             // Poliza
             // 
             this.Poliza.BackColor = System.Drawing.Color.Gainsboro;
+            this.Poliza.Controls.Add(this.ValorPrima);
+            this.Poliza.Controls.Add(this.VigenciaIni);
+            this.Poliza.Controls.Add(this.CalendarPolIni);
             this.Poliza.Controls.Add(this.ActualizarPol);
             this.Poliza.Controls.Add(this.TpPoliza);
             this.Poliza.Controls.Add(this.GuardarPol);
@@ -683,6 +690,41 @@
             this.Poliza.TabIndex = 2;
             this.Poliza.Text = "Poliza";
             // 
+            // VigenciaIni
+            // 
+            this.VigenciaIni.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.VigenciaIni.Enabled = false;
+            this.VigenciaIni.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VigenciaIni.ForeColor = System.Drawing.Color.Black;
+            this.VigenciaIni.HintForeColor = System.Drawing.Color.Empty;
+            this.VigenciaIni.HintText = "";
+            this.VigenciaIni.isPassword = false;
+            this.VigenciaIni.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.VigenciaIni.LineIdleColor = System.Drawing.Color.Gray;
+            this.VigenciaIni.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
+            this.VigenciaIni.LineThickness = 4;
+            this.VigenciaIni.Location = new System.Drawing.Point(37, 352);
+            this.VigenciaIni.Margin = new System.Windows.Forms.Padding(4);
+            this.VigenciaIni.Name = "VigenciaIni";
+            this.VigenciaIni.Size = new System.Drawing.Size(185, 44);
+            this.VigenciaIni.TabIndex = 32;
+            this.VigenciaIni.Text = "Fecha Vigencia Inicial";
+            this.VigenciaIni.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // CalendarPolIni
+            // 
+            this.CalendarPolIni.BackColor = System.Drawing.Color.Gainsboro;
+            this.CalendarPolIni.Image = ((System.Drawing.Image)(resources.GetObject("CalendarPolIni.Image")));
+            this.CalendarPolIni.ImageActive = null;
+            this.CalendarPolIni.Location = new System.Drawing.Point(229, 359);
+            this.CalendarPolIni.Name = "CalendarPolIni";
+            this.CalendarPolIni.Size = new System.Drawing.Size(39, 43);
+            this.CalendarPolIni.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CalendarPolIni.TabIndex = 33;
+            this.CalendarPolIni.TabStop = false;
+            this.CalendarPolIni.Zoom = 10;
+            this.CalendarPolIni.Click += new System.EventHandler(this.CalendarPolIni_Click);
+            // 
             // ActualizarPol
             // 
             this.ActualizarPol.BackColor = System.Drawing.Color.DarkGray;
@@ -691,7 +733,7 @@
             this.ActualizarPol.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.ActualizarPol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ActualizarPol.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ActualizarPol.Location = new System.Drawing.Point(106, 442);
+            this.ActualizarPol.Location = new System.Drawing.Point(106, 579);
             this.ActualizarPol.Name = "ActualizarPol";
             this.ActualizarPol.Size = new System.Drawing.Size(207, 47);
             this.ActualizarPol.TabIndex = 5;
@@ -730,7 +772,7 @@
             this.GuardarPol.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.GuardarPol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GuardarPol.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GuardarPol.Location = new System.Drawing.Point(106, 442);
+            this.GuardarPol.Location = new System.Drawing.Point(106, 579);
             this.GuardarPol.Name = "GuardarPol";
             this.GuardarPol.Size = new System.Drawing.Size(207, 43);
             this.GuardarPol.TabIndex = 6;
@@ -751,12 +793,12 @@
             this.Vigencia.LineIdleColor = System.Drawing.Color.Gray;
             this.Vigencia.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
             this.Vigencia.LineThickness = 4;
-            this.Vigencia.Location = new System.Drawing.Point(37, 363);
+            this.Vigencia.Location = new System.Drawing.Point(37, 420);
             this.Vigencia.Margin = new System.Windows.Forms.Padding(4);
             this.Vigencia.Name = "Vigencia";
             this.Vigencia.Size = new System.Drawing.Size(185, 44);
             this.Vigencia.TabIndex = 4;
-            this.Vigencia.Text = "Fecha Vigencia";
+            this.Vigencia.Text = "Fecha Vigencia Final";
             this.Vigencia.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // NumPoliza
@@ -814,7 +856,7 @@
             this.CalendarPol.BackColor = System.Drawing.Color.Gainsboro;
             this.CalendarPol.Image = ((System.Drawing.Image)(resources.GetObject("CalendarPol.Image")));
             this.CalendarPol.ImageActive = null;
-            this.CalendarPol.Location = new System.Drawing.Point(229, 370);
+            this.CalendarPol.Location = new System.Drawing.Point(229, 427);
             this.CalendarPol.Name = "CalendarPol";
             this.CalendarPol.Size = new System.Drawing.Size(39, 43);
             this.CalendarPol.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1055,6 +1097,28 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // ValorPrima
+            // 
+            this.ValorPrima.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ValorPrima.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ValorPrima.ForeColor = System.Drawing.Color.DimGray;
+            this.ValorPrima.HintForeColor = System.Drawing.Color.Empty;
+            this.ValorPrima.HintText = "";
+            this.ValorPrima.isPassword = false;
+            this.ValorPrima.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.ValorPrima.LineIdleColor = System.Drawing.Color.Gray;
+            this.ValorPrima.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
+            this.ValorPrima.LineThickness = 4;
+            this.ValorPrima.Location = new System.Drawing.Point(37, 492);
+            this.ValorPrima.Margin = new System.Windows.Forms.Padding(4);
+            this.ValorPrima.Name = "ValorPrima";
+            this.ValorPrima.Size = new System.Drawing.Size(331, 44);
+            this.ValorPrima.TabIndex = 34;
+            this.ValorPrima.Text = "Valor Prima";
+            this.ValorPrima.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ValorPrima.Enter += new System.EventHandler(this.ValorPrima_Enter);
+            this.ValorPrima.Leave += new System.EventHandler(this.ValorPrima_Leave);
+            // 
             // Agregar_poliza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1081,6 +1145,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.CalendarBen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.Poliza.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.CalendarPolIni)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CalendarPol)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.Vehiculo.ResumeLayout(false);
@@ -1145,5 +1210,8 @@
         public System.Windows.Forms.TabPage Tomador;
         public System.Windows.Forms.TabPage Beneficiario;
         public System.Windows.Forms.TabPage Poliza;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox VigenciaIni;
+        private Bunifu.Framework.UI.BunifuImageButton CalendarPolIni;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox ValorPrima;
     }
 }

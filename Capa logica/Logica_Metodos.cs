@@ -199,7 +199,7 @@ namespace Capa_logica
         {
             // TOMANDO DATOS CONCRETOS DE POLIZA
             DataTable dt = new DataTable();
-            MySqlCommand query = new MySqlCommand("select p.tipo_poliza_tipIdRamo , p.aseguradora_aseId from poliza p where p.pol_NumeroPoliza = '" + Num_pol + "' ", bd.GetConnection());
+            MySqlCommand query = new MySqlCommand("select p.tipo_poliza_tipIdRamo , p.aseguradora_aseId, p.polValorPrima from poliza p where p.pol_NumeroPoliza = '" + Num_pol + "' ", bd.GetConnection());
             MySqlDataAdapter rs = new MySqlDataAdapter(query);
             rs.Fill(dt);
 

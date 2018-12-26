@@ -436,10 +436,14 @@ namespace OMB_Base_de_datos.Frames
             }
             else if (Vigencia.Text.Equals("Fecha Vigencia"))
             {
-                MessageBox.Show("Seleccione una fecha de vigencia");
+                MessageBox.Show("Seleccione una fecha de vigencia final");
+            }
+            else if (VigenciaIni.Text.Equals("Fecha Vigencia Inicial"))
+            {
+                MessageBox.Show("Seleccione una fecha de vigencia inicial");
             }
             // UPDATE POLIZA
-            string query = "update poliza set polVigencia='" + Vigencia.Text + "' WHERE pol_NumeroPoliza='" + NumPoliza.Text + "'";
+            string query = "update poliza set polVigenciaInicial='"+VigenciaIni.Text+"', polVigenciaFinal='" + Vigencia.Text + "', polValorPrima='"+ValorPrima.Text+"' WHERE pol_NumeroPoliza='" + NumPoliza.Text + "'";
 
             if (Metodos.Insertar_Datos_Poliza_General(query))
             {
@@ -462,9 +466,9 @@ namespace OMB_Base_de_datos.Frames
                 MessageBox.Show("Error al actualizar la poliza", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             // ACTUALIZAR AUTOMATICAMENTE POLIZA SI ESTA ACTIVA O INACTIVA
-            string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigencia >= NOW()  AND p.polEstado = 'INACTIVO'";
+            string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigenciaFinal >= NOW()  AND p.polEstado = 'INACTIVO'";
             Metodos.Insertar_Datos_Poliza_General(PolqueryActivo);
-            string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigencia < NOW() AND p.polEstado = 'ACTIVO'";
+            string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigenciaFinal < NOW() AND p.polEstado = 'ACTIVO'";
             Metodos.Insertar_Datos_Poliza_General(PolqueryInactivo);
             // FINALIZACION POLIZA UPDATE
 
@@ -490,9 +494,13 @@ namespace OMB_Base_de_datos.Frames
             {
                 MessageBox.Show("Seleccione una aseguradora");
             }
-            else if (Vigencia.Text.Equals("Fecha Vigencia"))
+            else if (Vigencia.Text.Equals("Fecha Vigencia Final"))
             {
-                MessageBox.Show("Seleccione una fecha de vigencia");
+                MessageBox.Show("Seleccione una fecha de vigencia final");
+            }
+            else if (VigenciaIni.Text.Equals("Fecha Vigencia Inicial"))
+            {
+                MessageBox.Show("Seleccione una fecha de vigencia inicial");
             }
             int ComboboxCorrectoTP = TpPoliza.SelectedIndex + 1;
             string DatosTP = ComboboxCorrectoTP.ToString();
@@ -501,8 +509,8 @@ namespace OMB_Base_de_datos.Frames
             string DatosAse = ComboboxCorrectoAse.ToString();
 
             //// INSERT POLIZA
-            string query = "insert into poliza(pol_NumeroPoliza,tipo_poliza_tipIdRamo,aseguradora_aseId,tomador_tomDocumento,beneficiario_benDocumento,polVigencia)" +
-            " values('" + NumPoliza.Text + "','" + DatosTP + "','" + DatosAse + "','" + DocTom.Text + "','" + DocBen.Text + "','" + Vigencia.Text + "')";
+            string query = "insert into poliza(pol_NumeroPoliza,tipo_poliza_tipIdRamo,aseguradora_aseId,tomador_tomDocumento,beneficiario_benDocumento,polVigenciaInicial,polVigenciaFinal,polValorPrima)" +
+            " values('" + NumPoliza.Text + "','" + DatosTP + "','" + DatosAse + "','" + DocTom.Text + "','" + DocBen.Text + "','" + VigenciaIni.Text + "','"+Vigencia.Text+"','"+ValorPrima.Text+"')";
 
             if (Metodos.Insertar_Datos_Poliza_General(query))
             {
@@ -525,9 +533,9 @@ namespace OMB_Base_de_datos.Frames
                 MessageBox.Show("Error al ingresar la poliza", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             // ACTUALIZAR AUTOMATICAMENTE POLIZA SI ESTA ACTIVA O INACTIVA
-            string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigencia >= NOW()";
+            string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigenciaFinal >= NOW()";
             Metodos.Insertar_Datos_Poliza_General(PolqueryActivo);
-            string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigencia < NOW()";
+            string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigenciaFinal < NOW()";
             Metodos.Insertar_Datos_Poliza_General(PolqueryInactivo);
             // FINALIZACION POLIZA UPDATE
 
@@ -590,9 +598,9 @@ namespace OMB_Base_de_datos.Frames
 
             }
             // ACTUALIZAR AUTOMATICAMENTE POLIZA SI ESTA ACTIVA O INACTIVA
-            string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigencia >= NOW()  AND p.polEstado = 'INACTIVO'";
+            string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigenciaFinal >= NOW()  AND p.polEstado = 'INACTIVO'";
             Metodos.Insertar_Datos_Poliza_General(PolqueryActivo);
-            string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigencia < NOW() AND p.polEstado = 'ACTIVO'";
+            string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigenciaFinal < NOW() AND p.polEstado = 'ACTIVO'";
             Metodos.Insertar_Datos_Poliza_General(PolqueryInactivo);
             // FINALIZACION POLIZA UPDATE
 
@@ -657,9 +665,9 @@ namespace OMB_Base_de_datos.Frames
                 MessageBox.Show("Error al ingresar Tomador","ERROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
                 // ACTUALIZAR AUTOMATICAMENTE POLIZA SI ESTA ACTIVA O INACTIVA
-                string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigencia >= NOW()  AND p.polEstado = 'INACTIVO'";
+                string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigenciaFinal >= NOW()  AND p.polEstado = 'INACTIVO'";
                 Metodos.Insertar_Datos_Poliza_General(PolqueryActivo);
-                string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigencia < NOW() AND p.polEstado = 'ACTIVO'";
+                string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigenciaFinal < NOW() AND p.polEstado = 'ACTIVO'";
                 Metodos.Insertar_Datos_Poliza_General(PolqueryInactivo);
                 // FINALIZACION POLIZA UPDATE
 
@@ -727,9 +735,9 @@ namespace OMB_Base_de_datos.Frames
             // FINALIZACION DEL INSERTAR
             }
             // ACTUALIZAR AUTOMATICAMENTE POLIZA SI ESTA ACTIVA O INACTIVA
-            string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigencia >= NOW()  AND p.polEstado = 'INACTIVO'";
+            string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigenciaFinal >= NOW()  AND p.polEstado = 'INACTIVO'";
             Metodos.Insertar_Datos_Poliza_General(PolqueryActivo);
-            string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigencia < NOW() AND p.polEstado = 'ACTIVO'";
+            string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigenciaFinal < NOW() AND p.polEstado = 'ACTIVO'";
             Metodos.Insertar_Datos_Poliza_General(PolqueryInactivo);
             // FINALIZACION POLIZA UPDATE
 
@@ -794,9 +802,9 @@ namespace OMB_Base_de_datos.Frames
                 // FINALIZACION DEL UPDATE
             }
             // ACTUALIZAR AUTOMATICAMENTE POLIZA SI ESTA ACTIVA O INACTIVA
-            string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigencia >= NOW()  AND p.polEstado = 'INACTIVO'";
+            string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigenciaFinal >= NOW()  AND p.polEstado = 'INACTIVO'";
             Metodos.Insertar_Datos_Poliza_General(PolqueryActivo);
-            string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigencia < NOW() AND p.polEstado = 'ACTIVO'";
+            string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigenciaFinal < NOW() AND p.polEstado = 'ACTIVO'";
             Metodos.Insertar_Datos_Poliza_General(PolqueryInactivo);
             // FINALIZACION POLIZA UPDATE
 
@@ -860,9 +868,9 @@ namespace OMB_Base_de_datos.Frames
                 }
             }
             // ACTUALIZAR AUTOMATICAMENTE POLIZA SI ESTA ACTIVA O INACTIVA
-            string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigencia >= NOW()  AND p.polEstado = 'INACTIVO'";
+            string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigenciaFinal >= NOW()  AND p.polEstado = 'INACTIVO'";
             Metodos.Insertar_Datos_Poliza_General(PolqueryActivo);
-            string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigencia < NOW() AND p.polEstado = 'ACTIVO'";
+            string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigenciaFinal < NOW() AND p.polEstado = 'ACTIVO'";
             Metodos.Insertar_Datos_Poliza_General(PolqueryInactivo);
             // FINALIZACION POLIZA UPDATE
 
@@ -911,9 +919,9 @@ namespace OMB_Base_de_datos.Frames
 
             }
             // ACTUALIZAR AUTOMATICAMENTE POLIZA SI ESTA ACTIVA O INACTIVA
-            string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigencia >= NOW()  AND p.polEstado = 'INACTIVO'";
+            string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigenciaFinal >= NOW()  AND p.polEstado = 'INACTIVO'";
             Metodos.Insertar_Datos_Poliza_General(PolqueryActivo);
-            string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigencia < NOW() AND p.polEstado = 'ACTIVO'";
+            string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigenciaFinal < NOW() AND p.polEstado = 'ACTIVO'";
             Metodos.Insertar_Datos_Poliza_General(PolqueryInactivo);
             // FINALIZACION POLIZA UPDATE
 
@@ -923,6 +931,30 @@ namespace OMB_Base_de_datos.Frames
             string SOATqueryInactivo = "UPDATE vehiculo v set v.veh_soat_estado = 'INACTIVO'where v.vehVigenciaSOAT < NOW()";
             Metodos.Insertar_Datos_Poliza_General(SOATqueryInactivo);
             // FIN
+        }
+
+        private void CalendarPolIni_Click(object sender, EventArgs e)
+        {
+            Fechas.ShowDialog();
+            Fechas.MandarFechas(VigenciaIni);
+        }
+
+        private void ValorPrima_Enter(object sender, EventArgs e)
+        {
+            if (ValorPrima.Text == "Valor Prima")
+            {
+                ValorPrima.Text = "";
+                ValorPrima.ForeColor = Color.Black;
+            }
+        }
+
+        private void ValorPrima_Leave(object sender, EventArgs e)
+        {
+            if (ValorPrima.Text == "")
+            {
+                ValorPrima.Text = "Valor Prima";
+                ValorPrima.ForeColor = Color.DimGray;
+            }
         }
     }
 }

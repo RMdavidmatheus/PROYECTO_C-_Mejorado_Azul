@@ -50,9 +50,9 @@ namespace OMB_Base_de_datos.Frames
             {
                 Metodos.LlenarTabla_Poliza(Listado);
                 // ACTUALIZAR AUTOMATICAMENTE POLIZA SI ESTA ACTIVA O INACTIVA
-                string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigencia >= NOW()  AND p.polEstado = 'INACTIVO'";
+                string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigenciaFinal >= NOW()  AND p.polEstado = 'INACTIVO'";
                 Metodos.Insertar_Datos_Poliza_General(PolqueryActivo);
-                string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigencia < NOW() AND p.polEstado = 'ACTIVO'";
+                string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigenciaFinal < NOW() AND p.polEstado = 'ACTIVO'";
                 Metodos.Insertar_Datos_Poliza_General(PolqueryInactivo);
                 // FINALIZACION POLIZA UPDATE
 
@@ -67,9 +67,9 @@ namespace OMB_Base_de_datos.Frames
             {
                 Metodos.LlenarTabla_Poliza(Listado);
                 // ACTUALIZAR AUTOMATICAMENTE POLIZA SI ESTA ACTIVA O INACTIVA
-                string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigencia >= NOW()  AND p.polEstado = 'INACTIVO'";
+                string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigenciaFinal >= NOW()  AND p.polEstado = 'INACTIVO'";
                 Metodos.Insertar_Datos_Poliza_General(PolqueryActivo);
-                string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigencia < NOW() AND p.polEstado = 'ACTIVO'";
+                string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigenciaFinal < NOW() AND p.polEstado = 'ACTIVO'";
                 Metodos.Insertar_Datos_Poliza_General(PolqueryInactivo);
                 // FINALIZACION POLIZA UPDATE
 
@@ -114,7 +114,9 @@ namespace OMB_Base_de_datos.Frames
                 Editar.TelBen.ForeColor = Color.Black;
 
                 Editar.NumPoliza.Text = Listado.CurrentRow.Cells[0].Value.ToString();
-                Editar.Vigencia.Text = Listado.CurrentRow.Cells[11].Value.ToString();
+                Editar.VigenciaIni.Text = Listado.CurrentRow.Cells[11].Value.ToString();
+                Editar.Vigencia.Text = Listado.CurrentRow.Cells[12].Value.ToString();
+                //Editar.ValorPrima.Text = Listado.CurrentRow.Cells[13].Value.ToString();
 
                 // EXTRAYENDO DATOS QUE NO ESTAN EN EL DATAGRID, POLIZA
                 DataTable dt4 = Metodos.Extraer_Pol(Editar.NumPoliza.Text);
@@ -125,6 +127,7 @@ namespace OMB_Base_de_datos.Frames
                     seleccionAse = Convert.ToInt32(row["aseguradora_aseId"]);
                     Editar.TpPoliza.SelectedIndex = seleccionTP-1; 
                     Editar.Ase.SelectedIndex = seleccionAse-1;
+                    Editar.ValorPrima.Text = Convert.ToString(row["polValorPrima"]);
                 }
                 //PONIENDO VISIBLE LA PESTAÑA VEHICULO CUANDO LA POLIZA ES EXCLUSIVAMENTE DE AUTOS
                 if (Editar.TpPoliza.SelectedItem.Equals("AUTOS"))
@@ -216,9 +219,9 @@ namespace OMB_Base_de_datos.Frames
             {
                 Metodos.LlenarTabla_Poliza(Listado);
                 // ACTUALIZAR AUTOMATICAMENTE POLIZA SI ESTA ACTIVA O INACTIVA
-                string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigencia >= NOW()  AND p.polEstado = 'INACTIVO'";
+                string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigenciaFinal >= NOW()  AND p.polEstado = 'INACTIVO'";
                 Metodos.Insertar_Datos_Poliza_General(PolqueryActivo);
-                string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigencia < NOW() AND p.polEstado = 'ACTIVO'";
+                string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigenciaFinal < NOW() AND p.polEstado = 'ACTIVO'";
                 Metodos.Insertar_Datos_Poliza_General(PolqueryInactivo);
                 // FINALIZACION POLIZA UPDATE
 
@@ -233,9 +236,9 @@ namespace OMB_Base_de_datos.Frames
             {
                 Metodos.LlenarTabla_Poliza(Listado);
                 // ACTUALIZAR AUTOMATICAMENTE POLIZA SI ESTA ACTIVA O INACTIVA
-                string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigencia >= NOW()  AND p.polEstado = 'INACTIVO'";
+                string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigenciaFinal >= NOW()  AND p.polEstado = 'INACTIVO'";
                 Metodos.Insertar_Datos_Poliza_General(PolqueryActivo);
-                string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigencia < NOW() AND p.polEstado = 'ACTIVO'";
+                string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigenciaFinal < NOW() AND p.polEstado = 'ACTIVO'";
                 Metodos.Insertar_Datos_Poliza_General(PolqueryInactivo);
                 // FINALIZACION POLIZA UPDATE
 
@@ -465,9 +468,9 @@ namespace OMB_Base_de_datos.Frames
             }
                     Metodos.LlenarTabla_Poliza(Listado);
             // ACTUALIZAR AUTOMATICAMENTE POLIZA SI ESTA ACTIVA O INACTIVA
-            string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigencia >= NOW()  AND p.polEstado = 'INACTIVO'";
+            string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigenciaFinal >= NOW()  AND p.polEstado = 'INACTIVO'";
             Metodos.Insertar_Datos_Poliza_General(PolqueryActivo);
-            string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigencia < NOW() AND p.polEstado = 'ACTIVO'";
+            string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigenciaFinal < NOW() AND p.polEstado = 'ACTIVO'";
             Metodos.Insertar_Datos_Poliza_General(PolqueryInactivo);
             // FINALIZACION POLIZA UPDATE
 

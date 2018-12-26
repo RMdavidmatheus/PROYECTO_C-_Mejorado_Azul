@@ -184,9 +184,9 @@ namespace OMB_Base_de_datos
             Title.Text = "Aplicativo OMB SEGUROS";
             Metodos.Abrir_Formulario_En_Panel(Contenido, new Principal(Usu));
             // ACTUALIZAR AUTOMATICAMENTE POLIZA SI ESTA ACTIVA O INACTIVA
-            string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigencia >= NOW()  AND p.polEstado = 'INACTIVO'";
+            string PolqueryActivo = "UPDATE poliza p set p.polEstado = 'ACTIVO'where p.polVigenciaFinal >= NOW()  AND p.polEstado = 'INACTIVO'";
             Metodos.Insertar_Datos_Poliza_General(PolqueryActivo);
-            string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigencia < NOW() AND p.polEstado = 'ACTIVO'";
+            string PolqueryInactivo = "UPDATE poliza p set p.polEstado = 'INACTIVO'where p.polVigenciaFinal < NOW() AND p.polEstado = 'ACTIVO'";
             Metodos.Insertar_Datos_Poliza_General(PolqueryInactivo);
             // FINALIZACION POLIZA UPDATE
 
