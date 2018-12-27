@@ -95,7 +95,7 @@ namespace OMB_Base_de_datos.Frames
 
         private void PdfVeh_Click(object sender, EventArgs e)
         {
-            iTextSharp.text.Image Logo = iTextSharp.text.Image.GetInstance("C:\\Users\\David PC\\source\\repos\\OMB_Base_de_datos\\OMB_Base_de_datos\\Resources\\LOGO2.png");
+            iTextSharp.text.Image Logo = iTextSharp.text.Image.GetInstance("C:\\Program Files\\OMB Seguros\\SetUp OMB\\Images\\LOGO2.png");
             iTextSharp.text.Font palatino = FontFactory.GetFont("MS GOTHIC", 15, iTextSharp.text.Font.BOLD);
             palatino.SetColor(246, 246, 246);
             //CREANDO EL ARCHIVO CON ITEXTSHARP

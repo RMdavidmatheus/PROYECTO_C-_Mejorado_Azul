@@ -16,30 +16,18 @@
         "Entry"
         {
         "MsmKey" = "8:_013835AD6B833C31571D09CBC000D626"
+        "OwnerKey" = "8:_58C21F26D08B609EE462E010CF1E09D8"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_013835AD6B833C31571D09CBC000D626"
         "OwnerKey" = "8:_187D3304A62D414AA4B634861CDFC0FB"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_013835AD6B833C31571D09CBC000D626"
-        "OwnerKey" = "8:_36844B734C93416091424AFCE0866629"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_013835AD6B833C31571D09CBC000D626"
-        "OwnerKey" = "8:_78D1FFAE8C307490701BE5E452855FBB"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_0C6A5262D04380A681D8A45E08E78D3B"
-        "OwnerKey" = "8:_187D3304A62D414AA4B634861CDFC0FB"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_0C6A5262D04380A681D8A45E08E78D3B"
         "OwnerKey" = "8:_36844B734C93416091424AFCE0866629"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -47,6 +35,18 @@
         {
         "MsmKey" = "8:_0C6A5262D04380A681D8A45E08E78D3B"
         "OwnerKey" = "8:_013835AD6B833C31571D09CBC000D626"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_0C6A5262D04380A681D8A45E08E78D3B"
+        "OwnerKey" = "8:_187D3304A62D414AA4B634861CDFC0FB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_0C6A5262D04380A681D8A45E08E78D3B"
+        "OwnerKey" = "8:_36844B734C93416091424AFCE0866629"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -87,13 +87,25 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_58C21F26D08B609EE462E010CF1E09D8"
+        "OwnerKey" = "8:_36844B734C93416091424AFCE0866629"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5FED91504312C2938CC719FDA4243FF4"
+        "OwnerKey" = "8:_36844B734C93416091424AFCE0866629"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_5FED91504312C2938CC719FDA4243FF4"
         "OwnerKey" = "8:_187D3304A62D414AA4B634861CDFC0FB"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_5FED91504312C2938CC719FDA4243FF4"
+        "MsmKey" = "8:_636E535465F7C627EA0B2418A4986E48"
         "OwnerKey" = "8:_36844B734C93416091424AFCE0866629"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -105,14 +117,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_636E535465F7C627EA0B2418A4986E48"
-        "OwnerKey" = "8:_36844B734C93416091424AFCE0866629"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_78D1FFAE8C307490701BE5E452855FBB"
-        "OwnerKey" = "8:_36844B734C93416091424AFCE0866629"
+        "MsmKey" = "8:_6A3E9525168B4DD29DAE2BE2980FD265"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -160,25 +166,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_78D1FFAE8C307490701BE5E452855FBB"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_86399EAC0F89C17F16BF9BEB5E352021"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_5FED91504312C2938CC719FDA4243FF4"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_636E535465F7C627EA0B2418A4986E48"
+        "OwnerKey" = "8:_58C21F26D08B609EE462E010CF1E09D8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -191,6 +185,18 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_0C6A5262D04380A681D8A45E08E78D3B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_86399EAC0F89C17F16BF9BEB5E352021"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_636E535465F7C627EA0B2418A4986E48"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -218,6 +224,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
             }
         }
         "Release"
@@ -242,6 +256,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
             }
         }
     }
@@ -414,6 +436,37 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_58C21F26D08B609EE462E010CF1E09D8"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Capa logica, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_58C21F26D08B609EE462E010CF1E09D8"
+                    {
+                    "Name" = "8:Capa logica.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Capa logica.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_51B4A34E6151407D8085F21834FDD269"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_5FED91504312C2938CC719FDA4243FF4"
             {
             "AssemblyRegister" = "3:1"
@@ -476,23 +529,12 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_78D1FFAE8C307490701BE5E452855FBB"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6A3E9525168B4DD29DAE2BE2980FD265"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Capa logica, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_78D1FFAE8C307490701BE5E452855FBB"
-                    {
-                    "Name" = "8:Capa logica.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Capa logica.dll"
-            "TargetName" = "8:"
+            "SourcePath" = "8:..\\OMB_Base_de_datos\\Resources\\LOGO2.png"
+            "TargetName" = "8:LOGO2.png"
             "Tag" = "8:"
-            "Folder" = "8:_51B4A34E6151407D8085F21834FDD269"
+            "Folder" = "8:_6D045052857E4E6E8831F3598994D3DA"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -504,7 +546,7 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_86399EAC0F89C17F16BF9BEB5E352021"
@@ -677,7 +719,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:SetUp OMB"
         "ProductCode" = "8:{042D19FD-5E2F-499A-AC42-269913B9B945}"
-        "PackageCode" = "8:{D9E123E7-6C0F-481C-BB7B-414A6B89A635}"
+        "PackageCode" = "8:{0C9DC4EE-AFEA-48B1-A9A4-1D41BBAF906D}"
         "UpgradeCode" = "8:{8463AD4D-E3AD-4170-9410-EB54DA1002E9}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -1226,7 +1268,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_187D3304A62D414AA4B634861CDFC0FB"
             {
-            "SourcePath" = "8:..\\Capa logica\\obj\\Release\\Capa logica.dll"
+            "SourcePath" = "8:"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_51B4A34E6151407D8085F21834FDD269"
@@ -1254,7 +1296,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_36844B734C93416091424AFCE0866629"
             {
-            "SourcePath" = "8:..\\OMB_Base_de_datos\\obj\\Release\\OMB_Base_de_datos.exe"
+            "SourcePath" = "8:..\\OMB_Base_de_datos\\obj\\Debug\\OMB_Base_de_datos.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_51B4A34E6151407D8085F21834FDD269"
