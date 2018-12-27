@@ -85,7 +85,7 @@
             this.Placa = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.CalendarVeh = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.ValorAuto = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.Contenido.SuspendLayout();
@@ -292,6 +292,7 @@
             this.EmailTom.Text = "Email Tomador";
             this.EmailTom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.EmailTom.Enter += new System.EventHandler(this.EmailTom_Enter);
+            this.EmailTom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.EmailTom_KeyPress);
             this.EmailTom.Leave += new System.EventHandler(this.EmailTom_Leave);
             // 
             // TelTom
@@ -314,6 +315,7 @@
             this.TelTom.Text = "Telefono Tomador";
             this.TelTom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TelTom.Enter += new System.EventHandler(this.TelTom_Enter);
+            this.TelTom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TelTom_KeyPress);
             this.TelTom.Leave += new System.EventHandler(this.TelTom_Leave);
             // 
             // DirTom
@@ -336,6 +338,7 @@
             this.DirTom.Text = "Direccion Tomador";
             this.DirTom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.DirTom.Enter += new System.EventHandler(this.DirTom_Enter);
+            this.DirTom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DirTom_KeyPress);
             this.DirTom.Leave += new System.EventHandler(this.DirTom_Leave);
             // 
             // ApeTom
@@ -358,6 +361,7 @@
             this.ApeTom.Text = "Apellidos Tomador";
             this.ApeTom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.ApeTom.Enter += new System.EventHandler(this.ApeTom_Enter);
+            this.ApeTom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ApeTom_KeyPress);
             this.ApeTom.Leave += new System.EventHandler(this.ApeTom_Leave);
             // 
             // NomTom
@@ -380,6 +384,7 @@
             this.NomTom.Text = "Nombres Tomador";
             this.NomTom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.NomTom.Enter += new System.EventHandler(this.NomTom_Enter);
+            this.NomTom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NomTom_KeyPress);
             this.NomTom.Leave += new System.EventHandler(this.NomTom_Leave);
             // 
             // TipoDocTom
@@ -420,6 +425,7 @@
             this.DocTom.Text = "Documento Tomador";
             this.DocTom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.DocTom.Enter += new System.EventHandler(this.DocTom_Enter);
+            this.DocTom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DocTom_KeyPress);
             this.DocTom.Leave += new System.EventHandler(this.DocTom_Leave);
             // 
             // Beneficiario
@@ -516,6 +522,7 @@
             this.EmailBen.Text = "Email Beneficiario";
             this.EmailBen.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.EmailBen.Enter += new System.EventHandler(this.EmailBen_Enter);
+            this.EmailBen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.EmailBen_KeyPress);
             this.EmailBen.Leave += new System.EventHandler(this.EmailBen_Leave);
             // 
             // TelBen
@@ -538,6 +545,7 @@
             this.TelBen.Text = "Telefono Beneficiario";
             this.TelBen.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TelBen.Enter += new System.EventHandler(this.TelBen_Enter);
+            this.TelBen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TelBen_KeyPress);
             this.TelBen.Leave += new System.EventHandler(this.TelBen_Leave);
             // 
             // DirBen
@@ -560,6 +568,7 @@
             this.DirBen.Text = "Direccion Beneficiario";
             this.DirBen.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.DirBen.Enter += new System.EventHandler(this.DirBen_Enter);
+            this.DirBen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DirBen_KeyPress);
             this.DirBen.Leave += new System.EventHandler(this.DirBen_Leave);
             // 
             // ApeBen
@@ -582,6 +591,7 @@
             this.ApeBen.Text = "Apellidos Beneficiario";
             this.ApeBen.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.ApeBen.Enter += new System.EventHandler(this.ApeBen_Enter);
+            this.ApeBen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ApeBen_KeyPress);
             this.ApeBen.Leave += new System.EventHandler(this.ApeBen_Leave);
             // 
             // NomBen
@@ -604,6 +614,7 @@
             this.NomBen.Text = "Nombres Beneficiario";
             this.NomBen.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.NomBen.Enter += new System.EventHandler(this.NomBen_Enter);
+            this.NomBen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NomBen_KeyPress);
             this.NomBen.Leave += new System.EventHandler(this.NomBen_Leave);
             // 
             // TipoDocBen
@@ -644,6 +655,7 @@
             this.DocBen.Text = "Documento Beneficiario";
             this.DocBen.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.DocBen.Enter += new System.EventHandler(this.DocBen_Enter);
+            this.DocBen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DocBen_KeyPress);
             this.DocBen.Leave += new System.EventHandler(this.DocBen_Leave);
             // 
             // CalendarBen
@@ -710,6 +722,7 @@
             this.ValorPrima.Text = "Valor Prima";
             this.ValorPrima.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.ValorPrima.Enter += new System.EventHandler(this.ValorPrima_Enter);
+            this.ValorPrima.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ValorPrima_KeyPress);
             this.ValorPrima.Leave += new System.EventHandler(this.ValorPrima_Leave);
             // 
             // VigenciaIni
@@ -843,6 +856,7 @@
             this.NumPoliza.Text = "Numero de poliza";
             this.NumPoliza.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.NumPoliza.Enter += new System.EventHandler(this.NumPoliza_Enter);
+            this.NumPoliza.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NumPoliza_KeyPress);
             this.NumPoliza.Leave += new System.EventHandler(this.NumPoliza_Leave);
             // 
             // Ase
@@ -900,6 +914,7 @@
             // Vehiculo
             // 
             this.Vehiculo.BackColor = System.Drawing.Color.Gainsboro;
+            this.Vehiculo.Controls.Add(this.ValorAuto);
             this.Vehiculo.Controls.Add(this.ActualizarVeh);
             this.Vehiculo.Controls.Add(this.Modelo);
             this.Vehiculo.Controls.Add(this.GuardarVeh);
@@ -925,7 +940,7 @@
             this.ActualizarVeh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.ActualizarVeh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ActualizarVeh.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ActualizarVeh.Location = new System.Drawing.Point(125, 598);
+            this.ActualizarVeh.Location = new System.Drawing.Point(125, 651);
             this.ActualizarVeh.Name = "ActualizarVeh";
             this.ActualizarVeh.Size = new System.Drawing.Size(207, 47);
             this.ActualizarVeh.TabIndex = 7;
@@ -938,7 +953,7 @@
             this.Modelo.CalendarMonthBackground = System.Drawing.Color.Gainsboro;
             this.Modelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Modelo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Modelo.Location = new System.Drawing.Point(37, 214);
+            this.Modelo.Location = new System.Drawing.Point(37, 212);
             this.Modelo.Name = "Modelo";
             this.Modelo.Size = new System.Drawing.Size(331, 35);
             this.Modelo.TabIndex = 1;
@@ -951,7 +966,7 @@
             this.GuardarVeh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.GuardarVeh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GuardarVeh.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GuardarVeh.Location = new System.Drawing.Point(125, 598);
+            this.GuardarVeh.Location = new System.Drawing.Point(125, 651);
             this.GuardarVeh.Name = "GuardarVeh";
             this.GuardarVeh.Size = new System.Drawing.Size(207, 47);
             this.GuardarVeh.TabIndex = 8;
@@ -972,7 +987,7 @@
             this.VigenciaSOAT.LineIdleColor = System.Drawing.Color.Gray;
             this.VigenciaSOAT.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
             this.VigenciaSOAT.LineThickness = 4;
-            this.VigenciaSOAT.Location = new System.Drawing.Point(37, 516);
+            this.VigenciaSOAT.Location = new System.Drawing.Point(37, 584);
             this.VigenciaSOAT.Margin = new System.Windows.Forms.Padding(4);
             this.VigenciaSOAT.Name = "VigenciaSOAT";
             this.VigenciaSOAT.Size = new System.Drawing.Size(185, 44);
@@ -1000,6 +1015,7 @@
             this.Marca.Text = "Marca";
             this.Marca.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Marca.Enter += new System.EventHandler(this.Marca_Enter);
+            this.Marca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Marca_KeyPress);
             this.Marca.Leave += new System.EventHandler(this.Marca_Leave);
             // 
             // Clase
@@ -1022,6 +1038,7 @@
             this.Clase.Text = "Clase";
             this.Clase.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Clase.Enter += new System.EventHandler(this.Clase_Enter);
+            this.Clase.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Clase_KeyPress);
             this.Clase.Leave += new System.EventHandler(this.Clase_Leave);
             // 
             // Servicio
@@ -1044,6 +1061,7 @@
             this.Servicio.Text = "Servicio";
             this.Servicio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Servicio.Enter += new System.EventHandler(this.Servicio_Enter);
+            this.Servicio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Servicio_KeyPress);
             this.Servicio.Leave += new System.EventHandler(this.Servicio_Leave);
             // 
             // Fasecolda
@@ -1066,6 +1084,7 @@
             this.Fasecolda.Text = "Fasecolda";
             this.Fasecolda.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Fasecolda.Enter += new System.EventHandler(this.Fasecolda_Enter);
+            this.Fasecolda.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Fasecolda_KeyPress);
             this.Fasecolda.Leave += new System.EventHandler(this.Fasecolda_Leave);
             // 
             // Placa
@@ -1088,6 +1107,7 @@
             this.Placa.Text = "Placa";
             this.Placa.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Placa.Enter += new System.EventHandler(this.Placa_Enter);
+            this.Placa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Placa_KeyPress);
             this.Placa.Leave += new System.EventHandler(this.Placa_Leave);
             // 
             // CalendarVeh
@@ -1095,7 +1115,7 @@
             this.CalendarVeh.BackColor = System.Drawing.Color.Gainsboro;
             this.CalendarVeh.Image = ((System.Drawing.Image)(resources.GetObject("CalendarVeh.Image")));
             this.CalendarVeh.ImageActive = null;
-            this.CalendarVeh.Location = new System.Drawing.Point(229, 523);
+            this.CalendarVeh.Location = new System.Drawing.Point(229, 591);
             this.CalendarVeh.Name = "CalendarVeh";
             this.CalendarVeh.Size = new System.Drawing.Size(39, 43);
             this.CalendarVeh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1114,10 +1134,28 @@
             this.pictureBox4.TabIndex = 30;
             this.pictureBox4.TabStop = false;
             // 
-            // contextMenuStrip1
+            // ValorAuto
             // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.ValorAuto.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ValorAuto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ValorAuto.ForeColor = System.Drawing.Color.DimGray;
+            this.ValorAuto.HintForeColor = System.Drawing.Color.Empty;
+            this.ValorAuto.HintText = "";
+            this.ValorAuto.isPassword = false;
+            this.ValorAuto.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.ValorAuto.LineIdleColor = System.Drawing.Color.Gray;
+            this.ValorAuto.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
+            this.ValorAuto.LineThickness = 4;
+            this.ValorAuto.Location = new System.Drawing.Point(37, 516);
+            this.ValorAuto.Margin = new System.Windows.Forms.Padding(4);
+            this.ValorAuto.Name = "ValorAuto";
+            this.ValorAuto.Size = new System.Drawing.Size(331, 44);
+            this.ValorAuto.TabIndex = 32;
+            this.ValorAuto.Text = "Valor del vehiculo";
+            this.ValorAuto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ValorAuto.Enter += new System.EventHandler(this.ValorAuto_Enter);
+            this.ValorAuto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ValorAuto_KeyPress);
+            this.ValorAuto.Leave += new System.EventHandler(this.ValorAuto_Leave);
             // 
             // Agregar_poliza
             // 
@@ -1178,7 +1216,6 @@
         public System.Windows.Forms.Button GuardarPol;
         public System.Windows.Forms.Button GuardarVeh;
         public System.Windows.Forms.TabPage Vehiculo;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         public Bunifu.Framework.UI.BunifuMaterialTextbox DocTom;
         public System.Windows.Forms.ComboBox TipoDocTom;
         public Bunifu.Framework.UI.BunifuMaterialTextbox DirTom;
@@ -1213,5 +1250,6 @@
         public Bunifu.Framework.UI.BunifuMaterialTextbox VigenciaIni;
         private Bunifu.Framework.UI.BunifuImageButton CalendarPolIni;
         public Bunifu.Framework.UI.BunifuMaterialTextbox ValorPrima;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox ValorAuto;
     }
 }

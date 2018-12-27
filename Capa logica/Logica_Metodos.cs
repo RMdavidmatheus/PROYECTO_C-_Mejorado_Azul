@@ -221,7 +221,7 @@ namespace Capa_logica
         {
             // TOMANDO DATOS CONCRETOS DE VEHICULOS
             DataTable dt = new DataTable();
-            MySqlCommand query = new MySqlCommand("select v.vehModelo, v.vehFasecolda, v.vehServicio, v.vehClase, v.vehMarca, v.vehVigenciaSOAT from vehiculo v where v.vehPlaca = '" + Placa + "' ", bd.GetConnection());
+            MySqlCommand query = new MySqlCommand("select v.vehModelo, v.vehFasecolda, v.vehServicio, v.vehClase, v.vehMarca, vehValorAuto, v.vehVigenciaSOAT from vehiculo v where v.vehPlaca = '" + Placa + "' ", bd.GetConnection());
             MySqlDataAdapter rs = new MySqlDataAdapter(query);
             rs.Fill(dt);
 

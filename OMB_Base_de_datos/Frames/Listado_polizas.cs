@@ -127,6 +127,7 @@ namespace OMB_Base_de_datos.Frames
                     Editar.TpPoliza.SelectedIndex = seleccionTP-1; 
                     Editar.Ase.SelectedIndex = seleccionAse-1;
                     Editar.ValorPrima.Text = Convert.ToString(row["polValorPrima"]);
+                    Editar.ValorPrima.ForeColor = Color.Black;
                 }
                 //PONIENDO VISIBLE LA PESTAÑA VEHICULO CUANDO LA POLIZA ES EXCLUSIVAMENTE DE AUTOS
                 if (Editar.TpPoliza.SelectedItem.Equals("AUTOS"))
@@ -155,6 +156,8 @@ namespace OMB_Base_de_datos.Frames
                         Editar.Clase.ForeColor = Color.Black;
                         Editar.Marca.Text = Convert.ToString(row["vehMarca"]);
                         Editar.Marca.ForeColor = Color.Black;
+                        Editar.ValorAuto.Text = Convert.ToString(row["vehValorAuto"]);
+                        Editar.ValorAuto.ForeColor = Color.Black;
                         // FORMATO DE FECHA VIG SOAT
                         Editar.VigenciaSOAT.Text = Convert.ToDateTime(row["vehVigenciaSOAT"]).ToString("yyyy-MM-dd");
                     }

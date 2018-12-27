@@ -573,12 +573,16 @@ namespace OMB_Base_de_datos.Frames
             {
                 MessageBox.Show("Ingrese una fecha de vigencia del SOAT");
             }
+            else if (ValorAuto.Text.Equals("Valor del vehiculo"))
+            {
+                MessageBox.Show("Ingrese un valor del vehiculo");
+            }
             // FINALIZACION DE VALIDACION
             else
             {
             // INSERT VEHICULO
-            string query = "insert into vehiculo (vehPlaca,vehModelo,vehFasecolda,vehServicio,vehClase,vehMarca,vehVigenciaSOAT)" +
-                   " values('" + Placa.Text + "','" + Modelo.Text + "','" + Fasecolda.Text + "','" + Servicio.Text + "','" + Clase.Text + "','" + Marca.Text + "','" + VigenciaSOAT.Text + "')";
+            string query = "insert into vehiculo (vehPlaca,vehModelo,vehFasecolda,vehServicio,vehClase,vehMarca,vehValorAuto,vehVigenciaSOAT)" +
+                   " values('" + Placa.Text + "','" + Modelo.Text + "','" + Fasecolda.Text + "','" + Servicio.Text + "','" + Clase.Text + "','" + Marca.Text + "','"+ValorAuto.Text+"','" + VigenciaSOAT.Text + "')";
             if (Metodos.Insertar_Datos_Poliza_General(query))
             {
 
@@ -904,9 +908,14 @@ namespace OMB_Base_de_datos.Frames
             {
                 MessageBox.Show("Seleccione una fecha de vigencia");
             }
+            else if (ValorAuto.Text.Equals("Valor del vehiculo"))
+            {
+                MessageBox.Show("Digite un valor para el vehiculo");
+
+            }
             else
             {
-            string query = "update vehiculo set vehModelo='" + Modelo.Text + "', vehFasecolda='" + Fasecolda.Text + "', vehServicio='" + Servicio.Text + "', vehClase='" + Clase.Text + "', vehMarca='" + Marca.Text + "', vehVigenciaSOAT='" + VigenciaSOAT.Text + "' WHERE vehPlaca='" + Placa.Text + "'";
+            string query = "update vehiculo set vehModelo='" + Modelo.Text + "', vehFasecolda='" + Fasecolda.Text + "', vehServicio='" + Servicio.Text + "', vehClase='" + Clase.Text + "', vehMarca='" + Marca.Text + "', vehValorAuto='"+ValorAuto.Text+"', vehVigenciaSOAT='" + VigenciaSOAT.Text + "' WHERE vehPlaca='" + Placa.Text + "'";
             if (Metodos.Insertar_Datos_Poliza_General(query))
             {
                 MessageBox.Show("Vehiculo actualizado correctamente", "SATISFACTORIO", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -955,6 +964,124 @@ namespace OMB_Base_de_datos.Frames
                 ValorPrima.Text = "Valor Prima";
                 ValorPrima.ForeColor = Color.DimGray;
             }
+        }
+
+        private void ValorAuto_Enter(object sender, EventArgs e)
+        {
+            if (ValorAuto.Text == "Valor del vehiculo")
+            {
+                ValorAuto.Text = "";
+                ValorAuto.ForeColor = Color.Black;
+            }
+        }
+
+        private void ValorAuto_Leave(object sender, EventArgs e)
+        {
+            if (ValorAuto.Text == "")
+            {
+                ValorAuto.Text = "Valor del vehiculo";
+                ValorAuto.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void Placa_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Metodos.AlphaNumerico(e);
+        }
+
+        private void Fasecolda_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Metodos.SoloNumeros(e);
+        }
+
+        private void Servicio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Metodos.SoloLetras(e);
+        }
+
+        private void Clase_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Metodos.SoloLetras(e);
+        }
+
+        private void Marca_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Metodos.SoloLetras(e);
+        }
+
+        private void ValorAuto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Metodos.SoloNumeros(e);
+        }
+
+        private void NumPoliza_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Metodos.SoloNumeros(e);
+        }
+
+        private void ValorPrima_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Metodos.SoloNumeros(e);
+        }
+
+        private void DocBen_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Metodos.SoloNumeros(e);
+        }
+
+        private void NomBen_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Metodos.SoloLetras(e);
+        }
+
+        private void ApeBen_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Metodos.SoloLetras(e);
+        }
+
+        private void DirBen_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Metodos.AlphaNumerico(e);
+        }
+
+        private void TelBen_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Metodos.SoloNumeros(e);
+        }
+
+        private void EmailBen_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Metodos.Validar_Email(e);
+        }
+
+        private void DocTom_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Metodos.SoloNumeros(e);
+        }
+
+        private void NomTom_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Metodos.SoloLetras(e);
+        }
+
+        private void ApeTom_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Metodos.SoloLetras(e);
+        }
+
+        private void DirTom_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Metodos.AlphaNumerico(e);
+        }
+
+        private void TelTom_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Metodos.SoloNumeros(e);
+        }
+
+        private void EmailTom_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Metodos.Validar_Email(e);
         }
     }
 }

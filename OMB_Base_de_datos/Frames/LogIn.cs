@@ -161,16 +161,10 @@ namespace LogIn
 
         private void Web_Click(object sender, EventArgs e)
         {
-            var proceso = new ProcessStartInfo("firefox.exe");
-            // ABRIENDO FIREFOX
             var proceso3 = new ProcessStartInfo("chrome.exe");
             // ABRIENDO CHROME
-            proceso.Arguments = "https://proyectoomb.azurewebsites.net/OMB_Proyecto_FINAL/index.php";
-            // INSTANCIANDO SITIO FIREFOX
             proceso3.Arguments = "https://proyectoomb.azurewebsites.net/OMB_Proyecto_FINAL/index.php";
             // INSTANCIANDO SITIO CHROME
-            Process.Start(proceso);
-            // INICIANDO PROCESO FIREFOX
             Process.Start(proceso3);
             // INICIANDO PROCESO CHROME
         }
