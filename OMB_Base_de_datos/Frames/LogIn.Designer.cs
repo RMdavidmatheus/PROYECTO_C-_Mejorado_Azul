@@ -175,17 +175,17 @@
             this.Ingresar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Ingresar.BackgroundImage")));
             this.Ingresar.ButtonText = "Iniciar Sesion";
             this.Ingresar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Ingresar.Font = new System.Drawing.Font("Roboto Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ingresar.Font = new System.Drawing.Font("Roboto Medium", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ingresar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
             this.Ingresar.IdleBorderThickness = 1;
             this.Ingresar.IdleCornerRadius = 20;
             this.Ingresar.IdleFillColor = System.Drawing.Color.White;
             this.Ingresar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
             this.Ingresar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
-            this.Ingresar.Location = new System.Drawing.Point(158, 457);
+            this.Ingresar.Location = new System.Drawing.Point(165, 465);
             this.Ingresar.Margin = new System.Windows.Forms.Padding(5);
             this.Ingresar.Name = "Ingresar";
-            this.Ingresar.Size = new System.Drawing.Size(272, 73);
+            this.Ingresar.Size = new System.Drawing.Size(275, 71);
             this.Ingresar.TabIndex = 16;
             this.Ingresar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Ingresar.Click += new System.EventHandler(this.Ingresar_Click);
@@ -209,7 +209,7 @@
             this.Twitter.BackColor = System.Drawing.Color.White;
             this.Twitter.Image = ((System.Drawing.Image)(resources.GetObject("Twitter.Image")));
             this.Twitter.ImageActive = null;
-            this.Twitter.Location = new System.Drawing.Point(348, 570);
+            this.Twitter.Location = new System.Drawing.Point(352, 568);
             this.Twitter.Name = "Twitter";
             this.Twitter.Size = new System.Drawing.Size(43, 22);
             this.Twitter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -223,7 +223,7 @@
             this.Insta.BackColor = System.Drawing.Color.White;
             this.Insta.Image = ((System.Drawing.Image)(resources.GetObject("Insta.Image")));
             this.Insta.ImageActive = null;
-            this.Insta.Location = new System.Drawing.Point(201, 570);
+            this.Insta.Location = new System.Drawing.Point(205, 568);
             this.Insta.Name = "Insta";
             this.Insta.Size = new System.Drawing.Size(43, 22);
             this.Insta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -261,7 +261,7 @@
             this.Face.BackColor = System.Drawing.Color.White;
             this.Face.Image = ((System.Drawing.Image)(resources.GetObject("Face.Image")));
             this.Face.ImageActive = null;
-            this.Face.Location = new System.Drawing.Point(250, 570);
+            this.Face.Location = new System.Drawing.Point(254, 568);
             this.Face.Name = "Face";
             this.Face.Size = new System.Drawing.Size(43, 22);
             this.Face.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -275,7 +275,7 @@
             this.Web.BackColor = System.Drawing.Color.White;
             this.Web.Image = ((System.Drawing.Image)(resources.GetObject("Web.Image")));
             this.Web.ImageActive = null;
-            this.Web.Location = new System.Drawing.Point(299, 570);
+            this.Web.Location = new System.Drawing.Point(303, 568);
             this.Web.Name = "Web";
             this.Web.Size = new System.Drawing.Size(43, 22);
             this.Web.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -300,7 +300,7 @@
             this.RecuperarPassword.AutoSize = true;
             this.RecuperarPassword.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RecuperarPassword.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.RecuperarPassword.Location = new System.Drawing.Point(224, 538);
+            this.RecuperarPassword.Location = new System.Drawing.Point(231, 538);
             this.RecuperarPassword.Name = "RecuperarPassword";
             this.RecuperarPassword.Size = new System.Drawing.Size(141, 18);
             this.RecuperarPassword.TabIndex = 7;
