@@ -85,7 +85,7 @@
             // Documento
             // 
             this.Documento.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Documento.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Documento.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Documento.ForeColor = System.Drawing.Color.Gray;
             this.Documento.HintForeColor = System.Drawing.Color.Empty;
             this.Documento.HintText = "";
@@ -93,7 +93,7 @@
             this.Documento.LineFocusedColor = System.Drawing.SystemColors.Highlight;
             this.Documento.LineIdleColor = System.Drawing.Color.Gray;
             this.Documento.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
-            this.Documento.LineThickness = 4;
+            this.Documento.LineThickness = 5;
             this.Documento.Location = new System.Drawing.Point(25, 90);
             this.Documento.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Documento.Name = "Documento";
@@ -113,7 +113,7 @@
             this.Recuperar.ButtonText = "Recuperar";
             this.Recuperar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Recuperar.DisabledColor = System.Drawing.Color.Gray;
-            this.Recuperar.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Recuperar.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Recuperar.Iconcolor = System.Drawing.Color.Transparent;
             this.Recuperar.Iconimage = null;
             this.Recuperar.Iconimage_right = null;
@@ -126,14 +126,14 @@
             this.Recuperar.IconVisible = true;
             this.Recuperar.IconZoom = 90D;
             this.Recuperar.IsTab = false;
-            this.Recuperar.Location = new System.Drawing.Point(510, 90);
+            this.Recuperar.Location = new System.Drawing.Point(510, 107);
             this.Recuperar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Recuperar.Name = "Recuperar";
             this.Recuperar.Normalcolor = System.Drawing.Color.DarkGray;
             this.Recuperar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.Recuperar.OnHoverTextColor = System.Drawing.Color.White;
             this.Recuperar.selected = false;
-            this.Recuperar.Size = new System.Drawing.Size(241, 57);
+            this.Recuperar.Size = new System.Drawing.Size(241, 40);
             this.Recuperar.TabIndex = 1;
             this.Recuperar.Text = "Recuperar";
             this.Recuperar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -143,7 +143,7 @@
             // 
             // txtMensaje
             // 
-            this.txtMensaje.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtMensaje.BackColor = System.Drawing.Color.White;
             this.txtMensaje.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMensaje.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMensaje.ForeColor = System.Drawing.Color.Maroon;
@@ -158,7 +158,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtMensaje);
             this.Controls.Add(this.Recuperar);

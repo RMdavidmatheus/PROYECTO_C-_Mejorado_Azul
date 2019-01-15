@@ -20,6 +20,7 @@ namespace OMB_Base_de_datos
             Selection.Height = Polizas.Height;
             Selection.Top = Polizas.Top;
             Usu = TomarUsu;
+            Selection.Hide();
         }
         // METODO MOVER PANTALLA
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -79,8 +80,17 @@ namespace OMB_Base_de_datos
 
         private void Polizas_Click(object sender, EventArgs e)
         {
-            Selection.Height = Polizas.Height;
-            Selection.Top = Polizas.Top;
+            if (Selection.Visible==false)
+            {
+                Selection.Show();
+                Selection.Top = Polizas.Top;
+                Selection.Height = Polizas.Height;
+            }
+            else
+            {
+                Selection.Top = Polizas.Top;
+                Selection.Height = Polizas.Height;
+            }
             Title.Text = Polizas.Text;
             Metodos.Abrir_Formulario_En_Panel(Contenido,new Frames.Listado_polizas(Usu));
 
@@ -88,40 +98,85 @@ namespace OMB_Base_de_datos
 
         private void Tomadores_Click(object sender, EventArgs e)
         {
-            Selection.Height = Tomadores.Height;
-            Selection.Top = Tomadores.Top;
+            if (Selection.Visible == false)
+            {
+                Selection.Show();
+                Selection.Top = Tomadores.Top;
+                Selection.Height = Tomadores.Height;
+            }
+            else
+            {
+                Selection.Top = Tomadores.Top;
+                Selection.Height = Tomadores.Height;
+            }
             Title.Text = Tomadores.Text;
             Metodos.Abrir_Formulario_En_Panel(Contenido,new Frames.Listado_Tomadores(Usu));
         }
 
         private void Beneficiarios_Click(object sender, EventArgs e)
         {
-            Selection.Height = Beneficiarios.Height;
-            Selection.Top = Beneficiarios.Top;
+            if (Selection.Visible == false)
+            {
+                Selection.Show();
+                Selection.Top = Beneficiarios.Top;
+                Selection.Height = Beneficiarios.Height;
+            }
+            else
+            {
+                Selection.Top = Beneficiarios.Top;
+                Selection.Height = Beneficiarios.Height;
+            }
             Title.Text = Beneficiarios.Text;
             Metodos.Abrir_Formulario_En_Panel(Contenido,new Frames.Listado_Beneficiarios(Usu));
         }
 
         private void Vehiculos_Click(object sender, EventArgs e)
         {
-            Selection.Height = Vehiculos.Height;
-            Selection.Top = Vehiculos.Top;
+            if (Selection.Visible == false)
+            {
+                Selection.Show();
+                Selection.Top = Vehiculos.Top;
+                Selection.Height = Vehiculos.Height;
+            }
+            else
+            {
+                Selection.Top = Vehiculos.Top;
+                Selection.Height = Vehiculos.Height;
+            }
             Title.Text = Vehiculos.Text;
             Metodos.Abrir_Formulario_En_Panel(Contenido, new Frames.Listado_Vehiculos(Usu));
         }
 
         private void vigenciapol_Click(object sender, EventArgs e)
         {
-            Selection.Height = vigenciapol.Height;
-            Selection.Top = vigenciapol.Top;
+            if (Selection.Visible == false)
+            {
+                Selection.Show();
+                Selection.Top = vigenciapol.Top;
+                Selection.Height = vigenciapol.Height;
+            }
+            else
+            {
+                Selection.Top = vigenciapol.Top;
+                Selection.Height = vigenciapol.Height;
+            }
             Title.Text = vigenciapol.Text;
             Metodos.Abrir_Formulario_En_Panel(Contenido, new Frames.Reporte_Vigencias_Polizas(Usu));
         }
 
         private void vigenciasoat_Click(object sender, EventArgs e)
         {
-            Selection.Height = vigenciasoat.Height;
-            Selection.Top = vigenciasoat.Top;
+            if (Selection.Visible == false)
+            {
+                Selection.Show();
+                Selection.Top = vigenciasoat.Top;
+                Selection.Height = vigenciasoat.Height;
+            }
+            else
+            {
+                Selection.Top = vigenciasoat.Top;
+                Selection.Height = vigenciasoat.Height;
+            }
             Title.Text = vigenciasoat.Text;
             Metodos.Abrir_Formulario_En_Panel(Contenido, new Frames.Reporte_Vigencia_SOAT(Usu));
         }
@@ -134,7 +189,6 @@ namespace OMB_Base_de_datos
             }
             else
             {
-                MessageBox.Show("Continuara en el aplicativo..","RETORNANDO",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
             }
         }
 
@@ -164,7 +218,7 @@ namespace OMB_Base_de_datos
             if (Slide.Width == 60)
             {
                 Slide.Visible = false;
-                Slide.Width = 266;
+                Slide.Width = 272;
                 PanelSlideAni.ShowSync(Slide);
                 PanelSlideAni.ShowSync(MenuSlide);
                 LogoHide.ShowSync(Logo);

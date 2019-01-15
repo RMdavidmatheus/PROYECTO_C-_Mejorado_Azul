@@ -48,9 +48,9 @@
             this.Carga.animated = false;
             this.Carga.animationIterval = 5;
             this.Carga.animationSpeed = 300;
-            this.Carga.BackColor = System.Drawing.Color.Gainsboro;
+            this.Carga.BackColor = System.Drawing.Color.White;
             this.Carga.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Carga.BackgroundImage")));
-            this.Carga.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F);
+            this.Carga.Font = new System.Drawing.Font("Roboto", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Carga.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.Carga.LabelVisible = true;
             this.Carga.LineProgressThickness = 8;
@@ -78,11 +78,11 @@
             // 
             this.TitilePanel.AutoSize = true;
             this.TitilePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
-            this.TitilePanel.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TitilePanel.Font = new System.Drawing.Font("Roboto", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TitilePanel.ForeColor = System.Drawing.SystemColors.Control;
             this.TitilePanel.Location = new System.Drawing.Point(-3, 7);
             this.TitilePanel.Name = "TitilePanel";
-            this.TitilePanel.Size = new System.Drawing.Size(239, 41);
+            this.TitilePanel.Size = new System.Drawing.Size(227, 42);
             this.TitilePanel.TabIndex = 0;
             this.TitilePanel.Text = "Ingresando...";
             // 
@@ -94,7 +94,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(232, 270);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Carga);

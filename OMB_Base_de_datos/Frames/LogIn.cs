@@ -194,5 +194,48 @@ namespace LogIn
             OMB_Base_de_datos.Frames.Recuperacion_pass Recuperar = new OMB_Base_de_datos.Frames.Recuperacion_pass();
             Recuperar.ShowDialog();
         }
+
+        private void Ingresar_Click(object sender, EventArgs e)
+        {
+            usutxtBox = Usuario.Text;
+            contxtBox = Pass.Text;
+
+            if (Usuario.Text != "" || Pass.Text != "")
+            {
+                DataTable ValidarDato = Metodos.Validar_Ingreso(usutxtBox, contxtBox);
+
+                if (ValidarDato.Rows.Count > 0)
+                {
+                    DataRow row = ValidarDato.Rows[0];
+                    UsuarioBD = Convert.ToString(row["Usuario"]);
+                    ContraseñaBD = Convert.ToString(row["Contrasena"]);
+
+                }
+
+                if (Usuario.Text.Equals(UsuarioBD) || Pass.Text.Equals(ContraseñaBD))
+                {
+                    TomarUsu = UsuarioBD;
+                    ContraseñaBD = "";
+                    OMB_Base_de_datos.Frames.Cargando bar = new OMB_Base_de_datos.Frames.Cargando(TomarUsu);
+                    bar.Show();
+                    this.Hide();
+                    //OMB_Base_de_datos.Menu Menu = new OMB_Base_de_datos.Menu(TomarUsu);
+                    //Menu.Show();
+                    UsuarioBD = "";
+                    ContraseñaBD = "";
+                }
+
+                else if (Usuario.Text != UsuarioBD || Pass.Text != ContraseñaBD)
+                {
+                    Usuario.Text = "";
+                    ErrorUsu.Text = "Error usuario incorrecto...";
+                    Pass.Text = "";
+                    ErrorPass.Text = "Error contraseña incorrecta...";
+
+                }
+
+                TomarUsu = "";
+            }
+        }
     }
 }

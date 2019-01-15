@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation9 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
+            BunifuAnimatorNS.Animation animation10 = new BunifuAnimatorNS.Animation();
             this.Herramienta = new System.Windows.Forms.Panel();
             this.Title = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.TitleIcon = new System.Windows.Forms.PictureBox();
@@ -100,11 +100,11 @@
             this.Title.AutoSize = true;
             this.PanelSlideAni.SetDecoration(this.Title, BunifuAnimatorNS.DecorationType.None);
             this.LogoHide.SetDecoration(this.Title, BunifuAnimatorNS.DecorationType.None);
-            this.Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title.Font = new System.Drawing.Font("Roboto Light", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Title.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Title.Location = new System.Drawing.Point(310, 11);
+            this.Title.Location = new System.Drawing.Point(311, 11);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(368, 33);
+            this.Title.Size = new System.Drawing.Size(345, 35);
             this.Title.TabIndex = 5;
             this.Title.Text = "Aplicativo OMB SEGUROS";
             // 
@@ -113,9 +113,9 @@
             this.PanelSlideAni.SetDecoration(this.TitleIcon, BunifuAnimatorNS.DecorationType.None);
             this.LogoHide.SetDecoration(this.TitleIcon, BunifuAnimatorNS.DecorationType.None);
             this.TitleIcon.Image = ((System.Drawing.Image)(resources.GetObject("TitleIcon.Image")));
-            this.TitleIcon.Location = new System.Drawing.Point(272, 9);
+            this.TitleIcon.Location = new System.Drawing.Point(280, 12);
             this.TitleIcon.Name = "TitleIcon";
-            this.TitleIcon.Size = new System.Drawing.Size(45, 39);
+            this.TitleIcon.Size = new System.Drawing.Size(31, 35);
             this.TitleIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.TitleIcon.TabIndex = 4;
             this.TitleIcon.TabStop = false;
@@ -213,7 +213,7 @@
             this.PanelSlideAni.SetDecoration(this.Slide, BunifuAnimatorNS.DecorationType.None);
             this.Slide.Location = new System.Drawing.Point(0, 0);
             this.Slide.Name = "Slide";
-            this.Slide.Size = new System.Drawing.Size(269, 675);
+            this.Slide.Size = new System.Drawing.Size(272, 667);
             this.Slide.TabIndex = 1;
             // 
             // Twitter
@@ -224,7 +224,7 @@
             this.PanelSlideAni.SetDecoration(this.Twitter, BunifuAnimatorNS.DecorationType.None);
             this.Twitter.Image = ((System.Drawing.Image)(resources.GetObject("Twitter.Image")));
             this.Twitter.ImageActive = null;
-            this.Twitter.Location = new System.Drawing.Point(197, 635);
+            this.Twitter.Location = new System.Drawing.Point(197, 639);
             this.Twitter.Name = "Twitter";
             this.Twitter.Size = new System.Drawing.Size(43, 22);
             this.Twitter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -241,7 +241,7 @@
             this.PanelSlideAni.SetDecoration(this.MenuSlide, BunifuAnimatorNS.DecorationType.None);
             this.MenuSlide.Image = ((System.Drawing.Image)(resources.GetObject("MenuSlide.Image")));
             this.MenuSlide.ImageActive = null;
-            this.MenuSlide.Location = new System.Drawing.Point(227, 163);
+            this.MenuSlide.Location = new System.Drawing.Point(230, 163);
             this.MenuSlide.Name = "MenuSlide";
             this.MenuSlide.Size = new System.Drawing.Size(31, 40);
             this.MenuSlide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -258,7 +258,7 @@
             this.PanelSlideAni.SetDecoration(this.Web, BunifuAnimatorNS.DecorationType.None);
             this.Web.Image = ((System.Drawing.Image)(resources.GetObject("Web.Image")));
             this.Web.ImageActive = null;
-            this.Web.Location = new System.Drawing.Point(148, 635);
+            this.Web.Location = new System.Drawing.Point(148, 639);
             this.Web.Name = "Web";
             this.Web.Size = new System.Drawing.Size(43, 22);
             this.Web.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -289,7 +289,7 @@
             this.PanelSlideAni.SetDecoration(this.Insta, BunifuAnimatorNS.DecorationType.None);
             this.Insta.Image = ((System.Drawing.Image)(resources.GetObject("Insta.Image")));
             this.Insta.ImageActive = null;
-            this.Insta.Location = new System.Drawing.Point(50, 635);
+            this.Insta.Location = new System.Drawing.Point(50, 639);
             this.Insta.Name = "Insta";
             this.Insta.Size = new System.Drawing.Size(43, 22);
             this.Insta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -302,9 +302,9 @@
             this.Selection.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.LogoHide.SetDecoration(this.Selection, BunifuAnimatorNS.DecorationType.None);
             this.PanelSlideAni.SetDecoration(this.Selection, BunifuAnimatorNS.DecorationType.None);
-            this.Selection.Location = new System.Drawing.Point(0, 215);
+            this.Selection.Location = new System.Drawing.Point(0, 218);
             this.Selection.Name = "Selection";
-            this.Selection.Size = new System.Drawing.Size(13, 64);
+            this.Selection.Size = new System.Drawing.Size(10, 59);
             this.Selection.TabIndex = 0;
             // 
             // Face
@@ -315,7 +315,7 @@
             this.PanelSlideAni.SetDecoration(this.Face, BunifuAnimatorNS.DecorationType.None);
             this.Face.Image = ((System.Drawing.Image)(resources.GetObject("Face.Image")));
             this.Face.ImageActive = null;
-            this.Face.Location = new System.Drawing.Point(99, 635);
+            this.Face.Location = new System.Drawing.Point(99, 639);
             this.Face.Name = "Face";
             this.Face.Size = new System.Drawing.Size(43, 22);
             this.Face.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -353,12 +353,12 @@
             this.vigenciasoat.OnHoverTextColor = System.Drawing.Color.White;
             this.vigenciasoat.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.vigenciasoat.selected = false;
-            this.vigenciasoat.Size = new System.Drawing.Size(269, 64);
+            this.vigenciasoat.Size = new System.Drawing.Size(279, 64);
             this.vigenciasoat.TabIndex = 5;
             this.vigenciasoat.Text = "Vigencia SOATS";
             this.vigenciasoat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.vigenciasoat.Textcolor = System.Drawing.Color.White;
-            this.vigenciasoat.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vigenciasoat.TextFont = new System.Drawing.Font("Roboto Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vigenciasoat.Click += new System.EventHandler(this.vigenciasoat_Click);
             // 
             // vigenciapol
@@ -391,12 +391,12 @@
             this.vigenciapol.OnHoverTextColor = System.Drawing.Color.White;
             this.vigenciapol.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.vigenciapol.selected = false;
-            this.vigenciapol.Size = new System.Drawing.Size(269, 64);
+            this.vigenciapol.Size = new System.Drawing.Size(279, 64);
             this.vigenciapol.TabIndex = 4;
             this.vigenciapol.Text = "Vigencias polizas";
             this.vigenciapol.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.vigenciapol.Textcolor = System.Drawing.Color.White;
-            this.vigenciapol.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vigenciapol.TextFont = new System.Drawing.Font("Roboto Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vigenciapol.Click += new System.EventHandler(this.vigenciapol_Click);
             // 
             // Vehiculos
@@ -429,12 +429,12 @@
             this.Vehiculos.OnHoverTextColor = System.Drawing.Color.White;
             this.Vehiculos.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Vehiculos.selected = false;
-            this.Vehiculos.Size = new System.Drawing.Size(269, 64);
+            this.Vehiculos.Size = new System.Drawing.Size(279, 64);
             this.Vehiculos.TabIndex = 3;
             this.Vehiculos.Text = "Vehiculos";
             this.Vehiculos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Vehiculos.Textcolor = System.Drawing.Color.White;
-            this.Vehiculos.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Vehiculos.TextFont = new System.Drawing.Font("Roboto Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Vehiculos.Click += new System.EventHandler(this.Vehiculos_Click);
             // 
             // Beneficiarios
@@ -467,12 +467,12 @@
             this.Beneficiarios.OnHoverTextColor = System.Drawing.Color.White;
             this.Beneficiarios.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Beneficiarios.selected = false;
-            this.Beneficiarios.Size = new System.Drawing.Size(269, 64);
+            this.Beneficiarios.Size = new System.Drawing.Size(279, 64);
             this.Beneficiarios.TabIndex = 2;
             this.Beneficiarios.Text = "Beneficiarios";
             this.Beneficiarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Beneficiarios.Textcolor = System.Drawing.Color.White;
-            this.Beneficiarios.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Beneficiarios.TextFont = new System.Drawing.Font("Roboto Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Beneficiarios.Click += new System.EventHandler(this.Beneficiarios_Click);
             // 
             // Tomadores
@@ -486,6 +486,7 @@
             this.PanelSlideAni.SetDecoration(this.Tomadores, BunifuAnimatorNS.DecorationType.None);
             this.LogoHide.SetDecoration(this.Tomadores, BunifuAnimatorNS.DecorationType.None);
             this.Tomadores.DisabledColor = System.Drawing.Color.Gray;
+            this.Tomadores.Font = new System.Drawing.Font("Roboto Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tomadores.Iconcolor = System.Drawing.Color.Transparent;
             this.Tomadores.Iconimage = ((System.Drawing.Image)(resources.GetObject("Tomadores.Iconimage")));
             this.Tomadores.Iconimage_right = null;
@@ -499,18 +500,19 @@
             this.Tomadores.IconZoom = 60D;
             this.Tomadores.IsTab = false;
             this.Tomadores.Location = new System.Drawing.Point(0, 285);
+            this.Tomadores.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Tomadores.Name = "Tomadores";
             this.Tomadores.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
             this.Tomadores.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.Tomadores.OnHoverTextColor = System.Drawing.Color.White;
             this.Tomadores.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Tomadores.selected = false;
-            this.Tomadores.Size = new System.Drawing.Size(269, 64);
+            this.Tomadores.Size = new System.Drawing.Size(279, 64);
             this.Tomadores.TabIndex = 1;
             this.Tomadores.Text = "Tomadores";
             this.Tomadores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Tomadores.Textcolor = System.Drawing.Color.White;
-            this.Tomadores.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tomadores.TextFont = new System.Drawing.Font("Roboto Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tomadores.Click += new System.EventHandler(this.Tomadores_Click);
             // 
             // Polizas
@@ -524,6 +526,7 @@
             this.PanelSlideAni.SetDecoration(this.Polizas, BunifuAnimatorNS.DecorationType.None);
             this.LogoHide.SetDecoration(this.Polizas, BunifuAnimatorNS.DecorationType.None);
             this.Polizas.DisabledColor = System.Drawing.Color.Gray;
+            this.Polizas.Font = new System.Drawing.Font("Roboto Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Polizas.Iconcolor = System.Drawing.Color.Transparent;
             this.Polizas.Iconimage = ((System.Drawing.Image)(resources.GetObject("Polizas.Iconimage")));
             this.Polizas.Iconimage_right = null;
@@ -537,18 +540,19 @@
             this.Polizas.IconZoom = 60D;
             this.Polizas.IsTab = false;
             this.Polizas.Location = new System.Drawing.Point(0, 215);
+            this.Polizas.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Polizas.Name = "Polizas";
             this.Polizas.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(37)))), ((int)(((byte)(66)))));
             this.Polizas.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.Polizas.OnHoverTextColor = System.Drawing.Color.White;
             this.Polizas.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Polizas.selected = false;
-            this.Polizas.Size = new System.Drawing.Size(269, 64);
+            this.Polizas.Size = new System.Drawing.Size(279, 64);
             this.Polizas.TabIndex = 0;
             this.Polizas.Text = "Listado de polizas";
             this.Polizas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Polizas.Textcolor = System.Drawing.Color.White;
-            this.Polizas.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Polizas.TextFont = new System.Drawing.Font("Roboto Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Polizas.Click += new System.EventHandler(this.Polizas_Click);
             // 
             // Contenido
@@ -556,12 +560,12 @@
             this.Contenido.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Contenido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Contenido.BackColor = System.Drawing.Color.White;
             this.LogoHide.SetDecoration(this.Contenido, BunifuAnimatorNS.DecorationType.None);
             this.PanelSlideAni.SetDecoration(this.Contenido, BunifuAnimatorNS.DecorationType.None);
-            this.Contenido.Location = new System.Drawing.Point(275, 3);
+            this.Contenido.Location = new System.Drawing.Point(273, 3);
             this.Contenido.Name = "Contenido";
-            this.Contenido.Size = new System.Drawing.Size(1009, 660);
+            this.Contenido.Size = new System.Drawing.Size(1008, 667);
             this.Contenido.TabIndex = 2;
             // 
             // FormaApp
@@ -573,22 +577,22 @@
             // 
             this.PanelSlideAni.AnimationType = BunifuAnimatorNS.AnimationType.HorizBlind;
             this.PanelSlideAni.Cursor = null;
-            animation4.AnimateOnlyDifferences = true;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 0;
-            animation4.Padding = new System.Windows.Forms.Padding(0);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 0F;
-            this.PanelSlideAni.DefaultAnimation = animation4;
+            animation9.AnimateOnlyDifferences = true;
+            animation9.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.BlindCoeff")));
+            animation9.LeafCoeff = 0F;
+            animation9.MaxTime = 1F;
+            animation9.MinTime = 0F;
+            animation9.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.MosaicCoeff")));
+            animation9.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation9.MosaicShift")));
+            animation9.MosaicSize = 0;
+            animation9.Padding = new System.Windows.Forms.Padding(0);
+            animation9.RotateCoeff = 0F;
+            animation9.RotateLimit = 0F;
+            animation9.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.ScaleCoeff")));
+            animation9.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.SlideCoeff")));
+            animation9.TimeCoeff = 0F;
+            animation9.TransparencyCoeff = 0F;
+            this.PanelSlideAni.DefaultAnimation = animation9;
             // 
             // Main
             // 
@@ -601,35 +605,35 @@
             this.PanelSlideAni.SetDecoration(this.Main, BunifuAnimatorNS.DecorationType.None);
             this.Main.Location = new System.Drawing.Point(0, 53);
             this.Main.Name = "Main";
-            this.Main.Size = new System.Drawing.Size(1281, 663);
+            this.Main.Size = new System.Drawing.Size(1281, 670);
             this.Main.TabIndex = 3;
             // 
             // LogoHide
             // 
             this.LogoHide.AnimationType = BunifuAnimatorNS.AnimationType.VertBlind;
             this.LogoHide.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.LogoHide.DefaultAnimation = animation3;
+            animation10.AnimateOnlyDifferences = true;
+            animation10.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.BlindCoeff")));
+            animation10.LeafCoeff = 0F;
+            animation10.MaxTime = 1F;
+            animation10.MinTime = 0F;
+            animation10.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.MosaicCoeff")));
+            animation10.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation10.MosaicShift")));
+            animation10.MosaicSize = 0;
+            animation10.Padding = new System.Windows.Forms.Padding(0);
+            animation10.RotateCoeff = 0F;
+            animation10.RotateLimit = 0F;
+            animation10.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.ScaleCoeff")));
+            animation10.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.SlideCoeff")));
+            animation10.TimeCoeff = 0F;
+            animation10.TransparencyCoeff = 0F;
+            this.LogoHide.DefaultAnimation = animation10;
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.Main);
             this.Controls.Add(this.Herramienta);

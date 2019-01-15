@@ -126,5 +126,10 @@ namespace OMB_Base_de_datos.Frames
             this.hora.Text = DateTime.Now.ToLongTimeString();
             this.Fecha.Text = DateTime.Now.ToLongDateString();
         }
+
+        private void ListadoVeh_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

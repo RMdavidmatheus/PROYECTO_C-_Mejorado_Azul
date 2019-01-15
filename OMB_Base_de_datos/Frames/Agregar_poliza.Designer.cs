@@ -123,11 +123,11 @@
             // TituloForm
             // 
             this.TituloForm.AutoSize = true;
-            this.TituloForm.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TituloForm.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TituloForm.ForeColor = System.Drawing.SystemColors.Control;
             this.TituloForm.Location = new System.Drawing.Point(3, 11);
             this.TituloForm.Name = "TituloForm";
-            this.TituloForm.Size = new System.Drawing.Size(243, 32);
+            this.TituloForm.Size = new System.Drawing.Size(222, 33);
             this.TituloForm.TabIndex = 1;
             this.TituloForm.Text = "Llenado de datos";
             // 
@@ -160,7 +160,7 @@
             this.Contenido.Controls.Add(this.Beneficiario);
             this.Contenido.Controls.Add(this.Poliza);
             this.Contenido.Controls.Add(this.Vehiculo);
-            this.Contenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Contenido.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Contenido.HeaderColor = System.Drawing.Color.Gainsboro;
             this.Contenido.HorizontalLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.Contenido.ItemSize = new System.Drawing.Size(240, 16);
@@ -199,7 +199,7 @@
             // 
             this.FechaNaTom.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.FechaNaTom.Enabled = false;
-            this.FechaNaTom.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FechaNaTom.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FechaNaTom.ForeColor = System.Drawing.Color.Black;
             this.FechaNaTom.HintForeColor = System.Drawing.Color.Empty;
             this.FechaNaTom.HintText = "";
@@ -207,11 +207,11 @@
             this.FechaNaTom.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.FechaNaTom.LineIdleColor = System.Drawing.Color.Gray;
             this.FechaNaTom.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.FechaNaTom.LineThickness = 4;
+            this.FechaNaTom.LineThickness = 5;
             this.FechaNaTom.Location = new System.Drawing.Point(30, 588);
             this.FechaNaTom.Margin = new System.Windows.Forms.Padding(4);
             this.FechaNaTom.Name = "FechaNaTom";
-            this.FechaNaTom.Size = new System.Drawing.Size(185, 44);
+            this.FechaNaTom.Size = new System.Drawing.Size(200, 44);
             this.FechaNaTom.TabIndex = 7;
             this.FechaNaTom.Text = "Fecha de Nacimiento";
             this.FechaNaTom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -223,7 +223,7 @@
             this.ActualizarTom.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
             this.ActualizarTom.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.ActualizarTom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ActualizarTom.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ActualizarTom.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ActualizarTom.Location = new System.Drawing.Point(118, 648);
             this.ActualizarTom.Name = "ActualizarTom";
             this.ActualizarTom.Size = new System.Drawing.Size(207, 47);
@@ -239,7 +239,7 @@
             this.GuardarTom.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
             this.GuardarTom.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.GuardarTom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.GuardarTom.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GuardarTom.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GuardarTom.Location = new System.Drawing.Point(118, 648);
             this.GuardarTom.Name = "GuardarTom";
             this.GuardarTom.Size = new System.Drawing.Size(207, 47);
@@ -253,7 +253,7 @@
             this.Calendario.BackColor = System.Drawing.Color.Gainsboro;
             this.Calendario.Image = ((System.Drawing.Image)(resources.GetObject("Calendario.Image")));
             this.Calendario.ImageActive = null;
-            this.Calendario.Location = new System.Drawing.Point(222, 589);
+            this.Calendario.Location = new System.Drawing.Point(237, 588);
             this.Calendario.Name = "Calendario";
             this.Calendario.Size = new System.Drawing.Size(39, 43);
             this.Calendario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -265,9 +265,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(123, 15);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 15);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(153, 126);
+            this.pictureBox1.Size = new System.Drawing.Size(408, 126);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
@@ -275,7 +275,7 @@
             // EmailTom
             // 
             this.EmailTom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.EmailTom.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailTom.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmailTom.ForeColor = System.Drawing.Color.DimGray;
             this.EmailTom.HintForeColor = System.Drawing.Color.Empty;
             this.EmailTom.HintText = "";
@@ -283,7 +283,7 @@
             this.EmailTom.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.EmailTom.LineIdleColor = System.Drawing.Color.Gray;
             this.EmailTom.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.EmailTom.LineThickness = 4;
+            this.EmailTom.LineThickness = 5;
             this.EmailTom.Location = new System.Drawing.Point(30, 512);
             this.EmailTom.Margin = new System.Windows.Forms.Padding(4);
             this.EmailTom.Name = "EmailTom";
@@ -298,7 +298,7 @@
             // TelTom
             // 
             this.TelTom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TelTom.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TelTom.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TelTom.ForeColor = System.Drawing.Color.DimGray;
             this.TelTom.HintForeColor = System.Drawing.Color.Empty;
             this.TelTom.HintText = "";
@@ -306,7 +306,7 @@
             this.TelTom.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.TelTom.LineIdleColor = System.Drawing.Color.Gray;
             this.TelTom.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.TelTom.LineThickness = 4;
+            this.TelTom.LineThickness = 5;
             this.TelTom.Location = new System.Drawing.Point(30, 448);
             this.TelTom.Margin = new System.Windows.Forms.Padding(4);
             this.TelTom.Name = "TelTom";
@@ -321,7 +321,7 @@
             // DirTom
             // 
             this.DirTom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.DirTom.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DirTom.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DirTom.ForeColor = System.Drawing.Color.DimGray;
             this.DirTom.HintForeColor = System.Drawing.Color.Empty;
             this.DirTom.HintText = "";
@@ -329,7 +329,7 @@
             this.DirTom.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.DirTom.LineIdleColor = System.Drawing.Color.Gray;
             this.DirTom.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.DirTom.LineThickness = 4;
+            this.DirTom.LineThickness = 5;
             this.DirTom.Location = new System.Drawing.Point(30, 383);
             this.DirTom.Margin = new System.Windows.Forms.Padding(4);
             this.DirTom.Name = "DirTom";
@@ -344,7 +344,7 @@
             // ApeTom
             // 
             this.ApeTom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ApeTom.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ApeTom.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ApeTom.ForeColor = System.Drawing.Color.DimGray;
             this.ApeTom.HintForeColor = System.Drawing.Color.Empty;
             this.ApeTom.HintText = "";
@@ -352,7 +352,7 @@
             this.ApeTom.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.ApeTom.LineIdleColor = System.Drawing.Color.Gray;
             this.ApeTom.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.ApeTom.LineThickness = 4;
+            this.ApeTom.LineThickness = 5;
             this.ApeTom.Location = new System.Drawing.Point(30, 317);
             this.ApeTom.Margin = new System.Windows.Forms.Padding(4);
             this.ApeTom.Name = "ApeTom";
@@ -367,7 +367,7 @@
             // NomTom
             // 
             this.NomTom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.NomTom.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NomTom.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NomTom.ForeColor = System.Drawing.Color.DimGray;
             this.NomTom.HintForeColor = System.Drawing.Color.Empty;
             this.NomTom.HintText = "";
@@ -375,7 +375,7 @@
             this.NomTom.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.NomTom.LineIdleColor = System.Drawing.Color.Gray;
             this.NomTom.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.NomTom.LineThickness = 4;
+            this.NomTom.LineThickness = 5;
             this.NomTom.Location = new System.Drawing.Point(30, 254);
             this.NomTom.Margin = new System.Windows.Forms.Padding(4);
             this.NomTom.Name = "NomTom";
@@ -390,7 +390,7 @@
             // TipoDocTom
             // 
             this.TipoDocTom.BackColor = System.Drawing.Color.Gainsboro;
-            this.TipoDocTom.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TipoDocTom.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TipoDocTom.FormattingEnabled = true;
             this.TipoDocTom.Items.AddRange(new object[] {
             "CEDULA",
@@ -401,14 +401,14 @@
             "CEDULA EXTRANJERA"});
             this.TipoDocTom.Location = new System.Drawing.Point(30, 211);
             this.TipoDocTom.Name = "TipoDocTom";
-            this.TipoDocTom.Size = new System.Drawing.Size(331, 26);
+            this.TipoDocTom.Size = new System.Drawing.Size(331, 28);
             this.TipoDocTom.TabIndex = 1;
             this.TipoDocTom.Text = "-- SELECCIONE UN TIPO DE DOCUMENTO --";
             // 
             // DocTom
             // 
             this.DocTom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.DocTom.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DocTom.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DocTom.ForeColor = System.Drawing.Color.DimGray;
             this.DocTom.HintForeColor = System.Drawing.Color.Empty;
             this.DocTom.HintText = "";
@@ -416,7 +416,7 @@
             this.DocTom.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.DocTom.LineIdleColor = System.Drawing.Color.Gray;
             this.DocTom.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.DocTom.LineThickness = 4;
+            this.DocTom.LineThickness = 5;
             this.DocTom.Location = new System.Drawing.Point(30, 148);
             this.DocTom.Margin = new System.Windows.Forms.Padding(4);
             this.DocTom.Name = "DocTom";
@@ -456,8 +456,8 @@
             this.ActualizarBen.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
             this.ActualizarBen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.ActualizarBen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ActualizarBen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ActualizarBen.Location = new System.Drawing.Point(123, 649);
+            this.ActualizarBen.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ActualizarBen.Location = new System.Drawing.Point(114, 649);
             this.ActualizarBen.Name = "ActualizarBen";
             this.ActualizarBen.Size = new System.Drawing.Size(207, 47);
             this.ActualizarBen.TabIndex = 8;
@@ -472,8 +472,8 @@
             this.GuardarBen.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
             this.GuardarBen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.GuardarBen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.GuardarBen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GuardarBen.Location = new System.Drawing.Point(123, 649);
+            this.GuardarBen.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GuardarBen.Location = new System.Drawing.Point(112, 649);
             this.GuardarBen.Name = "GuardarBen";
             this.GuardarBen.Size = new System.Drawing.Size(207, 47);
             this.GuardarBen.TabIndex = 9;
@@ -485,7 +485,7 @@
             // 
             this.FechaBen.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.FechaBen.Enabled = false;
-            this.FechaBen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FechaBen.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FechaBen.ForeColor = System.Drawing.Color.Black;
             this.FechaBen.HintForeColor = System.Drawing.Color.Empty;
             this.FechaBen.HintText = "";
@@ -493,11 +493,11 @@
             this.FechaBen.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.FechaBen.LineIdleColor = System.Drawing.Color.Gray;
             this.FechaBen.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.FechaBen.LineThickness = 4;
-            this.FechaBen.Location = new System.Drawing.Point(35, 579);
+            this.FechaBen.LineThickness = 5;
+            this.FechaBen.Location = new System.Drawing.Point(28, 579);
             this.FechaBen.Margin = new System.Windows.Forms.Padding(4);
             this.FechaBen.Name = "FechaBen";
-            this.FechaBen.Size = new System.Drawing.Size(185, 44);
+            this.FechaBen.Size = new System.Drawing.Size(200, 44);
             this.FechaBen.TabIndex = 7;
             this.FechaBen.Text = "Fecha de Nacimiento";
             this.FechaBen.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -505,7 +505,7 @@
             // EmailBen
             // 
             this.EmailBen.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.EmailBen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailBen.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmailBen.ForeColor = System.Drawing.Color.DimGray;
             this.EmailBen.HintForeColor = System.Drawing.Color.Empty;
             this.EmailBen.HintText = "";
@@ -513,8 +513,8 @@
             this.EmailBen.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.EmailBen.LineIdleColor = System.Drawing.Color.Gray;
             this.EmailBen.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.EmailBen.LineThickness = 4;
-            this.EmailBen.Location = new System.Drawing.Point(35, 513);
+            this.EmailBen.LineThickness = 5;
+            this.EmailBen.Location = new System.Drawing.Point(28, 513);
             this.EmailBen.Margin = new System.Windows.Forms.Padding(4);
             this.EmailBen.Name = "EmailBen";
             this.EmailBen.Size = new System.Drawing.Size(331, 44);
@@ -528,7 +528,7 @@
             // TelBen
             // 
             this.TelBen.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TelBen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TelBen.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TelBen.ForeColor = System.Drawing.Color.DimGray;
             this.TelBen.HintForeColor = System.Drawing.Color.Empty;
             this.TelBen.HintText = "";
@@ -536,8 +536,8 @@
             this.TelBen.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.TelBen.LineIdleColor = System.Drawing.Color.Gray;
             this.TelBen.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.TelBen.LineThickness = 4;
-            this.TelBen.Location = new System.Drawing.Point(35, 449);
+            this.TelBen.LineThickness = 5;
+            this.TelBen.Location = new System.Drawing.Point(28, 449);
             this.TelBen.Margin = new System.Windows.Forms.Padding(4);
             this.TelBen.Name = "TelBen";
             this.TelBen.Size = new System.Drawing.Size(331, 44);
@@ -551,7 +551,7 @@
             // DirBen
             // 
             this.DirBen.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.DirBen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DirBen.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DirBen.ForeColor = System.Drawing.Color.DimGray;
             this.DirBen.HintForeColor = System.Drawing.Color.Empty;
             this.DirBen.HintText = "";
@@ -559,8 +559,8 @@
             this.DirBen.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.DirBen.LineIdleColor = System.Drawing.Color.Gray;
             this.DirBen.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.DirBen.LineThickness = 4;
-            this.DirBen.Location = new System.Drawing.Point(35, 384);
+            this.DirBen.LineThickness = 5;
+            this.DirBen.Location = new System.Drawing.Point(28, 384);
             this.DirBen.Margin = new System.Windows.Forms.Padding(4);
             this.DirBen.Name = "DirBen";
             this.DirBen.Size = new System.Drawing.Size(331, 44);
@@ -574,7 +574,7 @@
             // ApeBen
             // 
             this.ApeBen.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ApeBen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ApeBen.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ApeBen.ForeColor = System.Drawing.Color.DimGray;
             this.ApeBen.HintForeColor = System.Drawing.Color.Empty;
             this.ApeBen.HintText = "";
@@ -582,8 +582,8 @@
             this.ApeBen.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.ApeBen.LineIdleColor = System.Drawing.Color.Gray;
             this.ApeBen.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.ApeBen.LineThickness = 4;
-            this.ApeBen.Location = new System.Drawing.Point(35, 318);
+            this.ApeBen.LineThickness = 5;
+            this.ApeBen.Location = new System.Drawing.Point(28, 318);
             this.ApeBen.Margin = new System.Windows.Forms.Padding(4);
             this.ApeBen.Name = "ApeBen";
             this.ApeBen.Size = new System.Drawing.Size(331, 44);
@@ -597,7 +597,7 @@
             // NomBen
             // 
             this.NomBen.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.NomBen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NomBen.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NomBen.ForeColor = System.Drawing.Color.DimGray;
             this.NomBen.HintForeColor = System.Drawing.Color.Empty;
             this.NomBen.HintText = "";
@@ -605,8 +605,8 @@
             this.NomBen.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.NomBen.LineIdleColor = System.Drawing.Color.Gray;
             this.NomBen.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.NomBen.LineThickness = 4;
-            this.NomBen.Location = new System.Drawing.Point(35, 255);
+            this.NomBen.LineThickness = 5;
+            this.NomBen.Location = new System.Drawing.Point(28, 255);
             this.NomBen.Margin = new System.Windows.Forms.Padding(4);
             this.NomBen.Name = "NomBen";
             this.NomBen.Size = new System.Drawing.Size(331, 44);
@@ -629,7 +629,7 @@
             "PASAPORTE",
             "REGISTRO CIVIL",
             "CEDULA EXTRANJERA"});
-            this.TipoDocBen.Location = new System.Drawing.Point(39, 212);
+            this.TipoDocBen.Location = new System.Drawing.Point(32, 212);
             this.TipoDocBen.Name = "TipoDocBen";
             this.TipoDocBen.Size = new System.Drawing.Size(331, 26);
             this.TipoDocBen.TabIndex = 1;
@@ -638,7 +638,7 @@
             // DocBen
             // 
             this.DocBen.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.DocBen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DocBen.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DocBen.ForeColor = System.Drawing.Color.DimGray;
             this.DocBen.HintForeColor = System.Drawing.Color.Empty;
             this.DocBen.HintText = "";
@@ -646,8 +646,8 @@
             this.DocBen.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.DocBen.LineIdleColor = System.Drawing.Color.Gray;
             this.DocBen.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.DocBen.LineThickness = 4;
-            this.DocBen.Location = new System.Drawing.Point(35, 149);
+            this.DocBen.LineThickness = 5;
+            this.DocBen.Location = new System.Drawing.Point(28, 149);
             this.DocBen.Margin = new System.Windows.Forms.Padding(4);
             this.DocBen.Name = "DocBen";
             this.DocBen.Size = new System.Drawing.Size(331, 44);
@@ -663,7 +663,7 @@
             this.CalendarBen.BackColor = System.Drawing.Color.Gainsboro;
             this.CalendarBen.Image = ((System.Drawing.Image)(resources.GetObject("CalendarBen.Image")));
             this.CalendarBen.ImageActive = null;
-            this.CalendarBen.Location = new System.Drawing.Point(227, 586);
+            this.CalendarBen.Location = new System.Drawing.Point(235, 580);
             this.CalendarBen.Name = "CalendarBen";
             this.CalendarBen.Size = new System.Drawing.Size(39, 43);
             this.CalendarBen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -675,9 +675,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(128, 16);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 16);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(153, 126);
+            this.pictureBox2.Size = new System.Drawing.Size(402, 126);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
@@ -705,7 +705,7 @@
             // ValorPrima
             // 
             this.ValorPrima.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ValorPrima.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ValorPrima.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ValorPrima.ForeColor = System.Drawing.Color.DimGray;
             this.ValorPrima.HintForeColor = System.Drawing.Color.Empty;
             this.ValorPrima.HintText = "";
@@ -713,7 +713,7 @@
             this.ValorPrima.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.ValorPrima.LineIdleColor = System.Drawing.Color.Gray;
             this.ValorPrima.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.ValorPrima.LineThickness = 4;
+            this.ValorPrima.LineThickness = 5;
             this.ValorPrima.Location = new System.Drawing.Point(37, 492);
             this.ValorPrima.Margin = new System.Windows.Forms.Padding(4);
             this.ValorPrima.Name = "ValorPrima";
@@ -729,7 +729,7 @@
             // 
             this.VigenciaIni.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.VigenciaIni.Enabled = false;
-            this.VigenciaIni.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VigenciaIni.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VigenciaIni.ForeColor = System.Drawing.Color.Black;
             this.VigenciaIni.HintForeColor = System.Drawing.Color.Empty;
             this.VigenciaIni.HintText = "";
@@ -737,11 +737,11 @@
             this.VigenciaIni.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.VigenciaIni.LineIdleColor = System.Drawing.Color.Gray;
             this.VigenciaIni.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.VigenciaIni.LineThickness = 4;
+            this.VigenciaIni.LineThickness = 5;
             this.VigenciaIni.Location = new System.Drawing.Point(37, 352);
             this.VigenciaIni.Margin = new System.Windows.Forms.Padding(4);
             this.VigenciaIni.Name = "VigenciaIni";
-            this.VigenciaIni.Size = new System.Drawing.Size(185, 44);
+            this.VigenciaIni.Size = new System.Drawing.Size(200, 44);
             this.VigenciaIni.TabIndex = 32;
             this.VigenciaIni.Text = "Fecha Vigencia Inicial";
             this.VigenciaIni.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -751,7 +751,7 @@
             this.CalendarPolIni.BackColor = System.Drawing.Color.Gainsboro;
             this.CalendarPolIni.Image = ((System.Drawing.Image)(resources.GetObject("CalendarPolIni.Image")));
             this.CalendarPolIni.ImageActive = null;
-            this.CalendarPolIni.Location = new System.Drawing.Point(229, 359);
+            this.CalendarPolIni.Location = new System.Drawing.Point(244, 355);
             this.CalendarPolIni.Name = "CalendarPolIni";
             this.CalendarPolIni.Size = new System.Drawing.Size(39, 43);
             this.CalendarPolIni.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -767,7 +767,7 @@
             this.ActualizarPol.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
             this.ActualizarPol.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.ActualizarPol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ActualizarPol.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ActualizarPol.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ActualizarPol.Location = new System.Drawing.Point(106, 579);
             this.ActualizarPol.Name = "ActualizarPol";
             this.ActualizarPol.Size = new System.Drawing.Size(207, 47);
@@ -779,7 +779,7 @@
             // TpPoliza
             // 
             this.TpPoliza.BackColor = System.Drawing.Color.Gainsboro;
-            this.TpPoliza.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TpPoliza.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TpPoliza.FormattingEnabled = true;
             this.TpPoliza.Items.AddRange(new object[] {
             "AUTOS",
@@ -795,7 +795,7 @@
             "SOAT"});
             this.TpPoliza.Location = new System.Drawing.Point(37, 185);
             this.TpPoliza.Name = "TpPoliza";
-            this.TpPoliza.Size = new System.Drawing.Size(331, 26);
+            this.TpPoliza.Size = new System.Drawing.Size(331, 28);
             this.TpPoliza.TabIndex = 0;
             this.TpPoliza.Text = "-- SELECCIONE UN TIPO DE POLIZA --";
             // 
@@ -806,7 +806,7 @@
             this.GuardarPol.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
             this.GuardarPol.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.GuardarPol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.GuardarPol.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GuardarPol.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GuardarPol.Location = new System.Drawing.Point(106, 579);
             this.GuardarPol.Name = "GuardarPol";
             this.GuardarPol.Size = new System.Drawing.Size(207, 43);
@@ -819,7 +819,7 @@
             // 
             this.Vigencia.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Vigencia.Enabled = false;
-            this.Vigencia.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Vigencia.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Vigencia.ForeColor = System.Drawing.Color.Black;
             this.Vigencia.HintForeColor = System.Drawing.Color.Empty;
             this.Vigencia.HintText = "";
@@ -827,11 +827,11 @@
             this.Vigencia.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.Vigencia.LineIdleColor = System.Drawing.Color.Gray;
             this.Vigencia.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.Vigencia.LineThickness = 4;
+            this.Vigencia.LineThickness = 5;
             this.Vigencia.Location = new System.Drawing.Point(37, 420);
             this.Vigencia.Margin = new System.Windows.Forms.Padding(4);
             this.Vigencia.Name = "Vigencia";
-            this.Vigencia.Size = new System.Drawing.Size(185, 44);
+            this.Vigencia.Size = new System.Drawing.Size(200, 44);
             this.Vigencia.TabIndex = 4;
             this.Vigencia.Text = "Fecha Vigencia Final";
             this.Vigencia.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -839,7 +839,7 @@
             // NumPoliza
             // 
             this.NumPoliza.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.NumPoliza.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NumPoliza.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NumPoliza.ForeColor = System.Drawing.Color.DimGray;
             this.NumPoliza.HintForeColor = System.Drawing.Color.Empty;
             this.NumPoliza.HintText = "";
@@ -847,7 +847,7 @@
             this.NumPoliza.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.NumPoliza.LineIdleColor = System.Drawing.Color.Gray;
             this.NumPoliza.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.NumPoliza.LineThickness = 4;
+            this.NumPoliza.LineThickness = 5;
             this.NumPoliza.Location = new System.Drawing.Point(37, 287);
             this.NumPoliza.Margin = new System.Windows.Forms.Padding(4);
             this.NumPoliza.Name = "NumPoliza";
@@ -862,7 +862,7 @@
             // Ase
             // 
             this.Ase.BackColor = System.Drawing.Color.Gainsboro;
-            this.Ase.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ase.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ase.FormattingEnabled = true;
             this.Ase.Items.AddRange(new object[] {
             "SURA",
@@ -883,7 +883,7 @@
             "PREVISORA"});
             this.Ase.Location = new System.Drawing.Point(37, 243);
             this.Ase.Name = "Ase";
-            this.Ase.Size = new System.Drawing.Size(331, 26);
+            this.Ase.Size = new System.Drawing.Size(331, 28);
             this.Ase.TabIndex = 1;
             this.Ase.Text = "-- SELECCIONE UNA ASEGURADORA --";
             // 
@@ -892,7 +892,7 @@
             this.CalendarPol.BackColor = System.Drawing.Color.Gainsboro;
             this.CalendarPol.Image = ((System.Drawing.Image)(resources.GetObject("CalendarPol.Image")));
             this.CalendarPol.ImageActive = null;
-            this.CalendarPol.Location = new System.Drawing.Point(229, 427);
+            this.CalendarPol.Location = new System.Drawing.Point(244, 423);
             this.CalendarPol.Name = "CalendarPol";
             this.CalendarPol.Size = new System.Drawing.Size(39, 43);
             this.CalendarPol.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -904,10 +904,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(130, 16);
+            this.pictureBox3.Location = new System.Drawing.Point(3, 16);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(153, 126);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.Size = new System.Drawing.Size(405, 126);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox3.TabIndex = 30;
             this.pictureBox3.TabStop = false;
             // 
@@ -935,7 +935,7 @@
             // ValorAuto
             // 
             this.ValorAuto.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ValorAuto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ValorAuto.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ValorAuto.ForeColor = System.Drawing.Color.DimGray;
             this.ValorAuto.HintForeColor = System.Drawing.Color.Empty;
             this.ValorAuto.HintText = "";
@@ -943,7 +943,7 @@
             this.ValorAuto.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.ValorAuto.LineIdleColor = System.Drawing.Color.Gray;
             this.ValorAuto.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.ValorAuto.LineThickness = 4;
+            this.ValorAuto.LineThickness = 5;
             this.ValorAuto.Location = new System.Drawing.Point(37, 516);
             this.ValorAuto.Margin = new System.Windows.Forms.Padding(4);
             this.ValorAuto.Name = "ValorAuto";
@@ -962,7 +962,7 @@
             this.ActualizarVeh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
             this.ActualizarVeh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.ActualizarVeh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ActualizarVeh.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ActualizarVeh.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ActualizarVeh.Location = new System.Drawing.Point(125, 651);
             this.ActualizarVeh.Name = "ActualizarVeh";
             this.ActualizarVeh.Size = new System.Drawing.Size(207, 47);
@@ -974,11 +974,11 @@
             // Modelo
             // 
             this.Modelo.CalendarMonthBackground = System.Drawing.Color.Gainsboro;
-            this.Modelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Modelo.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Modelo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.Modelo.Location = new System.Drawing.Point(37, 212);
             this.Modelo.Name = "Modelo";
-            this.Modelo.Size = new System.Drawing.Size(331, 35);
+            this.Modelo.Size = new System.Drawing.Size(331, 39);
             this.Modelo.TabIndex = 1;
             // 
             // GuardarVeh
@@ -988,7 +988,7 @@
             this.GuardarVeh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
             this.GuardarVeh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.GuardarVeh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.GuardarVeh.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GuardarVeh.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GuardarVeh.Location = new System.Drawing.Point(125, 651);
             this.GuardarVeh.Name = "GuardarVeh";
             this.GuardarVeh.Size = new System.Drawing.Size(207, 47);
@@ -1001,7 +1001,7 @@
             // 
             this.VigenciaSOAT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.VigenciaSOAT.Enabled = false;
-            this.VigenciaSOAT.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VigenciaSOAT.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VigenciaSOAT.ForeColor = System.Drawing.Color.Black;
             this.VigenciaSOAT.HintForeColor = System.Drawing.Color.Empty;
             this.VigenciaSOAT.HintText = "";
@@ -1009,11 +1009,11 @@
             this.VigenciaSOAT.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.VigenciaSOAT.LineIdleColor = System.Drawing.Color.Gray;
             this.VigenciaSOAT.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.VigenciaSOAT.LineThickness = 4;
+            this.VigenciaSOAT.LineThickness = 5;
             this.VigenciaSOAT.Location = new System.Drawing.Point(37, 584);
             this.VigenciaSOAT.Margin = new System.Windows.Forms.Padding(4);
             this.VigenciaSOAT.Name = "VigenciaSOAT";
-            this.VigenciaSOAT.Size = new System.Drawing.Size(185, 44);
+            this.VigenciaSOAT.Size = new System.Drawing.Size(195, 44);
             this.VigenciaSOAT.TabIndex = 6;
             this.VigenciaSOAT.Text = "Fecha vigencia SOAT";
             this.VigenciaSOAT.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1021,7 +1021,7 @@
             // Marca
             // 
             this.Marca.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Marca.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Marca.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Marca.ForeColor = System.Drawing.Color.DimGray;
             this.Marca.HintForeColor = System.Drawing.Color.Empty;
             this.Marca.HintText = "";
@@ -1029,7 +1029,7 @@
             this.Marca.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.Marca.LineIdleColor = System.Drawing.Color.Gray;
             this.Marca.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.Marca.LineThickness = 4;
+            this.Marca.LineThickness = 5;
             this.Marca.Location = new System.Drawing.Point(37, 449);
             this.Marca.Margin = new System.Windows.Forms.Padding(4);
             this.Marca.Name = "Marca";
@@ -1044,7 +1044,7 @@
             // Clase
             // 
             this.Clase.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Clase.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clase.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Clase.ForeColor = System.Drawing.Color.DimGray;
             this.Clase.HintForeColor = System.Drawing.Color.Empty;
             this.Clase.HintText = "";
@@ -1052,7 +1052,7 @@
             this.Clase.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.Clase.LineIdleColor = System.Drawing.Color.Gray;
             this.Clase.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.Clase.LineThickness = 4;
+            this.Clase.LineThickness = 5;
             this.Clase.Location = new System.Drawing.Point(37, 384);
             this.Clase.Margin = new System.Windows.Forms.Padding(4);
             this.Clase.Name = "Clase";
@@ -1067,7 +1067,7 @@
             // Servicio
             // 
             this.Servicio.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Servicio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Servicio.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Servicio.ForeColor = System.Drawing.Color.DimGray;
             this.Servicio.HintForeColor = System.Drawing.Color.Empty;
             this.Servicio.HintText = "";
@@ -1075,7 +1075,7 @@
             this.Servicio.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.Servicio.LineIdleColor = System.Drawing.Color.Gray;
             this.Servicio.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.Servicio.LineThickness = 4;
+            this.Servicio.LineThickness = 5;
             this.Servicio.Location = new System.Drawing.Point(37, 318);
             this.Servicio.Margin = new System.Windows.Forms.Padding(4);
             this.Servicio.Name = "Servicio";
@@ -1090,7 +1090,7 @@
             // Fasecolda
             // 
             this.Fasecolda.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Fasecolda.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fasecolda.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Fasecolda.ForeColor = System.Drawing.Color.DimGray;
             this.Fasecolda.HintForeColor = System.Drawing.Color.Empty;
             this.Fasecolda.HintText = "";
@@ -1098,7 +1098,7 @@
             this.Fasecolda.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.Fasecolda.LineIdleColor = System.Drawing.Color.Gray;
             this.Fasecolda.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.Fasecolda.LineThickness = 4;
+            this.Fasecolda.LineThickness = 5;
             this.Fasecolda.Location = new System.Drawing.Point(37, 255);
             this.Fasecolda.Margin = new System.Windows.Forms.Padding(4);
             this.Fasecolda.Name = "Fasecolda";
@@ -1113,7 +1113,7 @@
             // Placa
             // 
             this.Placa.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Placa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Placa.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Placa.ForeColor = System.Drawing.Color.DimGray;
             this.Placa.HintForeColor = System.Drawing.Color.Empty;
             this.Placa.HintText = "";
@@ -1121,7 +1121,7 @@
             this.Placa.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.Placa.LineIdleColor = System.Drawing.Color.Gray;
             this.Placa.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.Placa.LineThickness = 4;
+            this.Placa.LineThickness = 5;
             this.Placa.Location = new System.Drawing.Point(37, 149);
             this.Placa.Margin = new System.Windows.Forms.Padding(4);
             this.Placa.Name = "Placa";
@@ -1138,7 +1138,7 @@
             this.CalendarVeh.BackColor = System.Drawing.Color.Gainsboro;
             this.CalendarVeh.Image = ((System.Drawing.Image)(resources.GetObject("CalendarVeh.Image")));
             this.CalendarVeh.ImageActive = null;
-            this.CalendarVeh.Location = new System.Drawing.Point(229, 591);
+            this.CalendarVeh.Location = new System.Drawing.Point(239, 585);
             this.CalendarVeh.Name = "CalendarVeh";
             this.CalendarVeh.Size = new System.Drawing.Size(39, 43);
             this.CalendarVeh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1150,9 +1150,9 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(130, 16);
+            this.pictureBox4.Location = new System.Drawing.Point(0, 16);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(153, 126);
+            this.pictureBox4.Size = new System.Drawing.Size(408, 126);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 30;
             this.pictureBox4.TabStop = false;

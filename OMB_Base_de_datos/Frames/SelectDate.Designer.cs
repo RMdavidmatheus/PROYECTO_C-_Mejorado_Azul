@@ -74,11 +74,11 @@
             // 
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.SystemColors.Control;
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(3, 10);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(275, 31);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(273, 33);
             this.bunifuCustomLabel1.TabIndex = 0;
             this.bunifuCustomLabel1.Text = "Seleccionando Fecha";
             // 
@@ -87,20 +87,20 @@
             this.GuardarDate.ActiveBorderThickness = 1;
             this.GuardarDate.ActiveCornerRadius = 20;
             this.GuardarDate.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
-            this.GuardarDate.ActiveForecolor = System.Drawing.Color.Gainsboro;
+            this.GuardarDate.ActiveForecolor = System.Drawing.Color.White;
             this.GuardarDate.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.GuardarDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.GuardarDate.BackColor = System.Drawing.Color.Gainsboro;
+            this.GuardarDate.BackColor = System.Drawing.Color.White;
             this.GuardarDate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("GuardarDate.BackgroundImage")));
             this.GuardarDate.ButtonText = "Seleccionar fecha";
             this.GuardarDate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GuardarDate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GuardarDate.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GuardarDate.ForeColor = System.Drawing.Color.Black;
             this.GuardarDate.IdleBorderThickness = 1;
             this.GuardarDate.IdleCornerRadius = 20;
-            this.GuardarDate.IdleFillColor = System.Drawing.Color.Gainsboro;
+            this.GuardarDate.IdleFillColor = System.Drawing.Color.White;
             this.GuardarDate.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.GuardarDate.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.GuardarDate.Location = new System.Drawing.Point(88, 136);
@@ -125,7 +125,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(348, 211);
             this.Controls.Add(this.Date);
             this.Controls.Add(this.GuardarDate);
