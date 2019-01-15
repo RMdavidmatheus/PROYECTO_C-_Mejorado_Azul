@@ -74,6 +74,7 @@
             this.CalendarPol = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.Vehiculo = new System.Windows.Forms.TabPage();
+            this.ValorAuto = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.ActualizarVeh = new System.Windows.Forms.Button();
             this.Modelo = new System.Windows.Forms.DateTimePicker();
             this.GuardarVeh = new System.Windows.Forms.Button();
@@ -85,7 +86,6 @@
             this.Placa = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.CalendarVeh = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.ValorAuto = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.Contenido.SuspendLayout();
@@ -111,7 +111,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.panel1.Controls.Add(this.TituloForm);
             this.panel1.Controls.Add(this.bunifuImageButton1);
             this.panel1.Location = new System.Drawing.Point(0, -4);
@@ -133,7 +133,7 @@
             // 
             // bunifuImageButton1
             // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
             this.bunifuImageButton1.Location = new System.Drawing.Point(357, 11);
@@ -147,7 +147,7 @@
             // 
             // Contenido
             // 
-            this.Contenido.ActiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.Contenido.ActiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.Contenido.AllowDrop = true;
             this.Contenido.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -162,7 +162,7 @@
             this.Contenido.Controls.Add(this.Vehiculo);
             this.Contenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Contenido.HeaderColor = System.Drawing.Color.Gainsboro;
-            this.Contenido.HorizontalLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.Contenido.HorizontalLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.Contenido.ItemSize = new System.Drawing.Size(240, 16);
             this.Contenido.Location = new System.Drawing.Point(0, 45);
             this.Contenido.Name = "Contenido";
@@ -932,6 +932,29 @@
             this.Vehiculo.TabIndex = 3;
             this.Vehiculo.Text = "Vehiculo";
             // 
+            // ValorAuto
+            // 
+            this.ValorAuto.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ValorAuto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ValorAuto.ForeColor = System.Drawing.Color.DimGray;
+            this.ValorAuto.HintForeColor = System.Drawing.Color.Empty;
+            this.ValorAuto.HintText = "";
+            this.ValorAuto.isPassword = false;
+            this.ValorAuto.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.ValorAuto.LineIdleColor = System.Drawing.Color.Gray;
+            this.ValorAuto.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
+            this.ValorAuto.LineThickness = 4;
+            this.ValorAuto.Location = new System.Drawing.Point(37, 516);
+            this.ValorAuto.Margin = new System.Windows.Forms.Padding(4);
+            this.ValorAuto.Name = "ValorAuto";
+            this.ValorAuto.Size = new System.Drawing.Size(331, 44);
+            this.ValorAuto.TabIndex = 32;
+            this.ValorAuto.Text = "Valor del vehiculo";
+            this.ValorAuto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ValorAuto.Enter += new System.EventHandler(this.ValorAuto_Enter);
+            this.ValorAuto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ValorAuto_KeyPress);
+            this.ValorAuto.Leave += new System.EventHandler(this.ValorAuto_Leave);
+            // 
             // ActualizarVeh
             // 
             this.ActualizarVeh.BackColor = System.Drawing.Color.DarkGray;
@@ -1133,29 +1156,6 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 30;
             this.pictureBox4.TabStop = false;
-            // 
-            // ValorAuto
-            // 
-            this.ValorAuto.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ValorAuto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ValorAuto.ForeColor = System.Drawing.Color.DimGray;
-            this.ValorAuto.HintForeColor = System.Drawing.Color.Empty;
-            this.ValorAuto.HintText = "";
-            this.ValorAuto.isPassword = false;
-            this.ValorAuto.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.ValorAuto.LineIdleColor = System.Drawing.Color.Gray;
-            this.ValorAuto.LineMouseHoverColor = System.Drawing.Color.CornflowerBlue;
-            this.ValorAuto.LineThickness = 4;
-            this.ValorAuto.Location = new System.Drawing.Point(37, 516);
-            this.ValorAuto.Margin = new System.Windows.Forms.Padding(4);
-            this.ValorAuto.Name = "ValorAuto";
-            this.ValorAuto.Size = new System.Drawing.Size(331, 44);
-            this.ValorAuto.TabIndex = 32;
-            this.ValorAuto.Text = "Valor del vehiculo";
-            this.ValorAuto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.ValorAuto.Enter += new System.EventHandler(this.ValorAuto_Enter);
-            this.ValorAuto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ValorAuto_KeyPress);
-            this.ValorAuto.Leave += new System.EventHandler(this.ValorAuto_Leave);
             // 
             // Agregar_poliza
             // 

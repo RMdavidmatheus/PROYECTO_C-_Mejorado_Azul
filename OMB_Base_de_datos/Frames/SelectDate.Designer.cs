@@ -47,7 +47,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.panel1.Controls.Add(this.Cerrar);
             this.panel1.Controls.Add(this.bunifuCustomLabel1);
             this.panel1.Location = new System.Drawing.Point(0, -1);
@@ -58,7 +58,7 @@
             // 
             // Cerrar
             // 
-            this.Cerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.Cerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.Cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Cerrar.Image")));
             this.Cerrar.ImageActive = null;
             this.Cerrar.Location = new System.Drawing.Point(284, 8);
@@ -73,6 +73,7 @@
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.SystemColors.Control;
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(3, 10);
@@ -85,9 +86,9 @@
             // 
             this.GuardarDate.ActiveBorderThickness = 1;
             this.GuardarDate.ActiveCornerRadius = 20;
-            this.GuardarDate.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.GuardarDate.ActiveForecolor = System.Drawing.Color.White;
-            this.GuardarDate.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.GuardarDate.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
+            this.GuardarDate.ActiveForecolor = System.Drawing.Color.Gainsboro;
+            this.GuardarDate.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.GuardarDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -99,9 +100,9 @@
             this.GuardarDate.ForeColor = System.Drawing.Color.Black;
             this.GuardarDate.IdleBorderThickness = 1;
             this.GuardarDate.IdleCornerRadius = 20;
-            this.GuardarDate.IdleFillColor = System.Drawing.Color.White;
-            this.GuardarDate.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.GuardarDate.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.GuardarDate.IdleFillColor = System.Drawing.Color.Gainsboro;
+            this.GuardarDate.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
+            this.GuardarDate.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.GuardarDate.Location = new System.Drawing.Point(88, 136);
             this.GuardarDate.Margin = new System.Windows.Forms.Padding(5);
             this.GuardarDate.Name = "GuardarDate";
